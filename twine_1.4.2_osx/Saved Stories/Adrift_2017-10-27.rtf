@@ -1,0 +1,1155 @@
+{\rtf1\ansi\ansicpg1251
+{\fonttbl\f0\fswiss\fcharset0 Arial;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red128\green128\blue128;\red51\green51\blue204;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx792
+\tx8640\ql\qnatural\pardirnatural\pgnx720\pgny720
+\fs24\b1 FirstEntrance\b0\fs20 \
+The door opens without difficulty.  Inside, the air is warm and humid.  The shelves behind the counters are stocked with fluffy towels, luxuriant patterned robes, and countless small bottles of soaps, salts, and oils. You don't need anything.\
+\
+A tiny footbridge crosses the stream to the hall on the other side.  The unattended counters continue as far as you can see in both directions.  In front of you, the stream flows through a channel running down the center of a broad ramp.\
+\
+\b\cf2 \ul follow the left hallway\ulnone \cf0 \b0 \
+\b\cf2 \ul follow the right hallway\ulnone \cf0 \b0 \
+\b\cf2 \ul follow the ramp\ulnone \cf0 \b0 \
+\
+\fs24\b1 StoryTitle\b0\fs20 \
+Adrift\
+\
+\fs24\b1 Dream\b0\fs20 \
+\f1\cf1 <<print either("Adrift", "Aimless", "Empty", "Falling", "Floating", "Lost", "Sinking", "Vanished", "Weightless")>>\cf0\f0 .\
+\
+\b\cf2 \ul boys are pretty\ulnone \cf0 \b0 \
+\b\cf2 \ul girls are pretty\ulnone \cf0 \b0 \
+\
+\fs24\b1 Sleep\b0\fs20 \
+...\
+\
+\b\cf2 \ul dream.\ulnone \cf0 \b0 \
+\
+\fs24\b1 Start\b0\fs20 \
+<<set \
+$ignoring = 0; $cold = 0; \
+$empty = 0; \
+$swimming = 0; $dark = 0; \
+$stripped = 0; $knocked = 0; $alone = 0;\
+$played = 0; $burned = 0;\
+$key = 0;\
+$end = 0\
+>>\b\cf2 \ul Sleep.\ulnone \cf0 \b0 \
+\
+\fs24\b1 Entrance\b0\fs20 \
+In the center of a broad ramp, a stream flows through a mosaic-lined channel down to the ramp's base, across a hall, and under a glass wall to the forest outside. A tiny footbridge spans the stream.  On either side of it, the hallway--empty counters stocked with luxuries on one hand, and glass wall on the other--stretches away as far as you can see.  To one side of the stream is the silver-handled door leading back outside.\
+\
+The faint smell of steam is in the air.\
+\
+\b\cf2 \ul follow the left hallway\ulnone \cf0 \b0 \
+\b\cf2 \ul follow the right hallway\ulnone \cf0 \b0 \
+\b\cf2 \ul follow the ramp\ulnone \cf0 \b0 \
+\f1\cf1 <<if visited("FirstExit")>>\cf0\f0 \b\cf2 \ul go outside\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \b\cf2 \ul go outside\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 RampToShowers\b0\fs20 \
+The smell of steam grows stronger and the air grows warmer as you make your way up the ramp.  Before long, you come to a large open room.\
+\
+\b\cf2 \ul look\ulnone \cf0 \b0 \
+\
+\fs24\b1 Showers\b0\fs20 \
+The room is covered from floor to ceiling with tiles as warm as the steamy air.  A dozen shower spouts are spaced around the edges of the room, and several more jut out from the ceiling near the middle.  Some of them are running, but no one else is in the room.\
+\
+You don't see any drains: instead, the water collects at the edges of the room in a gutter, which flows to a channel running through the center of a broad ramp, down and out of sight.\
+\
+In the center of the room is a deeply recessed pit, large enough for maybe four people, with stairs leading in one side.  You hear the sound of \f1\cf1 <<if $cold>>\cf0\f0 running\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 splashing\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0  water coming from the pit, but you can't quite see in.\
+\
+On the other wall of the room, barely visible through the steam, is a narrow hall with a flight of stairs climbing out of sight. In the corner to the side of the hall is an unmarked door.  It looks like a maintenance door of some kind; you're probably not supposed to use it.\
+\
+\f1\cf1 <<if not $showering>>\cf0\f0 \b\cf2 \ul take a shower\ulnone \cf0 \b0 \
+\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \f1\cf1 <<set $showering to 0>>\cf0\f0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \f1\cf1 <<if $ignoring and not $cold>>\cf0\f0 \b\cf2 \ul go in the pit\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \b\cf2 \ul go in the pit\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\b\cf2 \ul follow the ramp\ulnone \cf0 \b0 \
+\b\cf2 \ul follow the stairs\ulnone \cf0 \b0 \
+\b\cf2 \ul try the door\ulnone \cf0 \b0 \
+\
+\fs24\b1 ShowersToPool\b0\fs20 \
+The stairs are dark and humid, just wide enough for one person.  As you ascend, the steam grows thinner and the tiles under your feet grow cool.  \f1\cf1 <<if $dark>>\cf0\f0 After turning once on a narrow landing, the stair grows steadily darker; you're forced to take the last few steps by feel.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 You turn once on a narrow landing, then emerge a little while later into a large open room.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\f1\cf1 <<if $dark>>\cf0\f0 \b\cf2 \ul look\ulnone \cf0 \b0 \\
+\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \b\cf2 \ul look\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 Pool\b0\fs20 \
+The air here is cool and just a little humid, but not uncomfortable.  On the near side of the room a narrow staircase leads down out from the wall.\
+\
+\f1\cf1 <<if $swimming>>\cf0\f0 Two naked \f1\cf1 <<$boy>>\cf0\f0 s, a little younger than yourself, are doing laps in the pool, pausing now and then to show off and fool around.\
+\
+One of them notices you standing by the pool and smiles, motioning you to join them.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 Two naked \f1\cf1 <<$boy>>\cf0\f0 s, a little younger than yourself, are standing next to the pool.  They turn to look at you as you enter, and one of them smiles.\
+\
+"Hey," \f1\cf1 <<$he>>\cf0\f0  says.  "Want to swim with us?"\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\b\cf2 \ul join them\ulnone \cf0 \b0 \
+\b\cf2 \ul go down the stairs\ulnone \cf0 \b0 \
+\
+\fs24\b1 Laps\b0\fs20 \
+You jump into the pool and the two \f1\cf1 <<$boy>>\cf0\f0 s dive in after, racing and splashing each other and generally showing off.\
+\
+They're surprisingly graceful swimmers.\
+\
+\b\cf2 \ul float\ulnone \cf0 \b0 \
+\b\cf2 \ul flirt\ulnone \cf0 \b0 \
+\b\cf2 \ul get out\ulnone \cf0 \b0 \
+\
+\fs24\b1 Float\b0\fs20 \
+While the two \f1\cf1 <<$boy>>\cf0\f0 s play, you turn on your back and simply float for a while.  After a minute or two, you hear splashing nearby.  You turn your head and see one of them treading water next to you, watching you float.  It's the same \f1\cf1 <<$boy>>\cf0\f0  who invited you in.\
+\
+\b\cf2 \ul say nothing\ulnone \cf0 \b0 \
+\b\cf2 \ul talk\ulnone \cf0 \b0 \
+\
+\fs24\b1 OrnateKnock\b0\fs20 \
+On closer inspection, the ornate wooden door is missing not only its handle, but its keyhole as well.  In fact, the entire surface is as smooth and slick as polished glass.  You try pushing on it, but it won't budge.  You try knocking on it, but you hear no response.  There doesn't seem to be any way in.\f1\cf1 <<set $ornate to 1>>\cf0\f0 \
+\
+\f1\cf1 <\f1\cf1 <RoomsScrap>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 South\b0\fs20 \
+The stream flows through a channel down a broad ramp on the other side of the glass, across a hall to an opening at the base of the wall, and out into the forest where you stand.  Across the hall,  on both sides of the ramp and as far as you can see, are empty counters with cabinets and shelves behind them.  No one is at the counters.\
+\
+To one side of the stream is a glass door with a silver handle.\
+\
+\f1\cf1 <<if visited("FirstEntrance")>>\cf0\f0 \b\cf2 \ul go inside\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \b\cf2 \ul try the door\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\b\cf2 \ul go downstream\ulnone \cf0 \b0 \
+\
+\fs24\b1 Upstream\b0\fs20 \
+You follow the stream for a minute or so before arriving at a long wall made of glass.\
+\
+\b\cf2 \ul look\ulnone \cf0 \b0 \
+\
+\fs24\b1 FirstExit\b0\fs20 \
+You walk back into the forest, the strange sense of artificiality returning as you do.  You hadn't realized it had gone.\
+\
+You notice you can't hear any birds.  Then you notice you can't hear the rustling of the leaves, though the breeze is plainly moving them.  The forest looks and feels real, but apart from the ever-present rushing of the stream it is completely silent.\
+\
+\f1\cf1 <\f1\cf1 <South>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 StoryMenu\b0\fs20 \
+\b\cf2 \ul Credits\ulnone \cf0 \b0 \
+\
+\fs24\b1 TheForest\b0\fs20 \
+\f1\cf1 <<if $likes is "boys">>\cf0\f0 \f1\cf1 <<set $boy = "boy"; $girl = "girl"; $Boy = "Boy"; $Girl = "Girl"; $he = "he"; $she = "she"; $He = "He"; $She = "She"; $him = "him"; $her = "her"; $Him = "Him"; $Her = "Her"; $his = "his"; $shis = "her"; $His = "His"; $Shis = "Her"; $whis = "his"; $hers = "hers"; $Whis = "His"; $Hers = "Hers">>\cf0\f0 \\
+\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \f1\cf1 <<set $boy = "girl"; $girl = "boy"; $Boy = "Girl"; $Girl = "Boy"; $he = "she"; $she = "he"; $He = "She"; $She = "He"; $him = "her"; $her = "him"; $Him = "Her"; $Her = "Him"; $his = "her"; $shis = "his"; $His = "Her"; $Shis = "His"; $whis = "hers"; $hers = "his"; $Whis = "Hers"; $Hers = "His">>\cf0\f0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \\
+Tall trees dappled with warm sunlight surround you.  Somewhere nearby, a stream rushes past.  Leaves and ferns litter the forest floor.\
+\
+Everything you touch feels real, yet the whole seems fake.\
+\
+\b\cf2 \ul search for the stream\ulnone \cf0 \b0 \
+\b\cf2 \ul explore the forest\ulnone \cf0 \b0 \
+\
+\fs24\b1 LightsOff Transition Sheet\b0\fs20 \
+.transition-in {\
+	opacity: 0;\
+	position: absolute;\
+}\
+body {\
+	transition: 1s;\
+	-webkit-transition: 1s;\
+}\
+.transition-out {\
+	opacity: 0;\
+	position: absolute;\
+}\
+\
+\fs24\b1 LobbyEntrance\b0\fs20 \
+You stroll down the carpeted hallway, taking your time.  You soon pass a spacious, well-lit lobby filled with plush chairs, tables, and potted plants.  The AC sends a faint, cool breeze drifting into the hallway.\
+\
+The far wall of the lobby is also glass; there's a smooth tan beach and calm waves beyond.  Along one inner wall, hundreds of shining keys hang from hooks behind a broad counter.\
+\
+The counter is empty.\
+\
+\b\cf2 \ul take a look\ulnone \cf0 \b0 \
+\b\cf2 \ul continue on\ulnone \cf0 \b0 \
+\
+\fs24\b1 TakeAShower\b0\fs20 \
+\f1\cf1 <<if $cold>>\cf0\f0 You walk under one of the steaming taps, only to find that the water is frigid.  You quickly step back out, shivering.\
+\
+Despite the cold water, the air around you is still warm.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 You walk under one of the running taps and find that it's the perfect temperature.  The water massages and slips over your skin, its heat permeating your body, relaxing and energizing you from the tips of your fingers to the center of your chest.  You feel calm, alert and alive.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \f1\cf1 <<set $showering to 1>>\cf0\f0 \
+\
+\b\cf2 \ul look around\ulnone \cf0 \b0 \
+\
+\fs24\b1 PoolToShowers\b0\fs20 \
+\f1\cf1 <<if $dark>>\cf0\f0 Shouldn't happen! [You carefully make your way to the darkened stairs and begin walking.  The light grows as you descend, along with the heat and steam, and the way becomes easier.]\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 You quickly descend the long, narrow staircase, the heat and steam growing thicker with each step.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0   Before long, you emerge into the heavy fog of the showers.\
+\
+\b\cf2 \ul look\ulnone \cf0 \b0 \
+\
+\fs24\b1 SteelKnock\b0\fs20 \
+On closer inspection, the steel door is missing not only its handle, but its keyhole as well.  Its surface is rough and hard and freezing to the touch.  You try pushing on it, but it won't budge.  You try knocking on it, but you hear no response.  There doesn't seem to be any way in.\f1\cf1 <<set $steel to 1>>\cf0\f0 \
+\
+\f1\cf1 <\f1\cf1 <RoomsScrap>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 ShowerPit\b0\fs20 \
+\f1\cf1 <<if $cold>>\cf0\f0 You climb the stairs into the pit and see four unoccupied taps, one of them running.  The water coming from the tap is freezing cold.\
+\
+\b\cf2 \ul go back out\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 You climb the stairs into the pit and see a naked \f1\cf1 <<$boy>>\cf0\f0 , a little older than you, washing \f1\cf1 <<$him>>\cf0\f0 self under one of the taps.  \f1\cf1 <<$He>>\cf0\f0  doesn't seem to notice you.\
+\
+\b\cf2 \ul get \f1\cf1 <<$his>>\cf0\f0  attention\ulnone \cf0 \b0 \
+\b\cf2 \ul take a shower\ulnone \cf0 \b0 \
+\b\cf2 \ul go back out\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 PoolExit\b0\fs20 \
+You swim back to the edge of the pool and pull yourself out, trying not to think of how clumsy you must seem compared to the two \f1\cf1 <<$boy>>\cf0\f0 s.  \f1\cf1 <<if $cold>>\cf0\f0 The air out here is colder than you remember, and you're soaking wet.  You shiver slightly.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 You start to search for a towel, then remember you don't need one.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\b\cf2 \ul look around\ulnone \cf0 \b0 \
+\
+\fs24\b1 Impress\b0\fs20 \
+You start swimming hard after the two \f1\cf1 <<$boy>>\cf0\f0 s, as though to catch them.  They laugh and turn away, staying bare inches ahead of you, though you can tell they're not really trying.  After a little while, the \f1\cf1 <<$boy>>\cf0\f0  who invited you in falls just a little too far behind, enough for you to reach out and grab hold of \f1\cf1 <<$his>>\cf0\f0  foot.\
+\
+\f1\cf1 <<if not $cold>>\cf0\f0 As you do, the \f1\cf1 <<$boy>>\cf0\f0  suddenly turns on you and pounces, a mischevious grin on their face. \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 The room goes completely dark in an instant.\
+\
+You pause for a moment, straining your eyes and ears, but you can't see a thing and the only sounds are the echoes of splashing water.\
+\
+\b\cf2 \ul wait\ulnone \cf0 \b0 \
+\
+\fs24\b1 PoolTalk\b0\fs20 \
+You smile at the \f1\cf1 <<$boy>>\cf0\f0  and strike up a conversation, mentioning how gracefully \f1\cf1 <<$he>>\cf0\f0  and \f1\cf1 <<$his>>\cf0\f0  friend cut through the water.  \f1\cf1 <<$He>>\cf0\f0  laughs and brushes the complement off, but seems pleased.  You struggle to think of something else to say.\
+\
+You start to ask \f1\cf1 <<$him>>\cf0\f0  about \f1\cf1 <<$his>>\cf0\f0  friend, looking around as you do, but the floor of the pool drops out from under you and you fall through the water as though it were air.\
+\
+It's only a moment before you're able to swim to the surface again, but when you do you find the room has gone completely dark.  With all the noise of your splashing, you can't tell where the \f1\cf1 <<$boy>>\cf0\f0  and \f1\cf1 <<$his>>\cf0\f0  companion are.  You can't even see your own hand in front of your face.\
+\
+\b\cf2 \ul wait\ulnone \cf0 \b0 \
+\
+\fs24\b1 FloatMore\b0\fs20 \
+You smile politely, then return to floating.\
+\
+After a few moments, the \f1\cf1 <<$boy>>\cf0\f0  joins you.  \f1\cf1 <<$He>>\cf0\f0  ends up floating quite close to you.  Almost close enough to touch.\
+\
+\b\cf2 \ul ignore \f1\cf1 <<$him>>\cf0\f0 \ulnone \cf0 \b0 \
+\b\cf2 \ul reach out\ulnone \cf0 \b0 \
+\b\cf2 \ul leave the pool\ulnone \cf0 \b0 \
+\
+\fs24\b1 RoomsScrap\b0\fs20 \
+[if $cold, steel door is ajar.  If $company (or $played=4?), ornate door is ajar.]\
+\
+You are in a narrow, breezy hall carpeted in plush burgundy.  The hall is lined on either side with dark wood panels, interspersed with rippled glass doors.  Upon each door is a small keyhole, but no handle.  One such door is lit from behind with clean, bright daylight; the others are dark.\
+\
+At either end of the hall stands another door: one of heavy wood and ornately inlaid gold and silver, the other of brutal riveted steel.  Both are also without handles.\
+\
+In the center of the hall, where one of the glass doors would have gone, is a descending staircase.\
+\
+\b\cf2 \ul try the lit door\ulnone \cf0 \b0 \
+\b\cf2 \ul try a dark door\ulnone \cf0 \b0 \
+\f1\cf1 <<if not $ornate>>\cf0\f0 \b\cf2 \ul try the ornate door\ulnone \cf0 \b0 \
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \f1\cf1 <<if not $steel>>\cf0\f0 \b\cf2 \ul try the steel door\ulnone \cf0 \b0 \
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \b\cf2 \ul leave\ulnone \cf0 \b0 \
+\
+\fs24\b1 Credits\b0\fs20 \
+\i Adrift\i0  was written by \b\cf2 \ul Malcolm Maes-McCrimmon\ulnone \cf0 \b0 , copyright 2017.  It is licensed under a Creative Commons \b\cf2 \ul BY-SA 4.0\ulnone \cf0 \b0  license: this means you are free to copy, distribute, modify, or borrow from it provided that you (1) credit the original author, and (2) distribute any modifications or borrowed material under the same or similar license. See the \b\cf2 \ul full terms\ulnone \cf0 \b0  for details.\
+\
+Thank you for playing!\
+\
+\f1\cf1 <<if $end>>\cf0\f0 \f1\cf1 <a onclick="location.reload()" class="internalLink">\cf0\f0 another night\f1\cf1 </a>\cf0\f0 \\
+\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \b\cf2 \ul go back\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 FollowSound\b0\fs20 \
+You follow the sound of running water for only a few moments before reaching its source.\
+\
+\f1\cf1 <\f1\cf1 <TheStream>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 RoomsShut\b0\fs20 \
+You try pushing on the door to see if it will open.  The door is \f1\cf1 <<if $cold>>\cf0\f0 coarse and hard and freezing to the touch.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 warm to the touch, and as smooth and seamless as polished glass.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0  It solidly resists your attempts to move it.\
+\
+You try knocking, but there's no response.  There doesn't seem to be a way in without a key.\
+\
+\b\cf2 \ul turn back\ulnone \cf0 \b0 \
+\
+\fs24\b1 LobbyStair\b0\fs20 \
+The stairs are richly carpeted and clean-smelling, like cotton.  Before long you reach a large door of\f1\cf1 <<if $cold>>\cf0\f0  brutal, riveted steel.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0  dark wood and ornately inlaid gold and silver.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0  The door has no handle, but in its center is a small hole that might fit a key.\
+\
+\f1\cf1 <<if $key>>\cf0\f0 \b\cf2 \ul try the gold key\ulnone \cf0 \b0 \
+\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \f1\cf1 <<if not visited("RoomsShut")>>\cf0\f0 \b\cf2 \ul test the door\ulnone \cf0 \b0 \
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \b\cf2 \ul turn back\ulnone \cf0 \b0 \
+\
+\
+\
+\fs24\b1 LobbyLook\b0\fs20 \
+You wander around the lobby, pausing to admire the view of the ocean.  It looks like perfect weather for a swim, but there aren't any doors leading out.\
+\
+There's a stairway set into the wall, next to the counter.  A sign above the stairway says simply, "ROOMS".\
+\
+On top of the unattended counter is a small bell.\
+\
+\b\cf2 \ul take the stairs\ulnone \cf0 \b0 \
+\b\cf2 \ul ring the bell\ulnone \cf0 \b0 \
+\f1\cf1 <<if visited("LobbyWait")>>\cf0\f0 \b\cf2 \ul climb the counter\ulnone \cf0 \b0 \
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \b\cf2 \ul go down the hall\ulnone \cf0 \b0 \
+\
+\fs24\b1 Explore\b0\fs20 \
+You make your way into the trees.  A cool breeze shakes the leaves overhead and stirs the ferns at your feet.  The sound of the stream begins to fade.\
+\
+\b\cf2 \ul keep going\ulnone \cf0 \b0 \
+\b\cf2 \ul find the stream\ulnone \cf0 \b0 \
+\
+\fs24\b1 ExitPit\b0\fs20 \
+Face burning, you turn away and climb back out of the pit.  You glance around the room to check if anyone else has seen you.\
+\
+\f1\cf1 <\f1\cf1 <Showers>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 DarkRoom\b0\fs20 \
+\f1\cf1 <<if $darkd > 0>>\cf0\f0 You walk over to another door and test it out.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 You walk over to one of the many darkened doors and try to open it.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0   You try pushing on it, but it won't budge.  You try knocking on it, but you hear no response.  There doesn't seem to be any way in without a key.\f1\cf1 <<set $darkd to 1>>\cf0\f0 \
+\
+\f1\cf1 <\f1\cf1 <RoomsScrap>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 PitTalk\b0\fs20 \
+\f1\cf1 <<set $ignoring to 1>>\cf0\f0 The \f1\cf1 <<$boy>>\cf0\f0  turns to look at you with a smile, but frowns when \f1\cf1 <<$he>>\cf0\f0  sees you.\
+\
+"You don't belong here," \f1\cf1 <<$he>>\cf0\f0  says, pointedly looking over your naked body.\
+\
+\b\cf2 \ul apologize\ulnone \cf0 \b0 \
+\b\cf2 \ul leave\ulnone \cf0 \b0 \
+\b\cf2 \ul talk with \f1\cf1 <<$him>>\cf0\f0 \ulnone \cf0 \b0 \
+\
+\fs24\b1 Excused\b0\fs20 \
+You politely decline the \f1\cf1 <<$boy>>\cf0\f0 's offer.  \f1\cf1 <<$He>>\cf0\f0  gives you a wistful pout, but \f1\cf1 <<$his>>\cf0\f0  friend simply shrugs\f1\cf1 <<if $swimming>>\cf0\f0  and the two soon dip back under the water, smooth as fish.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0  and the two of them dive into the pool without you.  They're surprisingly graceful swimmers.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \f1\cf1 <<set $swimming to 1>>\cf0\f0 \
+\
+\f1\cf1 <<if $dest is "Showers">>\cf0\f0 \b\cf2 \ul leave\ulnone \cf0 \b0 \f1\cf1 <<else if $dest is "Baths">>\cf0\f0 [This should never happen!]\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 [This should never happen either!]\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 LightsOut\b0\fs20 \
+\f1\cf1 <<set $dark to 1>>\cf0\f0 \\
+\f1\cf1 <<if $from is "showers">>\cf0\f0 The air here is cool and just a little humid, but not uncomfortable.  Wet echoes sound across the room with your footsteps as your cautiously feel your way to the edge of the pool, then lower yourself in.  The water feels \f1\cf1 <<if $cold>>\cf0\f0 cold and heavy\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 cool and refreshing\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0  on your skin.\
+\
+After a few moments, your eyes adjust enough to make out dim shapes.  The two \f1\cf1 <<$boy>>\cf0\f0 s are still nowhere to be seen.\
+\
+\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 Hardly any light is left in the room--it takes several long minutes for your eyes to adjust.  Eventually, you're able to make out dim shapes.\
+\
+The two \f1\cf1 <<$boy>>\cf0\f0 s seem to have disappeared; no one else is in the pool with you.\
+\
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \b\cf2 \ul go back downstairs\ulnone \cf0 \b0 \
+\b\cf2 \ul keep swimming\ulnone \cf0 \b0 \
+\
+\fs24\b1 FloatMost\b0\fs20 \
+A small wave brushes the two of you nearer.  You close your eyes for a moment and take a deep breath.  When you open them again, the room is pitch black and silent.\
+\
+\b\cf2 \ul look around\ulnone \cf0 \b0 \
+\
+\fs24\b1 StorySettings\b0\fs20 \
+jquery:off\
+hash:off\
+bookmark:on\
+modernizr:off\
+undo:off\
+obfuscate:off\
+exitprompt:off\
+blankcss:off\
+\
+\
+\fs24\b1 TheStream\b0\fs20 \
+A clear stream rushes over a bed of smooth stones.  The sound is very soothing.\
+\
+Around it stands the forest.\
+\
+\f1\cf1 <<if not visited("Drink")>>\cf0\f0 \b\cf2 \ul take a taste\ulnone \cf0 \b0 \
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \b\cf2 \ul find the source\ulnone \cf0 \b0 \
+\b\cf2 \ul go downstream\ulnone \cf0 \b0 \
+\b\cf2 \ul explore the forest\ulnone \cf0 \b0 \
+\
+\fs24\b1 Rooms\b0\fs20 \
+\f1\cf1 <<if not visited("RoomsShut")>>\cf0\f0 [description of door surface/texture goes here]\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 [briefened description of door-openness]\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+[cold steel door takes you to row of prison cells, warm wooden door takes you to row of plush hotel rooms]\
+\
+[ORRRR:\
+\
+default: "watch"\
+company: "watch closely"\
+cold: "listen" (and cry???)]\
+\
+\fs24\b1 LobbyWait\b0\fs20 \
+You walk up to the counter and ring the bell, then wait patiently for a few minutes.\
+\
+Nothing happens.\
+\
+Behind the counter, the keys glimmer in the artificial breeze.\
+\
+\b\cf2 \ul ring the bell again\ulnone \cf0 \b0 \
+\b\cf2 \ul climb the counter\ulnone \cf0 \b0 \
+\b\cf2 \ul look around\ulnone \cf0 \b0 \
+\
+\fs24\b1 InsideFollow\b0\fs20 \
+\f1\cf1 <<if $from is "Lobby">>\cf0\f0 You exit the lobby and walk down the long hall,\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 You continue down the hall,\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0  blank white wall on one side and unbroken glass on the other.  Outside, the leaves of the trees sway a little in a light breeze.\f1\cf1 <<if not visited("FirstExit")>>\cf0\f0   For some reason, the forest doesn't seem as fake from in here.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+Before long, a stream crosses your path.\
+\
+\b\cf2 \ul look\ulnone \cf0 \b0 \
+\
+\fs24\b1 Downstream\b0\fs20 \
+You follow the stream for a minute or so before arriving at a pair of shimmering glass doors.\
+\
+\b\cf2 \ul look\ulnone \cf0 \b0 \
+\
+\fs24\b1 LitRoom\b0\fs20 \
+\f1\cf1 <<set $lit to "seen">>\cf0\f0 [silhouettes behind the glass; no sound]\
+\
+\b\cf2 \ul knock\ulnone \cf0 \b0 \
+\b\cf2 \ul go back\ulnone \cf0 \b0 \
+\
+\fs24\b1 LitKnock\b0\fs20 \
+\f1\cf1 <<set $lit to "knocked">>\cf0\f0 [no response or reaction]\
+\
+\b\cf2 \ul go back\ulnone \cf0 \b0 \
+\
+\fs24\b1 Grab\b0\fs20 \
+Just as you grab \f1\cf1 <<$his>>\cf0\f0  arm, with a shrieking sound like a stuck tap or maybe laughter, you find yourself standing under running water with soapy hands.  You look around, but the \f1\cf1 <<$boy>>\cf0\f0  is gone.\
+\
+The water gets cold.\
+\
+\b\cf2 \ul leave\ulnone \cf0 \b0 \
+\
+\fs24\b1 PitDisdain\b0\fs20 \
+You open your mouth to speak, but the \f1\cf1 <<$boy>>\cf0\f0  has already gone back to washing \f1\cf1 <<$him>>\cf0\f0 self.  \f1\cf1 <<$He>>\cf0\f0 's not even looking at you anymore.\
+\
+\b\cf2 \ul leave\ulnone \cf0 \b0 \
+\b\cf2 \ul try again\ulnone \cf0 \b0 \
+\b\cf2 \ul grab \f1\cf1 <<$him>>\cf0\f0 \ulnone \cf0 \b0 \
+\
+\fs24\b1 Ignoring\b0\fs20 \
+The \f1\cf1 <<$boy>>\cf0\f0  from before is still washing \f1\cf1 <<$him>>\cf0\f0 self, back turned.\
+\
+\b\cf2 \ul get \f1\cf1 <<$his>>\cf0\f0  attention\ulnone \cf0 \b0 \
+\b\cf2 \ul leave\ulnone \cf0 \b0 \
+\
+\fs24\b1 MoreExplore\b0\fs20 \
+You walk past tree after monotonous tree, soon losing track of the number.  Though you haven't turned or wavered, you can't shake the feeling that you're going in circles.  You can still hear the rushing stream in the distance, but only just.\
+\
+\f1\cf1 <<if either("bore", "door") is "bore">>\cf0\f0 \b\cf2 \ul keep going\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \b\cf2 \ul keep going\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\b\cf2 \ul find the stream\ulnone \cf0 \b0 \
+\
+\fs24\b1 PoolToTunnels\b0\fs20 \
+blah\
+\
+\f1\cf1 <\f1\cf1 <Tunnels>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 DarkSwim\b0\fs20 \
+[if swim long enough find underwater door that leads to submerged section of Museum, or (if you run out of breath) awake.]\
+\
+\b\cf2 \ul OPEN TEH HATCH!!!!\ulnone \cf0 \b0 \
+\
+\fs24\b1 Tunnels\b0\fs20 \
+[dark, concrete, partially flooded hallways. Descend far enough: dead end. Ascend far enough: Baths (?)]\
+\
+[pitch black, mouldering air, stairs underfoot: lower tunnels]\
+\
+\fs24\b1 Main Stylesheet\b0\fs20 \
+body {\
+	font-size: small;\
+}\
+/*#sidebar {\
+	width: 8em;\
+\
+}*/\
+\
+\fs24\b1 Drink\b0\fs20 \
+The stream is surprisingly warm, like bathwater.  It smells of steam and salt.  You decide not to drink it.\
+\
+\b\cf2 \ul follow upstream\ulnone \cf0 \b0 \
+\b\cf2 \ul follow downstream\ulnone \cf0 \b0 \
+\b\cf2 \ul explore the forest\ulnone \cf0 \b0 \
+\
+\fs24\b1 LobbyWaiter\b0\fs20 \
+You ring the bell again, loudly.  You wait.  You ring the bell a third time.\
+\
+Nobody comes.\
+\
+\b\cf2 \ul climb the counter\ulnone \cf0 \b0 \
+\b\cf2 \ul look around\ulnone \cf0 \b0 \
+\
+\fs24\b1 LobbyClimb\b0\fs20 \
+You clamber over the polished countertop to the other side.  Nothing's hidden behind it--there's just the wall of hanging keys.\
+\
+Up close, one of the keys stands out: where the others all have square bows and a dull brassy color, this key is closer to gold, with a bow like a circle.\
+\
+The other keys are all stamped with random-seeming numbers--439, 20, 1615, and so on--but the gold one is blank.\
+\
+\b\cf2 \ul take the gold key\ulnone \cf0 \b0 \
+[something else??]\
+\
+\fs24\b1 North\b0\fs20 \
+In front of you are two tall, straight trees.  Between them is a pair of glass doors with gold handles: the stream flows under them.  As far as you can see, there is nothing but more forest beyond the doors--although, at certain angles, it looks like the doors are sparkling with some sourceless movement.\
+\
+\b\cf2 \ul go upstream\ulnone \cf0 \b0 \
+\b\cf2 \ul go through the doors\ulnone \cf0 \b0 \
+\b\cf2 \ul go around the doors\ulnone \cf0 \b0 \
+\
+[The stream flows into a small opening at the base of the wall.  On the other side, it continues through a mosaic-lined channel underneath a set of glass doors with gold handles, to a large pool farther in.  A confusion of sparkling light extends up, away from the pool and out of sight.\
+\
+On either side of the doors are empty counters with cabinets and shelves behind them, all unattended, stretching indefinitely in either direction.]\
+\
+\fs24\b1 StairSide\b0\fs20 \
+The doors unlatch with a satisfying \i k-chunk\i0 .  The sound echoes grandly, as though there's a large room on the other side.\
+\
+You peer through the opened doors and find there \i is\i0  a large room on the other side, tiled from floor to ceiling with abstract, colorful mosaics.  The stream flows from the doors, down a short hall, and into a large, light-dappled pool. Above the pool, dozens of sparkling stairs, panels and walkways--all glass--rise up and out of sight.  They criscross, overlap, and shimmer with dazzling movement.\
+\
+\b\cf2 \ul go back\ulnone \cf0 \b0 \
+\b\cf2 \ul go through the doors\ulnone \cf0 \b0 \
+\
+\fs24\b1 Ignored\b0\fs20 \
+You try again to get \f1\cf1 <<$his>>\cf0\f0  attention, but no matter what you say \f1\cf1 <<$he>>\cf0\f0  doesn't react.  It's as though \f1\cf1 <<$he>>\cf0\f0  can't even hear you.\
+\
+\b\cf2 \ul leave\ulnone \cf0 \b0 \
+\b\cf2 \ul grab \f1\cf1 <<$him>>\cf0\f0 \ulnone \cf0 \b0 \
+\
+\fs24\b1 CatwalkDense\b0\fs20 \
+[cramped, industrial hallway(s); regular doors mixed with tiny hatches set near the ceiling]\
+\
+\b\cf2 \ul door #1\ulnone \cf0 \b0 \
+...etc...\
+\b\cf2 \ul flip\ulnone \cf0 \b0 \
+\
+\fs24\b1 StreamEnd\b0\fs20 \
+You follow the stream for a minute or so before arriving at a long wall made of glass.\
+\
+\fs24\b1 BoreExplore\b0\fs20 \
+You keep walking, and the trees keep coming, endlessly.  Though the sound of the stream wavers at the edge of hearing, it never quite falls silent.\f1\cf1 <<if $dazed>>\cf0\f0 \
+\
+You walk through the forest forever.  It is your only memory.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\f1\cf1 <<if not $dazed and (either("bore", "door") is "bore")>>\cf0\f0 \b\cf2 \ul keep going\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \b\cf2 \ul keep going\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\b\cf2 \ul find the stream\ulnone \cf0 \b0 \
+\
+\fs24\b1 LobbyTake\b0\fs20 \
+You check to make sure the lobby is still deserted, then reach up and remove the golden key from its hook.  It feels strangely heavy.  Seeing nothing else unusual about the key, you tuck it into your pocket.\
+\
+The floor beneath you vanishes.  You grab for the counter as you fall, but it's well out of reach.  The light from above shrinks away impossibly fast as you plummet into perfect darkness.\f1\cf1 <<set $key to 1>>\cf0\f0 \
+\
+\b\cf2 \ul fall\ulnone \cf0 \b0 \
+\
+\fs24\b1 LobbyToTunnels\b0\fs20 \
+[complete darkness, falling indefinitely, until you realize that you're not falling anymore.  You can hear your breathing echo, you feel cold stone beneath your (bare?) feet, and the air is damp and mouldering.]\
+\
+\f1\cf1 <\f1\cf1 <Tunnels>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 FireToLobby\b0\fs20 \
+Your eyes are open in a spacious, well-lit lobby.  You're curled up on one of the many plush chairs scattered around the room, along with small tables and potted plants. The AC sends a faint, cool breeze drifting over you.\
+\
+Looking around, you see the lobby's entrance: a hallway with a long glass wall, running out of sight to the left and right.  Beyond the glass lies the forest. \
+\
+The wall opposite the entrance is also glass. There's a smooth tan beach and calm waves on the other side.  Along a third, inner wall, hundreds of shining keys hang from hooks behind a broad counter.\
+\
+\b\cf2 \ul stand up\ulnone \cf0 \b0 \
+\
+\fs24\b1 CatwalkSparse\b0\fs20 \
+[agorophobically large space with stormy skylight at top; towering gates interspersed with heavy square hatches]\
+\
+\b\cf2 \ul hatch #1\ulnone \cf0 \b0 \
+...etc...\
+\b\cf2 \ul flip\ulnone \cf0 \b0 \
+\
+\fs24\b1 House\b0\fs20 \
+\f1\cf1 <<set $stripped to 0>>\cf0\f0 \\
+You're in a small, cozy home.\
+\
+The windows are black with night outside, but a fluttering of white suggests snowy weather.  The room is lit and warmed by a firepit in the center, recessed into the floor and ringed with soft cushions.\
+\
+To one side of the firepit is a ladder that runs up from a hole in the floor and through an identical hole in the ceiling.  Across from the ladder, against one wall, climbs a wooden spiral stair.  Farther from the fire is nothing of consequence.\
+\
+On the opposite side of the firepit, a gauzy curtain runs nearly the whole width of the room.  Where the curtain stops you see a dresser, a bottom drawer pulled open.  Behind the curtain you can just make out the silhouette of a large four-post bed, illuminated by a light coming from a half-open door. You hear the faint sound of running water.\
+\
+\b\cf2 \ul sit by the fire\ulnone \cf0 \b0 \
+\b\cf2 \ul look behind the curtain\ulnone \cf0 \b0 \
+\b\cf2 \ul climb down the ladder\ulnone \cf0 \b0 \
+\f1\cf1 <<if $played is 4>>\cf0\f0 \b\cf2 \ul climb up the ladder\ulnone \cf0 \b0 \f1\cf1 <<else if $played > 0>>\cf0\f0 \b\cf2 \ul climb up the ladder\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \b\cf2 \ul climb up the ladder\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\b\cf2 \ul take the stairs\ulnone \cf0 \b0 \
+\
+\fs24\b1 ForestDoor\b0\fs20 \
+\f1\cf1 <<if $dazed>>\cf0\f0 Forever ends.\
+\
+\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 After walking for what feels like miles, something unusual catches your eye.\
+\
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 At the base of one of the endless, identical trees is a wooden door, about chest height, with a silvery arched frame.  A tarnished handle beckons.\
+\
+You suddenly recall you haven't heard the stream for some time.  You turn your head to listen, and realize you have no idea which direction you came from.\
+\
+The sound of the stream is gone.  You are completely lost.\
+\
+\b\cf2 \ul try the handle\ulnone \cf0 \b0 \
+\
+\fs24\b1 ForestStair\b0\fs20 \
+After a bit of tugging the door reluctantly opens, and you duck through to the base of a cold, stone stairway. Some distance up, a warm light glimmers.\
+\
+A short climb later, you reach the light.  It's shining from the crack around a large, square door.  Behind you the stone stairs descend into darkness; the sparse light where you're standing is the only illumination.\
+\
+\b\cf2 \ul open the door\ulnone \cf0 \b0 \
+\
+\fs24\b1 Basement\b0\fs20 \
+You're in a warm, carpeted room, well-lit and sparsely furnished.  The ceiling is so low you have to stoop to move around, and the walls are gently curved in an egg shape.  At the pointy end is a small, square door about as tall as your knee.  At the broad end is a ladder leading to a hole in the ceiling.  To the right of the ladder is a fuzzy beanbag chair and a tiny table, and along the opposite wall is a plain bookshelf packed with paperbacks.\
+\
+\b\cf2 \ul try the door\ulnone \cf0 \b0 \
+\f1\cf1 <<if not $rushed>>\cf0\f0 \b\cf2 \ul read a book\ulnone \cf0 \b0 \
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \b\cf2 \ul climb the ladder\ulnone \cf0 \b0 \
+\
+\fs24\b1 OceanToStairs\b0\fs20 \
+[blah blah blah]\
+\
+\b\cf2 \ul go down the stairs\ulnone \cf0 \b0 \
+\b\cf2 \ul swim back up\ulnone \cf0 \b0 \
+\
+\fs24\b1 LoftExcuse\b0\fs20 \
+You shake your head and apologize for interrupting their game.  The \f1\cf1 <<$boy>>\cf0\f0  shrugs and turns back to the television as you make your way down the ladder.\
+\
+\b\cf2 \ul look\ulnone \cf0 \b0 \
+\
+\fs24\b1 LowerStairs\b0\fs20 \
+[revise entire Stairs area: water flows UP!]\
+\
+\f1\cf1 <<if $from is "doors">>\cf0\f0 As you approach the glass structure rising above the pool, you realize that the shimmering movement is the motion of flowing water.  Water coats nearly every surface of the structure, but...something is strange about its movement.  It takes you a moment to see that the water is flowing \i up\i0 , pouring from the pool at the bottom onto the glass structure above--streaming along walls, rushing up stairs, and spilling over the walkways and channels that connect them, falling up and up out of sight.  \f1\cf1 <<else if $from is "stairs">>\cf0\f0 You make your way back down to the pool and look around.  \f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 [This shouldn't happen: $from = \f1\cf1 <<$from>>\cf0\f0 ]\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 Somewhere high above, bright sunlight shimmers and dances through the watery glass.\
+\
+\f1\cf1 <<if $from is "doors">>\cf0\f0 At the far edge of the pool\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 At the near edge of the pool\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 , a bridge runs out to a staircase in the center.  \f1\cf1 <<if $from is "doors">>\cf0\f0 On this side\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 On the far side\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 , a trench of water flows from beneath two glass doors with gold handles, down a short hall, and into the pool.\
+\
+\b\cf2 \ul climb the stairs\ulnone \cf0 \b0 \
+\b\cf2 \ul go through the doors\ulnone \cf0 \b0 \
+\
+\fs24\b1 MiddleStairs\b0\fs20 \
+\f1\cf1 <<if $from is "below">>\cf0\f0 You climb the stairs for several minutes, the pool slowly growing smaller beneath you.  Though every stair and walkway is made of watery glass, it isn't slippery in the slightest.\
+\
+After a while, you come to a large platform.  \f1\cf1 <<else if $from is "above">>\cf0\f0 [pass]\f1\cf1 <<else if $from is "people">>\cf0\f0 The way back is much easier than the way there.  You soon find yourself on the other side of the watery platform.\
+\
+\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 [This shouldn't happen: $from = \f1\cf1 <<$from>>\cf0\f0 ]\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 On the edge of the platform, a flight of stairs extends above and below.  Away from the stairs is a maze of glass walls, some only as tall as your ankle, others many times your height.\f1\cf1 <<if $empty>>\cf0\f0   There's nothing there now.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0   On the other side of the maze, through the shimmering walls, you spot a hazy shape that might be a person.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\b\cf2 \ul go up\ulnone \cf0 \b0 \
+\b\cf2 \ul go down\ulnone \cf0 \b0 \f1\cf1 <<if not $empty>>\cf0\f0 \
+\b\cf2 \ul cross the maze\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 Ocean\b0\fs20 \
+\f1\cf1 <<if $from is "stairs">>\cf0\f0 The water is too thick to take a breath, so you simply dive in and start swimming.  For a few lungaching seconds you flail against the brilliant, churning water, not certain of up or down, or whether you're moving at all.\
+\
+Just as your lungs feel about to burst, you break free of the surface.  You take a few moments to catch your breath and brush the water from your eyes, then look around you.\
+\
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 A warm, dazzling sun shines down from a cloudless blue sky.  Broad, lazy waves surround you, glittering in the sunlight and setting the horizon bobbing gently up and down.  A light, cool breeze is blowing.\
+\
+Some distance away, you spot a sandy beach edged by a lush, green forest.  It's not too far to swim.\
+\
+\b\cf2 \ul dive\ulnone \cf0 \b0 \
+\b\cf2 \ul swim to shore\ulnone \cf0 \b0 \
+\
+\fs24\b1 Impassable\b0\fs20 \
+The door is too small for you to duck through.  You crawl onto your stomach and try to wriggle your way in, but your shoulders won't fit.  With your body blocking the light you can barely see the stairs in front of your face, let alone what's at the bottom.\
+\
+\b\cf2 \ul go back\ulnone \cf0 \b0 \
+\
+\fs24\b1 ForestStairTiny\b0\fs20 \
+Couching down, you open the door and peer through.  A cool breeze brushes past.  On the other side, you make out a broad set of stone stairs leading down into darkness.\
+\
+\b\cf2 \ul go through\ulnone \cf0 \b0 \
+\b\cf2 \ul go back\ulnone \cf0 \b0 \
+\
+\fs24\b1 BasementBook\b0\fs20 \
+You crawl over to the bookshelf, pick out one of the more interesting-looking titles, and curl up in the beanbag.  The chair is quite comfortable, and you're soon engrossed.\
+\
+Some time later, you find to your surprise that you've reached the last page.  A clock on the table shows that several hours have passed.  Stretching the stiffness from your limbs, you return the book to its place.\
+\
+\b\cf2 \ul look around\ulnone \cf0 \b0 \
+\
+\fs24\b1 Fireplace\b0\fs20 \
+You're sitting by the fire.  The cushions are broad and very comfortable.  The fire flickers prettily in the dark; red and gold.  You stare into the flames.\
+\
+\f1\cf1 <<if not $burned>>\cf0\f0 \b\cf2 \ul take a nap\ulnone \cf0 \b0 \
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \b\cf2 \ul burn yourself\ulnone \cf0 \b0 \
+\b\cf2 \ul stand up\ulnone \cf0 \b0 \
+\
+\fs24\b1 FireNap\b0\fs20 \
+The light and warmth of the fire are soothing, almost hypnotic.  You struggle to keep your eyes open.  You feel like you've forgotten something...\
+\
+\b\cf2 \ul remember\ulnone \cf0 \b0 \
+\
+\fs24\b1 StairsToOcean\b0\fs20 \
+You make your way up the flooded stairway.  The shimmering light grows brighter as you ascend, and the cascading sheets of water turn to a deluge.  Before long you're wading waist-deep, drenched by the incessant flow, almost swimming up the endless flights of glass.\
+\
+Eventually, you're surrounded by so much flowing, splashing water you can barely breathe--yet the torrent feels soft and thick against your skin.  Almost thick enough to swim in.\
+\
+The light from above is blindingly bright.  You can't see any farther.\
+\
+\b\cf2 \ul turn back\ulnone \cf0 \b0 \
+\b\cf2 \ul swim\ulnone \cf0 \b0 \
+\
+\fs24\b1 Loft\b0\fs20 \
+The ladder goes through a short tunnel and emerges at the pointy end of an egg-shaped, low-ceilinged loft.  At the wide end of the loft is a large television with two \f1\cf1 <<$boy>>\cf0\f0 s, a little younger than you, propped up on pillows in front of it.  The room is very warm; the \f1\cf1 <<$boy>>\cf0\f0 s' shirts lie discarded in a corner.  They look like they're playing some kind of videogame.\
+\
+After a moment, one of them glances your direction. \f1\cf1 <<$He>>\cf0\f0  smiles and holds out the controller.\
+\
+"Oh, hey" \f1\cf1 <<$he>>\cf0\f0  says. "Wanna play?"\
+\
+\b\cf2 \ul join them\ulnone \cf0 \b0 \
+\b\cf2 \ul go back\ulnone \cf0 \b0 \
+\
+\fs24\b1 BeachAwake\b0\fs20 \
+The sound of the surf, and the warmth of the sun and sand, lulls you to sleep.\
+\
+The beach remains.\
+\
+\b\cf2 \ul look\ulnone \cf0 \b0 \
+\
+\fs24\b1 MazeCross\b0\fs20 \
+It takes some time to cross the maze.  For every wall you can simply climb over, four more block your way, and although the walls are clear glass, the shimmering water running over them makes it impossible to see the path beyond.\
+\
+At last, you find your way to the other side of the maze, where a narrow walkway extends to a broad sheet of falling water.  On the other side of the waterfall, you see that the hazy shape from before is actually two people, sitting close together--talking, perhaps, though you can't hear anything through the water.\
+\
+You start to make your way across, but your once-sure footing is suddenly gone, leaving the watery glass slick and smooth.  Below the walkway, you can see all the way to the bottom of the pool, hundreds of feet down.\
+\
+\b\cf2 \ul keep going\ulnone \cf0 \b0 \
+\b\cf2 \ul turn back\ulnone \cf0 \b0 \
+\
+\fs24\b1 Beach\b0\fs20 \
+\f1\cf1 <<if $from is "Ocean">>\cf0\f0 You reach the shore without much difficulty, and walk out onto dry land.  \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 The sand is warm and powder-fine under your feet, and the sound of the surf is gentle and lulling.  The ocean sparkles in the sunlight.\
+\
+Away from shore, the fine sand gradually gives way to grass, trees, and ferns.  The leaves of the forest sway gently in the cool breeze.\
+\
+[Beach house?]\
+\
+\b\cf2 \ul go for a swim\ulnone \cf0 \b0 \
+\b\cf2 \ul enter the trees\ulnone \cf0 \b0 \
+\b\cf2 \ul lie down\ulnone \cf0 \b0 \
+\
+\fs24\b1 FireBurn\b0\fs20 \
+\f1\cf1 <<set $burned to 1>>\cf0\f0 Slowly, you reach your hand into the fire.  The warmth turns to heat, then builds.\
+\
+Your whole hand is in the flames now.  The heat is unbearably intense, yet it isn't pain.  Your skin sizzles and flakes, you're in agony, but you don't hurt.  You're sweating all over.  You feel shiveringly, gaspingly hot.\
+\
+\b\cf2 \ul pull back\ulnone \cf0 \b0 \
+\b\cf2 \ul step in\ulnone \cf0 \b0 \
+\
+\fs24\b1 FireBack\b0\fs20 \
+You draw your hand back from the fire.  Slowly, the heat fades.\
+\
+Your hand is undamaged.  It feels fine; comfortable, even.  The fire is warm.\
+\
+You feel restless.  Something's missing.\
+\
+\b\cf2 \ul look up\ulnone \cf0 \b0 \
+\
+\fs24\b1 LoftPlay\b0\fs20 \
+You make yourself comfortable next to the \f1\cf1 <<$boy>>\cf0\f0  and take the controller as \f1\cf1 <<$he>>\cf0\f0  explains the rules.  They're pretty complicated, but you think you understand the basics.\
+\
+Then the game starts, and you can barely keep up--colors and shapes you don't understand flash across the screen, along with seemingly random numbers and sound effects.  The \f1\cf1 <<$boy>>\cf0\f0  next to you tries to explain the modifiers, bonuses and power-ups as you play, but they are coming too quickly to mention them all, and it isn't helping your concentration.  After just a few minutes, the game is over--you've lost.\f1\cf1 <<set $played to 1>>\cf0\f0 \
+\
+\b\cf2 \ul try again\ulnone \cf0 \b0 \
+\b\cf2 \ul give up\ulnone \cf0 \b0 \
+\
+\fs24\b1 LoftPersist\b0\fs20 \
+\f1\cf1 <<if $played is 1>>\cf0\f0 The \f1\cf1 <<$boy>>\cf0\f0 s offer to let you play another round, and you nervously agree. You go over everything you remember from the last round, determined to do better this time.\
+\
+When the game starts, though, the whole screen has changed. Seeing your expression, the \f1\cf1 <<$boy>>\cf0\f0  next to you quickly explains that most of the rules are the same, but the visual elements and certain modifiers get changed each round to "keep things interesting."\
+\
+You nod and do your best to keep up, but it's hopeless.  You can't remember what any of the colors or numbers mean, and with everything shuffled around you struggle with the basic controls.  The round is over even more quickly than the last.\f1\cf1 <<set $played to 2>>\cf0\f0 \
+\
+\b\cf2 \ul keep trying\ulnone \cf0 \b0 \
+\b\cf2 \ul give up\ulnone \cf0 \b0 \\
+\f1\cf1 <<else if $played is 2>>\cf0\f0 You ask the two \f1\cf1 <<$boy>>\cf0\f0 s if you can give it just one more go.  They agree easily enough, but the \f1\cf1 <<$boy>>\cf0\f0   you've been playing against is starting to look bored.  When the game begins, the screen is once again completely unrecognizable--somehow even the numbers look like they're in a foreign language.  This round lasts a little longer than your first, but it doesn't feel like you're getting any better.  You begin to suspect your opponent is going easy on you.\
+\
+When the round ends, you catch \f1\cf1 <<$him>>\cf0\f0  stifling a yawn.  "Want another go?" \f1\cf1 <<$he>>\cf0\f0  says.\f1\cf1 <<set $played to 3>>\cf0\f0 \
+\
+\b\cf2 \ul give up\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 [This shouldn't happen!]\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 BeachNap\b0\fs20 \
+You lie down and let the sand's warmth sink into your bare skin while the sun bakes you from above.  The sky is cloudless and dazzling.\
+\
+Though the sun is bright, there's no danger of burning.\
+\
+\b\cf2 \ul close your eyes\ulnone \cf0 \b0 \
+\b\cf2 \ul wake up.\ulnone \cf0 \b0 \
+\
+\fs24\b1 HouseToAttic\b0\fs20 \
+You're in a dim, cramped hallway lined with dozens of shelves and drawers of every size and shape.  The shelves are stuffed with trinkets, knick knacks, and all kinds of books.\
+\
+The hallway Ts off at one end; at the other is a descending spiral stair.\
+\
+\b\cf2 \ul open a drawer\ulnone \cf0 \b0 \
+\b\cf2 \ul examine a shelf\ulnone \cf0 \b0 \
+\b\cf2 \ul take the left hallway\ulnone \cf0 \b0 \
+\b\cf2 \ul take the right hallway\ulnone \cf0 \b0 \
+\b\cf2 \ul go down the stairs\ulnone \cf0 \b0 \
+\
+\fs24\b1 BedroomStrip\b0\fs20 \
+Slowly, hands barely shaking, you remove your clothes and pile them on the bed.\
+\
+You notice your heart beating.\f1\cf1 <<set $stripped to 1>>\cf0\f0 \
+\
+\b\cf2 \ul look\ulnone \cf0 \b0 \
+\
+\fs24\b1 Bedroom\b0\fs20 \
+The bedroom is empty except for a dresser with the bottom drawer left open, and a large four-poster bed.  \f1\cf1 <<if $cold>>\cf0\f0 The bed is made, and the dresser drawer is neatly stocked with folded shirts of all colors and styles.  The air here is a little chilly.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 The bed is rumpled and unmade, but the drawer is neatly stocked with folded shirts of all colors and styles.  \f1\cf1 <<if $stripped>>\cf0\f0 Two sets of clothes\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 A shirt, pants, and set of \f1\cf1 <<$boy>>\cf0\f0 's underwear\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0  are piled carelessly on the bedspread.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+The room is illuminated with light from behind a half-open door on the far wall.  The sound of running water and a faint cloud of steam pour from the room beyond.\
+\
+\b\cf2 \ul knock on the door\ulnone \cf0 \b0 \
+\b\cf2 \ul go in without knocking\ulnone \cf0 \b0 \f1\cf1 <<if not $stripped>>\cf0\f0 \
+\f1\cf1 <<if not $cold>>\cf0\f0 \b\cf2 \ul leave your clothes on the bed\ulnone \cf0 \b0 \
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \b\cf2 \ul go back out\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 Baths\b0\fs20 \
+[Moldy, rotting wooden floors (no walls mentioned).  Two "themed" shower rooms, one totally ruined.  Rusted, dripping, steampunk-y tubes, valves and chambers comprise the "baths."  Catwalk at far end collapses if you try to use it, wakes you up.]\
+\
+\fs24\b1 AtticDrawer\b0\fs20 \
+\f1\cf1 <<set $drawer to either(0,1,2,3,4,5)>>\cf0\f0 \\
+\f1\cf1 <<if $drawer is 0>>\cf0\f0 [dice, tattered pack of cards, single(?) chesspiece, checkerboard bottom]\\
+\f1\cf1 <<else if $drawer is 1>>\cf0\f0 [beads, plastic jems, charms, and the head of a tiny porcelain dragon]\\
+\f1\cf1 <<else if $drawer is 2>>\cf0\f0 [tiny gears, cranks, and pistons, some moving on their own]\\
+\f1\cf1 <<else if $drawer is 3>>\cf0\f0 [mismatched $boy's underwear]\\
+\f1\cf1 <<else if $drawer is 4>>\cf0\f0 [full of water, lined with stone, no bottom]\\
+\f1\cf1 <<else if $drawer is 5>>\cf0\f0 [note: "Don't forget / this is important"]\\
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\b\cf2 \ul close the drawer\ulnone \cf0 \b0 \
+\
+\fs24\b1 WalkwayCross\b0\fs20 \
+Carefully, you begin making your way across the slippery glass.  The walkway narrows as you go, compunding the difficulty of balancing.  The last few feet are a sliver too sharp to walk on.  Your only choice is to jump through the falling water to the other side.\
+\
+\b\cf2 \ul jump\ulnone \cf0 \b0 \
+\b\cf2 \ul turn back\ulnone \cf0 \b0 \
+\
+\fs24\b1 ConversationIgnored\b0\fs20 \
+You try tapping on the glass and waving, to see if they will let you in.  The \f1\cf1 <<$boy>>\cf0\f0  glances at you for a moment, but makes no move to get up, and doesn't look your way again.  Your calls and shouts go ignored or unheard.  You can't get them to blink, let alone stand up and let you in.  They just keep talking and laughing.\
+\
+\b\cf2 \ul leave\ulnone \cf0 \b0 \
+\
+\fs24\b1 BeachWoods\b0\fs20 \
+You walk a little way into the trees, the sound of surf fading oddly fast.  You turn to look behind you, and see only the barest glimmer of ocean beyond the thickening forest.\
+\
+Before you, faintly, you hear the far-off sound of a running stream.\
+\
+\b\cf2 \ul go back\ulnone \cf0 \b0 \
+\b\cf2 \ul find the stream\ulnone \cf0 \b0 \
+\
+\fs24\b1 FireWash\b0\fs20 \
+Trembling, you crawl forward and step into the fire.  Your clothes catch immediately, washing your body in flames.  The heat is incredible; you shudder and cry out, every muscle in your body twitching and clenching.  It fills you from the outside in, swelling until there is nothing left but the unbearable fire, you can't stand it but you can't bear to let it go, and--\
+\
+\b\cf2 \ul and\ulnone \cf0 \b0 \
+\
+\fs24\b1 FireWake\b0\fs20 \
+--and a crushing shock of pain blows through the heat and snuffs it out--\
+\
+\b\cf2 \ul wake up.\ulnone \cf0 \b0 \
+\
+\fs24\b1 LoftWatch\b0\fs20 \
+\f1\cf1 <<if $from is "house">>\cf0\f0 You climb back up the ladder quietly, not wanting to disturb the \f1\cf1 <<$boy>>\cf0\f0 s' game.  They don't seem to notice you.\
+\
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 You settle back on the cushions and watch \f1\cf1 <<if $from is "loft">>\cf0\f0 the two \f1\cf1 <<$boy>>\cf0\f0 s\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 them\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0  play a few rounds.  The shapes and colors go by almost faster than you can process, yet each round seems to last forever.  It's clear you were not putting up much of a fight.\
+\
+You still have no idea what's going on.\
+\
+\f1\cf1 <<if $played is 3>>\cf0\f0 \b\cf2 \ul keep watching\ulnone \cf0 \b0 \
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \b\cf2 \ul leave\ulnone \cf0 \b0 \
+\
+\fs24\b1 LoftResign\b0\fs20 \
+You pass the controller back, joking that maybe you just aren't cut out for this type of game.  The two \f1\cf1 <<$boy>>\cf0\f0 s try to be nice--"Just watch for a bit if you like," one of them says, "I'm sure you'll figure it out"--but you can tell they're relieved to be playing with each other again.\
+\
+\b\cf2 \ul watch them play\ulnone \cf0 \b0 \
+\b\cf2 \ul leave\ulnone \cf0 \b0 \
+\
+\fs24\b1 Attic\b0\fs20 \
+You're in a dim, cramped hallway lined with dozens of shelves and drawers of every size and shape.  The shelves are stuffed with trinkets, knick knacks, and all kinds of books.\
+\
+The hallway splits in two at one end, with a short riser of stairs going up to one hall and down to the other.  At the opposite end of the hall is a descending spiral stair.\
+\
+\b\cf2 \ul open a drawer\ulnone \cf0 \b0 \
+\b\cf2 \ul examine a shelf\ulnone \cf0 \b0 \
+\b\cf2 \ul take the upper hallway\ulnone \cf0 \b0 \
+\b\cf2 \ul take the lower hallway\ulnone \cf0 \b0 \
+\b\cf2 \ul go down the stairs\ulnone \cf0 \b0 \
+\
+\fs24\b1 BathroomKnock\b0\fs20 \
+You knock on the bathroom door and call "Hello?"\
+\
+\f1\cf1 <<if $cold>>\cf0\f0 There's no response.\f1\cf1 <<else if $knocked>>\cf0\f0 You hear the \f1\cf1 <<$boy>>\cf0\f0 's voice reply from inside. "Yeah, come on in!" \f1\cf1 <<$he>>\cf0\f0  says.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 You hear a \f1\cf1 <<$boy>>\cf0\f0 's voice in reply.  "Hey! Just leave your clothes on the bed before you come in, okay?"\
+\
+You don't recognize \f1\cf1 <<$his>>\cf0\f0  voice. "Um, do I know you?" you say.\
+\
+The \f1\cf1 <<$boy>>\cf0\f0  laughs.  "Nope!" \f1\cf1 <<$he>>\cf0\f0  says.  "I don't care, though, you sound cute. Come on in whenever you're ready."\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\f1\cf1 <<set $knocked to 1>>\cf0\f0 \
+\b\cf2 \ul go in\ulnone \cf0 \b0 \
+\f1\cf1 <<if not $cold and not $stripped>>\cf0\f0 \b\cf2 \ul leave your clothes on the bed\ulnone \cf0 \b0 \
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \b\cf2 \ul walk away\ulnone \cf0 \b0 \
+\
+\fs24\b1 Bathroom\b0\fs20 \
+The bathroom is bright, steamy, and warm.  A sink and counter occupy the left wall; to your right is a large bathtub with the tap running.\
+\
+\f1\cf1 <<if $knocked and not $cold>>\cf0\f0 An attractive \f1\cf1 <<$boy>>\cf0\f0  about your age is lounging in the tub, unabashedly naked.  \f1\cf1 <<if $stripped>>\cf0\f0 \f1\cf1 <<$He>>\cf0\f0  looks you over, smiling.  "See? I knew you were a cutie." \f1\cf1 <<$He>>\cf0\f0  motions you over, pulling \f1\cf1 <<$his>>\cf0\f0  legs in to make room. "Come on in, the water's perfect."\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 Seeing you still clothed, \f1\cf1 <<$he>>\cf0\f0  frowns.\
+\
+"Hey, that's not fair. Take those off or get out."\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 The tub is empty.  No one else is in the room.\f1\cf1 <<if not $stripped>>\cf0\f0 \
+\
+You begin to sweat under your clothes.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\f1\cf1 <<if not $stripped>>\cf0\f0 \b\cf2 \ul take your clothes off\ulnone \cf0 \b0 \
+\f1\cf1 <<if $knocked>>\cf0\f0 \b\cf2 \ul shut the door\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \b\cf2 \ul shut the door\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\b\cf2 \ul leave\ulnone \cf0 \b0 \
+\f1\cf1 <<else if not $knocked>>\cf0\f0 \b\cf2 \ul shut the door\ulnone \cf0 \b0 \
+\b\cf2 \ul get in\ulnone \cf0 \b0 \
+\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \b\cf2 \ul get in\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 AtticShelf\b0\fs20 \
+\f1\cf1 <<set $shelf to either(0,1,2,3,4,5)>>\cf0\f0 \\
+\f1\cf1 <<if $shelf is 0>>\cf0\f0 [a tiny tree decked with jewels]\\
+\f1\cf1 <<else if $shelf is 1>>\cf0\f0 [porcelain figurines, one (dragon) missing a head]\\
+\f1\cf1 <<else if $shelf is 2>>\cf0\f0 [crammed with books, "from tattered, yellowing paperbacks to gilded tomes bound in leather", all blank]\\
+\f1\cf1 <<else if $shelf is 3>>\cf0\f0 [cabinet that opens to a smaller cabinet that opens to a smaller cabinet [...] that contains a tiny window with $boy's face <frozen in ice if $cold, otherwise smiles, laughs, and shuts door on $his side>]\\
+\f1\cf1 <<else if $shelf is 4>>\cf0\f0 [tiny waterfall, waterwheel, piney woods (no back)]\\
+\f1\cf1 <<else if $shelf is 5>>\cf0\f0 [fancy oil lamp, lit]\\
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\b\cf2 \ul look around the hall\ulnone \cf0 \b0 \
+\
+\fs24\b1 ConversationIntro\b0\fs20 \
+Gathering your courage, you take a breath and leap through the waterfall to the other side.  Your flailing feet meet only air for half a second, then suddenly find purchase, sending you tumbling to the ground.\
+\
+After catching your breath, you look up and see that the cause of your fall was a set of three stairs leading down into the soft, carpeted area in which you now lie.  Along the edge of the room is a cozy-looking ledge for sitting, with glass walls on each side, and the interior is scattered with plush, colorful cushions and pillows.  Across from the entrance is a narrow hall leading to another room, identical to the one you're in except for its spectacular view of the green, breezy forest far below.\
+\
+\f1\cf1 <<if $cold>>\cf0\f0 You suddenly notice that your entrance has left you soaking wet from head to toe, and as the water slowly drips off your naked body it takes the warmth of the stairways with it.  You begin to shiver.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 You look back at the sheet of water covering the entrance.  The carpet is dry, and so is your skin.  You feel warm and comfortable.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\b\cf2 \ul sit up\ulnone \cf0 \b0 \
+\
+\fs24\b1 ConversationFutile\b0\fs20 \
+\f1\cf1 <<if $cold>>\cf0\f0 Hugging your arms for warmth and trying to stop from shaking, you\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 You\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0  crouch down near the entrance and inspect the wall.  There doesn't seem to be any kind of seam or handle, and the wall doesn't budge no matter how hard you push it, or from which angle.  The hall appears to be sealed off.\
+\
+\f1\cf1 <<if $cold>>\cf0\f0 You look up to see if the other two will let you in, only to find that while you were concentrating the \f1\cf1 <<$boy>>\cf0\f0  and \f1\cf1 <<$his>>\cf0\f0  companion have left.  The other room is empty.\f1\cf1 <<set $empty to 1>>\cf0\f0 \
+\
+\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \b\cf2 \ul get the pair's attention\ulnone \cf0 \b0 \
+\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \b\cf2 \ul leave\ulnone \cf0 \b0 \
+\
+\fs24\b1 LoftStare\b0\fs20 \
+You watch a while longer.  As your hopes of actually understanding the game slowly fade, you start paying more attention to the \f1\cf1 <<$boy>>\cf0\f0 s.  The two of them have a close, easy rapport, laughing at in-jokes, teasing and jostling each other when they score.  It almost seems like they're watching each other more than the game.\
+\
+The naked skin of their backs has a soft blue halo from the light of the television screen.\f1\cf1 <<set $played to 4>>\cf0\f0 \
+\
+\b\cf2 \ul keep watching\ulnone \cf0 \b0 \
+\b\cf2 \ul leave\ulnone \cf0 \b0 \
+\
+\fs24\b1 LoftCreep\b0\fs20 \
+You watch.\
+\
+\b\cf2 \ul keep watching\ulnone \cf0 \b0 \
+\b\cf2 \ul leave\ulnone \cf0 \b0 \
+\
+\fs24\b1 AtticToMuseum\b0\fs20 \
+You're in a dim, twisty hallway lined with dozens of shelves and drawers of every size and shape.  The shelves are stuffed with trinkets, knick knacks, and all kinds of books.\
+\
+The hallway curves out of sight at one end; at the other is a short riser of stairs.\
+\
+\b\cf2 \ul open a drawer\ulnone \cf0 \b0 \
+\b\cf2 \ul examine a shelf\ulnone \cf0 \b0 \
+\b\cf2 \ul follow the curve\ulnone \cf0 \b0 \
+\b\cf2 \ul take the stairs\ulnone \cf0 \b0 \
+\
+\fs24\b1 BathroomStrip\b0\fs20 \
+Glancing at the open door, you take your clothes off and pile them on the floor. Your hands barely shake at all.\
+\
+\f1\cf1 <<if $knocked and not $cold>>\cf0\f0 When you're done, the \f1\cf1 <<$boy>>\cf0\f0  looks you over and smiles. "Yeah, that's better," \f1\cf1 <<$he>>\cf0\f0  says. "I knew you were a cutie." \f1\cf1 <<$He>>\cf0\f0  pulls \f1\cf1 <<$his>>\cf0\f0  legs up to make room for you in the tub.\
+\
+"Now come on in, the water's perfect."\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 The room is a little chilly, despite the steam.  Without your clothes you start to get cold.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0  \
+\f1\cf1 <<set $stripped to 1>>\cf0\f0 \
+\f1\cf1 <<if $knocked and not $cold>>\cf0\f0 \b\cf2 \ul get in the tub\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \b\cf2 \ul get in the tub\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 BathroomCold\b0\fs20 \
+[shutting the door after $boy tells you to strip or get out vanishes the $boy and sets $cold to 1. (Other stuff?)]\
+\
+\fs24\b1 BathroomSwelter\b0\fs20 \
+\f1\cf1 <<if not $locked>>\cf0\f0 You shut the door to the bathroom.  The room fills with steam right away; soon you can barely see through the fog.\
+\
+You're getting very hot.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 The door is locked; you can't open it.\
+\
+The room is sweltering, and the steam is only getting thicker.  You start to feel dizzy.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\b\cf2 \ul take off your clothes\ulnone \cf0 \b0 \f1\cf1 <<if not $locked>>\cf0\f0 \
+\b\cf2 \ul leave\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 BathroomDrown\b0\fs20 \
+The instant the door closes, the lights go out and water crashes over you, tumbling you end over end and submerging you completely.  You reach out for the handle, the floor, anything to hold on to, but your hands and feet find only empty water.  Everything is pitch black.  You can't even tell up from down anymore.\
+\
+\b\cf2 \ul swim\ulnone \cf0 \b0 \
+\
+\fs24\b1 Conversation\b0\fs20 \
+You sit up.  In the room across from yours, an older \f1\cf1 <<$boy>>\cf0\f0  and a \f1\cf1 <<$girl>>\cf0\f0  about your age are deep in conversation.\f1\cf1 <<if visited("ShowerPit")>>\cf0\f0   After a moment, you recognize the \f1\cf1 <<$boy>>\cf0\f0  as the one from the showers.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+The \f1\cf1 <<$girl>>\cf0\f0  is resting with \f1\cf1 <<$shis>>\cf0\f0  head on the \f1\cf1 <<$boy>>\cf0\f0 's lap, talking and gesturing as \f1\cf1 <<$she>>\cf0\f0  tells some story or other.  \f1\cf1 <<$He>>\cf0\f0  nods occasionally as \f1\cf1 <<$he>>\cf0\f0  listens, an interested smile on \f1\cf1 <<$his>>\cf0\f0  face.  As you watch, \f1\cf1 <<$he>>\cf0\f0  puts \f1\cf1 <<$his>>\cf0\f0  head back and laughs hugely.  The \f1\cf1 <<$girl>>\cf0\f0  smiles.  Though the hall leading to their room is only a few feet long, you can't hear anything they're saying.\
+\
+They don't seem to notice you.\
+\
+\b\cf2 \ul join them\ulnone \cf0 \b0 \
+\b\cf2 \ul go back\ulnone \cf0 \b0 \
+\
+\fs24\b1 ConversationBlock\b0\fs20 \
+You stand up to join them, but as you approach the hall between your rooms something smacks into you, hard.  It takes you a second to realize that you've run into a glass wall blocking the hall's entrance.  Flush with the surrounding wall, it escaped your notice before.\
+\
+Thankfully, the pair don't seem to have noticed you yet.\
+\
+\b\cf2 \ul find a way through\ulnone \cf0 \b0 \
+\b\cf2 \ul turn back\ulnone \cf0 \b0 \
+\
+\fs24\b1 LoftRegret\b0\fs20 \
+You climb back up the ladder quietly, not wanting to distrub the \f1\cf1 <<$boy>>\cf0\f0 s' game.  But when you reach the top of the ladder, you find the loft is pitch black.  You pause for a moment to let your eyes adjust, then hear soft conversation and giggling from the middle of the room, where the cushions were piled.\
+\
+The voices are low and whispered--too soft for you to make out.\
+\
+\b\cf2 \ul listen\ulnone \cf0 \b0 \
+\b\cf2 \ul leave\ulnone \cf0 \b0 \
+\
+\fs24\b1 LoftListen\b0\fs20 \
+You wait at the top of the ladder and listen to the \f1\cf1 <<$boy>>\cf0\f0 s' conversation.  Their whispers and laughter are just at the edge of hearing, too faint to make out words.  As your eyes adjust to the darkness, you notice stars glowing faintly on the ceiling, as though it were a window to the night sky.\
+\
+\b\cf2 \ul keep listening\ulnone \cf0 \b0 \
+\b\cf2 \ul leave\ulnone \cf0 \b0 \
+\
+\fs24\b1 SwelterStrip\b0\fs20 \
+You quickly strip off your clothes, but you don't feel any cooler.  If anything, the heat is worse.  You're having trouble standing up.\
+\
+\b\cf2 \ul try the door\ulnone \cf0 \b0 \
+\b\cf2 \ul find the bathtub\ulnone \cf0 \b0 \
+\
+\fs24\b1 BathroomDrowner\b0\fs20 \
+You pick a direction and start swimming. The room stays pitch black and empty; the water flowing over your skin is the only sign you're moving at all.\
+\
+Your lungs begin to ache.\
+\
+\b\cf2 \ul swim\ulnone \cf0 \b0 \
+\
+\fs24\b1 AquariumPlaque\b0\fs20 \
+[you can't read them...]\
+\
+\b\cf2 \ul go back\ulnone \cf0 \b0 \
+\
+\fs24\b1 PoolToMuseum\b0\fs20 \
+\f1\cf1 <<set $from to "pool">>\cf0\f0 You step into a large, circular aquarium, colorful and brightly-lit. \f1\cf1 <<if $from is "pool">>\cf0\f0 You're still underwater, but your lungs don't ache anymore.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 Although you're underwater, you don't feel any particular need for air.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \f1\cf1 <<if $from is not "museum">>\cf0\f0  You turn to close the door you came in through, but there isn't one--it's just a blank wall.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+The aquarium is filled with tropical fish, eels, rays, sharks, and all kinds of coral.  A walkway and guard rail line the aquarium, with descriptive plaques set at regular intervals.  On the opposite side of the tank, you see a curving stair leading out.\
+\
+You're not actually a guest here.\
+\
+\b\cf2 \ul examine a plaque\ulnone \cf0 \b0 \
+\b\cf2 \ul go out\ulnone \cf0 \b0 \
+\
+\fs24\b1 BatheAlone\b0\fs20 \
+[assert \f1\cf1 <<$cold>>\cf0\f0  or not \f1\cf1 <<$knocked>>\cf0\f0 ]\
+\
+[You get in. If $cold, the water is chilly.  Nothing happens.  You can try to get out (freeze as soon as you leave), or stay in the tub (freeze slowly).\
+\
+If not $cold, \f1\cf1 <<$boy>>\cf0\f0  walks in shortly after and shuts the door.  Raising one eyebrow, \f1\cf1 <<$he>>\cf0\f0  says "Well, hey there. Invited yourself in?"  \f1\cf1 <<$He>>\cf0\f0  grins.  "Well, you're cute, so I forgive you--but you really should knock or something next time.  Now make some room."  \f1\cf1 <<$He>>\cf0\f0  then gets in the tub with you.  Reverts to BatheCompany.]\
+\
+\fs24\b1 BatheCompany\b0\fs20 \
+The water in the tub is comfortably hot, but it's a little cramped with two people in it.  Your feet are touching, and you can't relax your legs without them sliding over to \f1\cf1 <<$his>>\cf0\f0  side.\
+\
+"Would you mind if I relaxed my legs a bit?" the \f1\cf1 <<$boy>>\cf0\f0  says, smiling.  "Just let me know if I do anything you don't like, and I'll stop."\
+\
+\f1\cf1 <<$He>>\cf0\f0  isn't bothering to cover \f1\cf1 <<$him>>\cf0\f0 self at all.\
+\
+\b\cf2 \ul tell \f1\cf1 <<$him>>\cf0\f0  yes\ulnone \cf0 \b0 \
+\b\cf2 \ul tell \f1\cf1 <<$him>>\cf0\f0  no\ulnone \cf0 \b0 \
+\
+\fs24\b1 Stars\b0\fs20 \
+Space is surprisingly comfortable.  You feel warm and at peace.\
+\
+There are \i so many\i0  stars; more than you've ever imagined.  Their light glows hard and steady, unmoved by the glimmer of atmosphere, pinprick-solid against the black of space.  No earth, moon, or sun in sight; you can't even feel your own body.  There are only stars.\
+\
+Time doesn't matter here.  You float, staring.\
+\
+\b\cf2 \ul wake up.\ulnone \cf0 \b0 \
+\
+\fs24\b1 LoftToStars\b0\fs20 \
+As you listen, the stars grow slowly brighter.  The ceiling is soon filled with a wash of them: more stars than you've ever seen in your life, the broad band of the Milky Way clearly visible.\
+\
+After a few minutes, you notice the \f1\cf1 <<$boy>>\cf0\f0 s have stopped talking.  A moment later you realize that the loft, the ladder, and the floor have all vanished, leaving you floating in space, surrounded by stars and the void.\
+\
+\b\cf2 \ul look\ulnone \cf0 \b0 \
+\
+\fs24\b1 Awake\b0\fs20 \
+You're lying in your bed, groggy with dreaming.\\
+\f1\cf1 <<if $cold or $burned>>\cf0\f0   The sheets are cold and clammy with sweat\f1\cf1 <<if $burned>>\cf0\f0 , but you're still hot\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 .\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0   You're comfortable and warm.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\f1\cf1 <<if $alone>>\cf0\f0 All is silent.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 Somewhere outside, \f1\cf1 <<if visited("Start") < 3>>\cf0\f0 crickets\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 birds\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0  are singing.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\f1\cf1 <<if visited("Start") >= 4>>\cf0\f0 The sun has risen.  Another day.\
+\
+\b\cf2 \ul Night's end.\ulnone \cf0 \b0 \\
+\\
+\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \f1\cf1 <<if visited("Start") is 1>>\cf0\f0 It's the middle of the night.\f1\cf1 <<else if visited("Start") is 2>>\cf0\f0 Dawn is hours away.\f1\cf1 <<else if visited("Start") is 3>>\cf0\f0 The sun hasn't risen yet.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 If you can read this, either you or the author has done something very wrong. (\f1\cf1 <<print visited("Start")>>\cf0\f0 )\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0   You should go back to sleep.\
+\
+\b\cf2 \ul Eyes close.\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 LightsOn Stylesheet\b0\fs20 \
+body {\
+	color: black;\
+	background-color: white;\
+	\
+}\
+#sidebar li a {\
+	color: #333;\
+	\
+}\
+#sidebar li a:hover, #sidebar #title a:hover, #snapback:hover, #restart:hover {\
+	color: black;\
+	\
+}\
+\
+\fs24\b1 SwelterCollapse\b0\fs20 \
+\f1\cf1 <<if $from is "door">>\cf0\f0 The door's handle refuses to turn. Your legs give out and you collapse onto the floor.\f1\cf1 <<else if $from is "tub">>\cf0\f0 You can only take a single step before your legs give out and you collapse onto the floor.\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 [This should not happen!]\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0  The heat intensifies, like you're about to catch fire. The steam is suffocating; you try to cry for help but you can't even draw a breath, and--\
+\
+\b\cf2 \ul and\ulnone \cf0 \b0 \
+\
+\fs24\b1 BathroomDrownest\b0\fs20 \
+You swim and swim, for--minutes?  Hours?  You've never held your breath so long.  Your lungs are screaming, but there's nothing left to exhale.  You take another stroke--convulsively, you inhale--water burns, and--\
+\
+\b\cf2 \ul wake up.\ulnone \cf0 \b0 \
+\
+\fs24\b1 AquariumToMuseum\b0\fs20 \
+\
+\
+\fs24\b1 BatheTense\b0\fs20 \
+You shake your head no.  The \f1\cf1 <<$boy>>\cf0\f0  shrugs.  "All right.  Let me know if you change your mind."  \f1\cf1 <<$He>>\cf0\f0  leans back and closes \f1\cf1 <<$his>>\cf0\f0  eyes, still not bothering to cover anything.\
+\
+Your legs are starting to cramp up a bit.\
+\
+\b\cf2 \ul tell \f1\cf1 <<$him>>\cf0\f0  yes\ulnone \cf0 \b0 \
+\b\cf2 \ul stare\ulnone \cf0 \b0 \
+\
+\fs24\b1 BatheRelax\b0\fs20 \
+You tell him it's fine if \f1\cf1 <<$he>>\cf0\f0  relaxes. \f1\cf1 <<$His>>\cf0\f0  feet slowly slide past your bent knees, coming to rest underneath your butt.\
+\
+"You can relax too, if you like," \f1\cf1 <<$he>>\cf0\f0  says.  "I don't mind."\
+\
+With a quiet sigh of relief, you let your own feet drift over to \f1\cf1 <<$his>>\cf0\f0  end of the tub, until they're resting on \f1\cf1 <<$him>>\cf0\f0  just as \f1\cf1 <<$he>>\cf0\f0 's resting on you.  Your legs cross and press against each other.\
+\
+It feels good to relax.\
+\f1\cf1 <<set $relaxed to 1>>\cf0\f0 \
+\b\cf2 \ul rest\ulnone \cf0 \b0 \
+\b\cf2 \ul stare\ulnone \cf0 \b0 \
+\
+\fs24\b1 BatheStare\b0\fs20 \
+You stare at the \f1\cf1 <<$boy>>\cf0\f0  for a while.  \f1\cf1 <<$He>>\cf0\f0  really is gorgeous.\
+\
+You suddenly notice the \f1\cf1 <<$boy>>\cf0\f0  staring back at you and drop your head.  \f1\cf1 <<$He>>\cf0\f0  laughs.\
+\
+"It's all right," \f1\cf1 <<$he>>\cf0\f0  says, "you can look.  I don't mind if you don't."\
+\
+\b\cf2 \ul stare\ulnone \cf0 \b0 \
+\b\cf2 \ul rest\ulnone \cf0 \b0 \
+\
+\fs24\b1 BatheStarer\b0\fs20 \
+You smile a little and nod.  The two of you stare at each other for a while in silence.\
+\
+Your heart is beating hard and your skin is tingling\f1\cf1 <<if $relaxed>>\cf0\f0 , yet you're fully relaxed\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 . Your legs are tired and cramped.\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\f1\cf1 <<if $relaxed>>\cf0\f0 \b\cf2 \ul rest\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 \b\cf2 \ul fidget\ulnone \cf0 \b0 \f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\fs24\b1 Museum\b0\fs20 \
+[Opulent, labyrinthine cross between a mansion, an aquarium, and a museum.  Constant feeling of being chased/watched.  Touching anything / going anywhere you're not supposed to leads to getting "caught", which wakes you up. (Exception: key?) Navigating correctly brings you to Rooms (which ones depends on $cold OR just to door).]\
+\
+\fs24\b1 BatheWasher\b0\fs20 \
+[sensual wash, then \f1\cf1 <<$boy>>\cf0\f0  offers to wash your back in return]\
+\
+\b\cf2 \ul accept\ulnone \cf0 \b0 \
+\b\cf2 \ul decline\ulnone \cf0 \b0 \
+\
+\fs24\b1 BatheWash\b0\fs20 \
+\f1\cf1 <<if $relaxed>>\cf0\f0 [$boy asks if wash]\f1\cf1 <\f1\cf1 <else>\cf0\f0 >\cf0\f0 [boy notices fidgeting, suggests wash]\f1\cf1 <\f1\cf1 <endif>\cf0\f0 >\cf0\f0 \
+\
+\b\cf2 \ul let \f1\cf1 <<$him>>\cf0\f0  wash your back\ulnone \cf0 \b0 \
+\b\cf2 \ul ask to wash \f1\cf1 <<$his>>\cf0\f0  back\ulnone \cf0 \b0 \
+\b\cf2 \ul decline\ulnone \cf0 \b0 \
+\
+\fs24\b1 BatheDeclined\b0\fs20 \
+[if $relaxed, go to (Ocean?), else wake up when your leg twitches]\
+\
+\fs24\b1 BatheWashee\b0\fs20 \
+[if $relaxed, go to Ocean, else go to (Pool? Aquarium?)]\
+\
+}
