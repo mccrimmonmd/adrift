@@ -1003,22 +1003,22 @@ Tiddler
 p315
 (dp316
 g25
-V<<if $dazed>>Forever ends.\u000a\u000a<<else>>After walking for what feels like miles, something unusual catches your eye.\u000a\u000a<<endif>>At the base of one of the endless, identical trees is a wooden door, about chest height, with a silvery arched frame.  A tarnished handle beckons.\u000a\u000aYou suddenly recall you haven't heard the stream for some time.  You turn your head to listen, and realize you have no idea which direction you came from.\u000a\u000aThe sound of the stream is gone.  You are completely lost.\u000a\u000a[[try the handle|ForestStair]]
+V<<if $dazed>>Forever ends.\u000a\u000a<<else>>After walking for what feels like miles, something unusual catches your eye.\u000a\u000a<<endif>>At the base of one of the endless, identical trees is a wooden door, about chest height, with a silvery arched frame.  A tarnished handle beckons.\u000a\u000aYou suddenly recall you haven't heard the stream for some time.  You turn your head to listen, and realize you have no idea which direction you came from.\u000a\u000aThe sound of the stream is gone.  You are lost.\u000a\u000a[[try the handle|ForestStair]]
 p317
 sg27
 VForestDoor
 p318
 sg29
 g30
-((I2017
+((I2023
+I3
+I11
+I2
+I19
+I41
 I5
-I28
+I70
 I0
-I9
-I32
-I6
-I148
-I1
 tp319
 (dp320
 tp321
@@ -1053,22 +1053,22 @@ Tiddler
 p330
 (dp331
 g25
-VYou keep walking, and the trees keep coming, endlessly.  Though the sound of the stream wavers at the edge of hearing, it never quite falls silent.<<if $dazed>>\u000a\u000aYou walk through the forest forever.  It is your only memory.<<endif>>\u000a\u000a<<if not $dazed and (either("bore", "door") is "bore")>>[[keep going|BoreExplore][$dazed = 1]]<<else>>[[keep going|ForestDoor]]<<endif>>\u000a[[find the stream|FollowSound]]
+VYou keep walking, and the trees keep coming, endlessly.  Though the sound of the stream wavers at the edge of hearing, it never quite falls silent.<<if $dazed>>\u000a\u000aYou walk through the forest forever.<<endif>>\u000a\u000a<<if not $dazed and (either("bore", "door") is "bore")>>[[keep going|BoreExplore][$dazed = 1]]<<else>>[[keep going|ForestDoor]]<<endif>>\u000a[[find the stream|FollowSound]]
 p332
 sg27
 VBoreExplore
 p333
 sg29
 g30
-((I2017
-I5
-I28
-I0
-I6
+((I2023
 I3
-I6
-I148
-I1
+I11
+I2
+I18
+I32
+I5
+I70
+I0
 tp334
 (dp335
 tp336
@@ -1110,15 +1110,15 @@ VBasement
 p348
 sg29
 g30
-((I2017
+((I2023
+I3
+I11
+I2
+I21
+I11
 I5
-I28
+I70
 I0
-I14
-I59
-I6
-I148
-I1
 tp349
 (dp350
 tp351
@@ -1145,29 +1145,29 @@ g18
 I00
 sg19
 (lp359
-F2337.0
-aF530.0
+F2312.0
+aF556.0
 asg21
 (itiddlywiki
 Tiddler
 p360
 (dp361
 g25
-V[dark, concrete, partially flooded hallways. Descend far enough: dead end. Ascend far enough: Baths (?)]\u000a\u000a[pitch black, mouldering air, stairs underfoot: lower tunnels]
+V[dark, concrete, partially flooded (non-euclidean?) labyrinth. Navigate successfully: Room. 'leave/give up': Baths? Awake?]\u000a\u000a[pitch black, mouldering air, stairs underfoot: lower tunnels]
 p362
 sg27
 VTunnels
 p363
 sg29
 g30
-((I2017
+((I2023
+I3
+I11
 I1
-I19
 I3
-I54
-I36
-I3
-I19
+I41
+I5
+I70
 I0
 tp364
 (dp365
@@ -1203,22 +1203,22 @@ Tiddler
 p375
 (dp376
 g25
-VAfter a bit of tugging the door reluctantly opens, and you duck through to the base of a cold, stone stairway. Some distance up, a warm light glimmers.\u000a\u000aA short climb later, you reach the light.  It's shining from the crack around a large, square door.  Behind you the stone stairs descend into darkness; the sparse light where you're standing is the only illumination.\u000a\u000a[[open the door|Basement][$rushed = 0]]
+VAfter a bit of tugging the door reluctantly opens, and you duck through to the base of a cold, stone stairway. Some distance up, a warm light glimmers.\u000a\u000aA short climb later, you reach the light.  It's shining from a crack around a large, square door.  Behind you the stone stairs descend into darkness; the sparse light where you're standing is the only illumination.\u000a\u000a[[open the door|Basement][$rushed = 0]]
 p377
 sg27
 VForestStair
 p378
 sg29
 g30
-((I2017
+((I2023
+I3
+I11
+I2
+I20
+I10
 I5
-I28
+I70
 I0
-I14
-I9
-I6
-I148
-I1
 tp379
 (dp380
 tp381
@@ -1253,22 +1253,22 @@ Tiddler
 p390
 (dp391
 g25
-V<<set $stripped to 0>>\u005c\u000aYou're in a small, cozy home.\u000a\u000aThe windows are black with night outside, but a twinkling of white suggests snow.  The room is lit and warmed by a firepit in the center, recessed into the floor and ringed with soft cushions.\u000a\u000aTo one side of the firepit is a ladder that runs up from a hole in the floor and through an identical hole in the ceiling.  Across from the ladder, against one wall, climbs a wooden spiral stair.  Farther from the fire is nothing of consequence.\u000a\u000aOn the opposite side of the firepit, a gauzy curtain runs nearly the whole width of the room.  Where the curtain stops you see a dresser, a bottom drawer pulled open.  Behind the curtain you can just make out the silhouette of a large four-post bed, illuminated by a light coming from a half-open door. You hear the faint sound of running water.\u000a\u000a[[sit by the fire|Fireplace]]\u000a[[look behind the curtain|Bedroom]]\u000a[[climb down the ladder|Basement]]\u000a<<if $played is 4>>[[climb up the ladder|LoftRegret]]<<else if $played > 0>>[[climb up the ladder|LoftWatch][$from = "house"]]<<else>>[[climb up the ladder|Loft]]<<endif>>\u000a[[take the stairs|HouseToAttic]]
+V<<set $stripped to 0>>\u005c\u000aYou're in a small, cozy home.\u000a\u000aThe windows are black with night outside, but a twinkling of white suggests snow.  The room is lit and warmed by a firepit in the center, recessed into the floor and ringed with soft cushions.\u000a\u000aTo one side of the firepit is a ladder that runs up from a hole in the floor and through an identical hole in the ceiling.  Across from the ladder, against one wall, a wooden spiral stair climbs up and disappears through a different spot.  Farther from the fire is nothing of consequence.\u000a\u000aOn the opposite side of the firepit, a gauzy curtain runs nearly the whole width of the room.  Where the curtain stops you see a dresser, a bottom drawer pulled open.  Behind the curtain you can just make out the silhouette of a large four-post bed, illuminated by a light coming from a half-open door. You hear the faint sound of running water.\u000a\u000a[[sit by the fire|Fireplace]]\u000a[[look behind the curtain|Bedroom]]\u000a[[climb down the ladder|Basement]]\u000a<<if $played is 4>>[[climb up the ladder|LoftRegret]]<<else if $played > 0>>[[climb up the ladder|LoftWatch][$from = "house"]]<<else>>[[climb up the ladder|Loft]]<<endif>>\u000a[[take the stairs|HouseToAttic]]
 p392
 sg27
 VHouse
 p393
 sg29
 g30
-((I2022
+((I2023
 I3
-I29
+I11
+I2
+I26
+I31
+I5
+I70
 I0
-I1
-I15
-I1
-I88
-I1
 tp394
 (dp395
 tp396
@@ -1392,11 +1392,11 @@ tp431
 Rp432
 sbsa(dp433
 g18
-I00
+I01
 sg19
 (lp434
-F140.0
-aF908.0
+F136.0
+aF888.0
 asg21
 (itiddlywiki
 Tiddler
@@ -1953,22 +1953,22 @@ Tiddler
 p600
 (dp601
 g25
-V<<print either("Adrift", "Aimless", "Empty", "Falling", "Floating", "Lost", "Sinking", "Vanished", "Weightless")>>.\u000a\u000a[[boys are pretty|TheForest][$likes = "boys"]]\u000a[[girls are pretty|TheForest][$likes = "girls"]]
+V<<print either("Adrift", "Aimless", "Empty", "Falling", "Floating", "Lost", "Nothing", "Sinking", "Vanished", "Weightless")>>.\u000a\u000a[[boys are pretty|TheForest][$likes = "boys"]]\u000a[[girls are pretty|TheForest][$likes = "girls"]]
 p602
 sg27
 VDream
 p603
 sg29
 g30
-((I2017
-I5
-I22
+((I2023
 I3
-I38
-I4
+I11
+I2
+I13
+I54
+I5
+I70
 I0
-I142
-I1
 tp604
 (dp605
 tp606
@@ -4365,8 +4365,8 @@ g18
 I00
 sg19
 (lp1329
-F2677.0
-aF599.0
+F2484.0
+aF1065.0
 asg21
 (itiddlywiki
 Tiddler
@@ -4415,8 +4415,8 @@ g18
 I00
 sg19
 (lp1344
-F2680.0
-aF748.0
+F2487.0
+aF1214.0
 asg21
 (itiddlywiki
 Tiddler
@@ -4965,29 +4965,29 @@ g18
 I00
 sg19
 (lp1509
-F732.0
-aF442.0
+F2500.0
+aF302.0
 asg21
 (itiddlywiki
 Tiddler
 p1510
 (dp1511
 g25
-V<<if not visited("RoomsShut")>>[description of door surface/texture goes here]<<else>>[briefened description of door-openness]<<endif>>\u000a\u000a[cold steel door takes you to row of prison cells, warm wooden door takes you to row of plush hotel rooms]\u000a\u000a[ORRRR:\u000a\u000adefault: "watch"\u000acompany: "watch closely"\u000acold: "listen" (and cry???)]\u000a\u000a[ORRR ORRRR:\u000a\u000apedastal with fist-sized "pearl", when you pick it up: default = beautiful and warm, company = orgasm, cold = jelly-like and disgusting, falls apart at your touch to reveal a rotten center]
+V<<if not visited("RoomShut")>>[description of door surface/texture goes here]<<else>>[briefened description of door-openness]<<endif>>\u000a\u000a[door takes you to SOMETHING GOOD???!?!?! that (a) changes depending on variables (esp. $cold), and (b) changes something about the game (new menu option, mention in Awake, persists across playthroughs? Will depend on what I can come up with for the GOOD SOMETHING???!?!?!??!?]\u000a\u000a/%[cold steel door takes you to row of prison cells, warm wooden door takes you to row of plush hotel rooms]\u000a\u000a[ORRRR:\u000a\u000adefault: "watch"\u000acompany: "watch closely"\u000acold: "listen" (and cry???)]\u000a\u000a[ORRR ORRRR:\u000a\u000apedastal with fist-sized "pearl", when you pick it up: default = beautiful and warm, company = orgasm, cold = jelly-like and disgusting, falls apart at your touch to reveal a rotten center]%/
 p1512
 sg27
-VRooms
+VRoom
 p1513
 sg29
 g30
-((I2020
+((I2023
+I3
+I11
 I1
-I19
-I15
-I50
-I57
-I6
-I19
+I11
+I5
+I5
+I70
 I0
 tp1514
 (dp1515
@@ -5265,30 +5265,30 @@ g18
 I00
 sg19
 (lp1599
-F731.0
-aF303.0
+F2499.0
+aF163.0
 asg21
 (itiddlywiki
 Tiddler
 p1600
 (dp1601
 g25
-VYou try pushing on the door to see if it will open.  The door is <<if $cold>>coarse and hard and freezing to the touch.<<else>>warm to the touch, and as smooth and seamless as polished glass.<<endif>> It solidly resists your attempts to move it.\u000a\u000aYou try knocking, but there's no response.  There doesn't seem to be a way in without a key.\u000a\u000a[[turn back|LobbyLook]]
+VYou try pushing on the door to see if it will open.  The door is <<if $cold>>coarse and hard and freezing to the touch.<<else>>warm to the touch, and as smooth and seamless as polished glass.<<endif>> It solidly resists your attempts to move it.\u000a\u000aYou'll need your key.\u000a\u000a[[turn back|LobbyLook]]
 p1602
 sg27
-VRoomsShut
+VRoomShut
 p1603
 sg29
 g30
-((I2016
-I9
-I24
-I18
-I57
-I4
-I5
-I268
+((I2023
+I3
+I11
 I1
+I7
+I59
+I5
+I70
+I0
 tp1604
 (dp1605
 tp1606
@@ -5565,8 +5565,8 @@ g18
 I00
 sg19
 (lp1689
-F2091.0
-aF607.0
+F2117.0
+aF633.0
 asg21
 (itiddlywiki
 Tiddler
@@ -5623,22 +5623,22 @@ Tiddler
 p1705
 (dp1706
 g25
-VYou're in a dim, cramped hallway lined with dozens of shelves and drawers of every size and shape.  The shelves are stuffed with trinkets, knick knacks, and all kinds of books.\u000a\u000aThe hallway splits in two at one end, with a short riser of stairs going up to one hall and down to the other.  At the opposite end of the hall is a descending spiral stair.\u000a\u000a[[open a drawer|AtticDrawer]]\u000a[[examine a shelf|AtticShelf]]\u000a[[take the upper hallway|AtticToMuseum]]\u000a[[take the lower hallway|AtticToMuseum]]\u000a[[go down the stairs|House]]
+V[tiny bay window with plush seats and a little table, with a mug of something good to drink (still steaming). Cramped everything, but cozy. Outside the window: forest?\u000a\u000aSpiral stairs down, steep stairs up(, hallway to creaky old door?)]\u000a\u000a/%You're in a dim, cramped hallway lined with dozens of shelves and drawers of every size and shape.  The shelves are stuffed with trinkets, knick knacks, and all kinds of books.\u000a\u000aThe hallway splits in two at one end, with a short riser of stairs going up to one hall and down to the other.  At the opposite end of the hall is a descending spiral stair.%/\u000a\u000a[[open a drawer|AtticDrawer]]\u000a[[examine a shelf|AtticShelf]]\u000a/%sit, drink, look out the window, etc.%/\u000a[[go up the stairs|AtticToMuseum]]\u000a[[take the hallway|AtticToMuseum]] /% to...tunnels? room?%/\u000a[[go down the stairs|House]]
 p1707
 sg27
 VAttic
 p1708
 sg29
 g30
-((I2017
+((I2023
+I3
+I11
+I1
+I14
+I10
 I5
-I28
-I1
-I9
-I36
-I6
-I148
-I1
+I70
+I0
 tp1709
 (dp1710
 tp1711
@@ -5665,8 +5665,8 @@ g18
 I00
 sg19
 (lp1719
-F2090.0
-aF467.0
+F2116.0
+aF493.0
 asg21
 (itiddlywiki
 Tiddler
@@ -6616,29 +6616,29 @@ I00
 sg19
 (lp2004
 F80.0
-aF1094.0
+aF1092.0
 asg21
 (itiddlywiki
 Tiddler
 p2005
 (dp2006
 g25
-VYou're in a dim, cramped hallway lined with dozens of shelves and drawers of every size and shape.  The shelves are stuffed with trinkets, knick knacks, and all kinds of books.\u000a\u000aThe hallway Ts off at one end; at the other is a descending spiral stair.\u000a\u000a[[open a drawer|AtticDrawer]]\u000a[[examine a shelf|AtticShelf]]\u000a[[take the left hallway|Attic]]\u000a[[take the right hallway|Attic]]\u000a[[go down the stairs|House]]
+VYou're in a dim, cramped stairway lined with dozens of shelves and drawers of every size and shape.  The shelves are stuffed with trinkets, knick knacks, and all kinds of books.\u000a\u000aThe stairway curves slightly, obscuring each end.\u000a\u000a[[open a drawer|AtticDrawer]]\u000a[[examine a shelf|AtticShelf]]\u000a[[go up the stairs|Attic]]\u000a[[go down the stairs|House]]
 p2007
 sg27
 VHouseToAttic
 p2008
 sg29
 g30
-((I2017
+((I2023
+I3
+I11
+I0
+I55
+I8
 I5
-I28
-I1
-I6
-I59
-I6
-I148
-I1
+I70
+I0
 tp2009
 (dp2010
 tp2011
@@ -6673,22 +6673,22 @@ Tiddler
 p2020
 (dp2021
 g25
-V<<set $drawer to either(0,1,2,3,4,5)>>/% More? %/\u005c\u000a<<if $drawer is 0>>[dice, tattered pack of cards, single(?) chesspiece, checkerboard bottom]\u005c\u000a<<else if $drawer is 1>>[beads, plastic jems, charms, and the head of a tiny porcelain dragon]\u005c\u000a<<else if $drawer is 2>>[tiny gears, cranks, and pistons, some moving on their own]\u005c\u000a<<else if $drawer is 3>>[mismatched $boy's underwear]\u005c\u000a<<else if $drawer is 4>>[full of water, lined with stone, no bottom]\u005c\u000a<<else if $drawer is 5>>[note: "Don't forget / this is important"]\u005c\u000a<<endif>>\u000a\u000a[[close the drawer|previous()]]
+V<<set $drawer to either(0,1,2,3,4,5)>>/% More? %/\u005c\u000a<<if $drawer is 0>>[dice, tattered pack of cards, single(?) chesspiece, checkerboard bottom]\u005c\u000a<<else if $drawer is 1>>[beads, plastic jems, charms, and the head of a tiny porcelain dragon]\u005c\u000a<<else if $drawer is 2>>[tiny gears, cranks, and pistons, some moving on their own]\u005c\u000a<<else if $drawer is 3>>You open one of the drawers and find a rather mismatched collection of <<$boy>>'s underwear: <<if $likes is "boys">>[desc]<<else>>[desc]<<endif>>\u000a\u000aThey don't smell like anything but clean laundry, mostly--just a hint of...\u005c\u000a<<else if $drawer is 4>>[full of water, lined with stone, no bottom]\u005c\u000a<<else if $drawer is 5>>You open one of the drawers and find it almost completely empty. The only thing in it is a single sheet of notebook paper, ragged along one edge, with a note that says only:\u000a\u000a  Don't forget\u000a\u000a  this is important\u005c\u000a<<endif>>\u000a\u000a[[close the drawer|previous()]]
 p2022
 sg27
 VAtticDrawer
 p2023
 sg29
 g30
-((I2017
+((I2023
+I3
+I11
+I2
+I11
+I26
 I5
-I21
-I17
-I13
-I37
-I6
-I141
-I1
+I70
+I0
 tp2024
 (dp2025
 tp2026
@@ -6723,22 +6723,22 @@ Tiddler
 p2035
 (dp2036
 g25
-V<<set $shelf to either(0,1,2,3,4,5)>>/% More? %/\u005c\u000a<<if $shelf is 0>>[a tiny tree decked with jewels]\u005c\u000a<<else if $shelf is 1>>[porcelain figurines, one (dragon) missing a head]\u005c\u000a<<else if $shelf is 2>>[crammed with books, "from tattered, yellowing paperbacks to gilded tomes bound in leather", all blank]\u005c\u000a<<else if $shelf is 3>>[cabinet that opens to a smaller cabinet that opens to a smaller cabinet [...] that contains a tiny window with $boy's face <frozen in ice if $cold, otherwise smiles, laughs, and shuts door on $his side>]\u005c\u000a<<else if $shelf is 4>>[tiny waterfall, waterwheel, piney woods (no back)]\u005c\u000a<<else if $shelf is 5>>[fancy oil lamp, lit]\u005c\u000a<<endif>>\u000a\u000a[[look around the hall|previous()]]
+V<<set $shelf to either(0,1,2,3,4,5)>>/% More? %/\u005c\u000a<<if $shelf is 0>>On one of the shelves is a little bonsai tree in a glass pot, with tiny jewel-like leaves in every imaginable shade of green. The leaves are rustling slightly as though in a light breeze, though you don't feel a draft.\u005c\u000a<<else if $shelf is 1>>On one of the shelves is a dizzying menagerie of little porcelain figurines: geese, falcons, fish, farm animals of all kinds, gorillas, elephants, big cats and tabbies, seals and walruses, giraffes, beetles, dragonflies, butterflies, wolves, lizards and crocodiles, mythical beasts, and more.\u000a\u000aOne of the figurines--a dragon with wings spread wide--is missing its head.\u005c\u000a<<else if $shelf is 2>>One of the shelves is crammed to the gills with books of every imaginable variety: pulp paperbacks; ancient, loosely-bound folios; hardcovers of every size and thickness; heavy, gilded tomes bound in rich leather, and even a few magazines and brochures. You can't see what's on the spines.\u000a\u000aPulling one off the shelf at random, you open it up and can't see the words inside, either. You put it back on the shelf.\u005c\u000a<<else if $shelf is 3>>Next to one of the shelves is a large cabinet in an antique style.\u000a\u000aYou open the door of the cabinet and find another, smaller cabinet inside it, this one with a much more modern look. You open that cabinet and find another, still smaller cabinet with a rather generic look, as though it might be found in a school or office. You open that cabinet as well, and see...\u000a\u000aA <<$boy>>'s face, eyes wide and staring<<if $cold>> out at you from inside a solid block of ice.<<else>> for a moment before <<$he>> smiles and laughs--sending your stomach to your throat as though the floor's fallen out from under you--then shuts a door on <<$his>> side.\u000a\u000aYou push on it, but it doesn't open.<<endif>>\u005c\u000a<<else if $shelf is 4>>[tiny waterfall, waterwheel, piney woods (no back)]\u005c\u000a<<else if $shelf is 5>>[fancy oil lamp, lit]\u005c\u000a<<endif>>\u000a\u000a[[look around|previous()]]
 p2037
 sg27
 VAtticShelf
 p2038
 sg29
 g30
-((I2017
+((I2023
+I3
+I11
+I2
+I1
+I40
 I5
-I28
-I1
-I4
-I45
-I6
-I148
-I1
+I70
+I0
 tp2039
 (dp2040
 tp2041
@@ -6773,22 +6773,22 @@ Tiddler
 p2050
 (dp2051
 g25
-VYou're in a dim, twisty hallway lined with dozens of shelves and drawers of every size and shape.  The shelves are stuffed with trinkets, knick knacks, and all kinds of books.\u000a\u000aThe hallway curves out of sight at one end; at the other is a short riser of stairs.\u000a\u000a[[open a drawer|AtticDrawer]]\u000a[[examine a shelf|AtticShelf]]\u000a[[follow the curve|Museum]]\u000a[[take the stairs|Attic]]
+VYou're in a steep, narrow stairway lined with dozens of shelves and drawers of every size and shape.  The shelves are stuffed with trinkets, knick knacks, and all kinds of books.\u000a\u000aThe stairs are so steep that all you can see at each end are the floor and ceiling.\u000a\u000a[[open a drawer|AtticDrawer]]\u000a[[examine a shelf|AtticShelf]]\u000a[[go up the stairs|Museum]]\u000a[[go down the stairs|Attic]]
 p2052
 sg27
 VAtticToMuseum
 p2053
 sg29
 g30
-((I2017
+((I2023
+I3
+I11
+I1
+I16
+I24
 I5
-I28
-I1
-I7
-I28
-I6
-I148
-I1
+I70
+I0
 tp2054
 (dp2055
 tp2056
