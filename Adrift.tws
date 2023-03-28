@@ -45,7 +45,7 @@ p22
 (dp24
 S'text'
 p25
-V<<set \u000a$ignoring = 0; $cold = 0; \u000a$empty = 0; \u000a$swimming = 0; $dark = 0; \u000a$stripped = 0; $knocked = 0; $alone = 0;\u000a$played = 0; $burned = 0;\u000a$key = 0;\u000a$end = 0\u000a>>[[Sleep.|Sleep]]
+V<<set \u000a$ignoring = 0; $cold = 0; \u000a$empty = 0; \u000a$swimming = 0; $dark = 0; \u000a$stripped = 0; $knocked = 0; $alone = 0;\u000a$played = 0; $burned = 0; $rushed = 0;\u000a$key = 0;\u000a$end = 0\u000a>>[[Sleep.|Sleep]]
 p26
 sS'title'
 p27
@@ -56,15 +56,15 @@ p29
 ctime
 struct_time
 p30
-((I2017
-I1
-I17
+((I2023
+I3
+I28
 I0
-I42
-I38
-I1
 I17
-I0
+I13
+I1
+I87
+I1
 tp31
 (dp32
 tp33
@@ -1162,13 +1162,13 @@ sg29
 g30
 ((I2023
 I3
-I11
-I2
-I20
-I10
-I5
-I70
+I28
 I0
+I17
+I41
+I1
+I87
+I1
 tp364
 (dp365
 tp366
@@ -1303,21 +1303,21 @@ Tiddler
 p405
 (dp406
 g25
-VCouching down, you open the door and peer through.  A cool breeze brushes past.  On the other side, you make out a broad set of stone stairs leading down into darkness.\u000a\u000a[[go through|Impassable]]\u000a[[go back|Basement]]
+VCouching down, you open the door and peer through.  A cool breeze brushes past.  On the other side, you see a broad set of stone stairs leading down into darkness.\u000a\u000a[[go through|Impassable]]\u000a[[go back|Basement]]
 p407
 sg27
 VForestStairTiny
 p408
 sg29
 g30
-((I2017
-I5
+((I2023
+I3
 I28
 I0
-I16
-I16
-I6
-I148
+I18
+I48
+I1
+I87
 I1
 tp409
 (dp410
@@ -1903,7 +1903,7 @@ Tiddler
 p585
 (dp586
 g25
-V<<print either("Adrift", "Aimless", "Empty", "Falling", "Floating", "Lost", "Nothing", "Sinking", "Vanished", "Weightless")>>.\u000a\u000a[[boys are pretty|Somewhere][$likes = "boys"]]\u000a[[girls are pretty|Somewhere][$likes = "girls"]]
+V<<print either("Adrift", "Aimless", "Falling", "Floating", "Flying", "Hollow", "Lost", "Nobody", "Sinking", "Vanished", "Weightless")>>.\u000a\u000a[[boys are pretty|Somewhere][$likes = "boys"]]\u000a[[girls are pretty|Somewhere][$likes = "girls"]]
 p587
 sg27
 VDream
@@ -1912,12 +1912,12 @@ sg29
 g30
 ((I2023
 I3
-I22
+I28
+I0
+I14
+I11
 I1
-I33
-I2
-I2
-I81
+I87
 I1
 tp589
 (dp590
@@ -3205,22 +3205,22 @@ Tiddler
 p976
 (dp977
 g25
-V<<set $burned to 1>>Slowly, you reach your hand into the fire.  The warmth turns to heat, then builds.\u000a\u000aYour whole hand is in the flames now.  The heat is unbearably intense, yet it isn't pain.  Your skin sizzles and flakes, you're in agony, but you don't hurt.  You're sweating all over.  You feel shiveringly, gaspingly hot.\u000a\u000a[[pull back|FireBack]]\u000a[[step in|FireWash]]
+V<<set $burned to 1>>Slowly, you reach your hand into the fire.  The warmth turns to heat, then builds.\u000a\u000aYour whole hand is in the flames now.  The heat is unbearably intense, but it isn't pain.  Your skin sizzles and flakes, you're in agony, but you don't hurt.  You're sweating all over.  You feel shiveringly, gaspingly hot.\u000a\u000a[[pull back|FireBack]]\u000a[[step in|FireWash]]
 p978
 sg27
 VFireBurn
 p979
 sg29
 g30
-((I2016
-I11
-I8
-I2
-I4
-I8
-I1
-I313
+((I2023
+I3
+I28
 I0
+I2
+I22
+I1
+I87
+I1
 tp980
 (dp981
 tp982
@@ -3355,22 +3355,22 @@ Tiddler
 p1021
 (dp1022
 g25
-VYou're lying in your bed, groggy with dreaming.\u005c\u000a<<if $cold or $burned>>  The sheets are cold and clammy with sweat<<if $burned>>, but you're still hot<<endif>>.<<else>>  You're comfortable and warm.<<endif>>\u000a/% TODO: Add clause for $burned or $company? Replace $dark/$alone with $company? %/\u000a<<if $alone>>All is silent.<<else>>Somewhere outside, <<if visited("Start") < 3>>crickets<<else>>birds<<endif>> are singing.<<endif>>\u000a\u000a<<if visited("Start") >= 4>>The sun has risen.  Another day.\u000a\u000a[[Night's end.|Credits][$end = 1]]\u005c\u000a\u005c\u000a<<else>><<if visited("Start") is 1>>It's the middle of the night.<<else if visited("Start") is 2>>Dawn is hours away.<<else if visited("Start") is 3>>The sun hasn't risen yet.<<else>>If you can read this, either you or the author has done something very wrong. (<<print visited("Start")>>)<<endif>>  You should go back to sleep.\u000a\u000a[[Eyes shut.|Start]]<<endif>>
+VYou're lying in your bed, heavy with dreaming.\u005c\u000a<<if $cold or $burned>>  The sheets are cold and clammy with sweat<<if $burned>>, but you're still hot<<endif>>.<<else>>  You're comfortable and warm.<<endif>>\u000a/% TODO: Add clause for $burned or $company? Replace $dark/$alone with $company? %/\u000aSomewhere outside, <<if visited("Start") < 3>>crickets<<else>>birds<<endif>> are singing.\u000a\u000a<<if visited("Start") >= 4>>The sun has risen.  Another day.\u000a\u000a[[Night's end.|Credits][$end = 1]]\u005c\u000a\u005c\u000a<<else>><<if visited("Start") is 1>>It's the middle of the night.<<else if visited("Start") is 2>>Dawn is hours away.<<else if visited("Start") is 3>>The sun hasn't risen yet.<<else>>If you can read this, either you or the author has done something very wrong. (<<print visited("Start")>>)<<endif>>  You should go back to sleep.\u000a\u000a[[Eyes shut.|Start]]<<endif>>
 p1023
 sg27
 VAwake
 p1024
 sg29
 g30
-((I2020
-I1
-I19
-I15
-I34
-I41
-I6
-I19
+((I2023
+I3
+I28
 I0
+I8
+I42
+I1
+I87
+I1
 tp1025
 (dp1026
 tp1027
@@ -5873,22 +5873,22 @@ Tiddler
 p1780
 (dp1781
 g25
-V--and a crushing shock of pain blows through the heat and snuffs it out--\u000a\u000a[[wake up.|Awake]]
+V--and a crushing blast of pain blows through the heat and snuffs it out--\u000a\u000a[[wake up.|Awake]]
 p1782
 sg27
 VFireWake
 p1783
 sg29
 g30
-((I2017
-I1
-I17
+((I2023
+I3
+I28
 I0
-I17
-I1
-I1
-I17
 I0
+I1
+I1
+I87
+I1
 tp1784
 (dp1785
 tp1786
@@ -6362,7 +6362,7 @@ tp1926
 Rp1927
 sbsa(dp1928
 g18
-I00
+I01
 sg19
 (lp1929
 F1876.0
@@ -7102,7 +7102,7 @@ g18
 I00
 sg19
 (lp2150
-F150.0
+F165.0
 aF155.0
 asg21
 (itiddlywiki
@@ -7110,7 +7110,7 @@ Tiddler
 p2151
 (dp2152
 g25
-V<<if $likes is "boys">><<set $boy = "boy"; $girl = "girl"; $Boy = "Boy"; $Girl = "Girl"; $he = "he"; $she = "she"; $He = "He"; $She = "She"; $him = "him"; $her = "her"; $Him = "Him"; $Her = "Her"; $his = "his"; $shis = "her"; $His = "His"; $Shis = "Her"; $whis = "his"; $hers = "hers"; $Whis = "His"; $Hers = "Hers">>\u005c\u000a<<else>><<set $boy = "girl"; $girl = "boy"; $Boy = "Girl"; $Girl = "Boy"; $he = "she"; $she = "he"; $He = "She"; $She = "He"; $him = "her"; $her = "him"; $Him = "Her"; $Her = "Him"; $his = "her"; $shis = "his"; $His = "Her"; $Shis = "His"; $whis = "hers"; $hers = "his"; $Whis = "Hers"; $Hers = "His">><<endif>>\u005c\u000a<<set $dest to either("Forest", "House", "Showers")>> /% Baths, Garden %/\u005c\u000a<<display $dest>>
+V<<if $likes is "boys">><<set $boy = "boy"; $girl = "girl"; $Boy = "Boy"; $Girl = "Girl"; $he = "he"; $she = "she"; $He = "He"; $She = "She"; $him = "him"; $her = "her"; $Him = "Him"; $Her = "Her"; $his = "his"; $shis = "her"; $His = "His"; $Shis = "Her"; $whis = "his"; $hers = "hers"; $Whis = "His"; $Hers = "Hers">>\u005c\u000a<<else>><<set $boy = "girl"; $girl = "boy"; $Boy = "Girl"; $Girl = "Boy"; $he = "she"; $she = "he"; $He = "She"; $She = "He"; $him = "her"; $her = "him"; $Him = "Her"; $Her = "Him"; $his = "her"; $shis = "his"; $His = "Her"; $Shis = "His"; $whis = "hers"; $hers = "his"; $Whis = "Hers"; $Hers = "His">><<endif>>\u005c\u000a<<set $destination to either("Forest", "House", "Showers")>> /% Baths, Garden... Museum? What else? %/\u005c\u000a<<display $destination>>
 p2153
 sg27
 VSomewhere
@@ -7119,12 +7119,12 @@ sg29
 g30
 ((I2023
 I3
-I22
-I2
+I28
+I0
+I15
+I20
 I1
-I29
-I2
-I81
+I87
 I1
 tp2155
 (dp2156
