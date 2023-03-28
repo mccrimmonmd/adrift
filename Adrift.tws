@@ -245,8 +245,8 @@ g18
 I00
 sg19
 (lp89
-F564.0
-aF50.0
+F694.0
+aF179.0
 asg21
 (itiddlywiki
 Tiddler
@@ -445,30 +445,30 @@ g18
 I00
 sg19
 (lp149
-I147
-aI150
+F364.0
+aF159.0
 asg21
 (itiddlywiki
 Tiddler
 p150
 (dp151
 g25
-V<<if $likes is "boys">><<set $boy = "boy"; $girl = "girl"; $Boy = "Boy"; $Girl = "Girl"; $he = "he"; $she = "she"; $He = "He"; $She = "She"; $him = "him"; $her = "her"; $Him = "Him"; $Her = "Her"; $his = "his"; $shis = "her"; $His = "His"; $Shis = "Her"; $whis = "his"; $hers = "hers"; $Whis = "His"; $Hers = "Hers">>\u005c\u000a<<else>><<set $boy = "girl"; $girl = "boy"; $Boy = "Girl"; $Girl = "Boy"; $he = "she"; $she = "he"; $He = "She"; $She = "He"; $him = "her"; $her = "him"; $Him = "Her"; $Her = "Him"; $his = "her"; $shis = "his"; $His = "Her"; $Shis = "His"; $whis = "hers"; $hers = "his"; $Whis = "Hers"; $Hers = "His">><<endif>>\u005c\u000aTall trees dappled with warm sunlight surround you.  Somewhere nearby, a stream rushes past.  Leaves and ferns litter the forest floor.\u000a\u000aEverything you touch feels real, yet the whole seems fake.\u000a\u000a[[search for the stream|FollowSound]]\u000a[[explore the forest|Explore]]
+VTall trees dappled with warm sunlight surround you.  Somewhere nearby, a stream rushes past.  Leaves and ferns litter the forest floor.\u000a\u000aEverything you touch feels real, yet the whole seems fake.\u000a\u000a[[search for the stream|FollowSound]]\u000a[[explore the forest|Explore]]
 p152
 sg27
-VTheForest
+VForest
 p153
 sg29
 g30
-((I2016
-I2
+((I2023
 I3
-I21
-I35
-I10
+I22
 I2
-I34
-I0
+I9
+I43
+I2
+I81
+I1
 tp154
 (dp155
 tp156
@@ -653,22 +653,22 @@ Tiddler
 p210
 (dp211
 g25
-VThe room is covered from floor to ceiling with tiles as warm as the steamy air.  A dozen shower spouts are spaced around the edges of the room, and several more jut out from the ceiling near the middle.  Some of them are running, but no one else is in the room.\u000a\u000aYou don't see any drains: instead, the water collects at the edges of the room in a gutter, which flows to a channel running through the center of a broad ramp, down and out of sight.\u000a\u000aIn the center of the room is a deeply recessed pit, large enough for maybe four people, with stairs leading in one side.  You hear the sound of <<if $cold>>running<<else>>splashing<<endif>> water coming from the pit, but you can't quite see in.\u000a\u000aOn the other wall of the room, barely visible through the steam, is a narrow hall with a flight of stairs climbing out of sight. In the corner to the side of the hall is an unmarked door.  It looks like a maintenance door of some kind; you're probably not supposed to use it.\u000a\u000a<<if not $showering>>[[take a shower|TakeAShower]]\u000a<<else>><<set $showering to 0>><<endif>><<if $ignoring and not $cold>>[[go in the pit|Ignoring]]<<else>>[[go in the pit|ShowerPit]]<<endif>>\u000a[[follow the ramp|Entrance]]\u000a[[follow the stairs|ShowersToPool]]\u000a[[try the door|Baths]]
+VYou're in a room covered from floor to ceiling with tiles as warm as the steamy air.  A dozen shower spouts are spaced around the walls of the room, and several more jut out from the ceiling near the middle.  Some of them are running, but no one else is in the room.\u000a\u000aYou don't see any drains: instead, the water collects at the edges of the room in a gutter, which flows to a channel running through the center of a broad ramp, down and out of sight.\u000a\u000aIn the center of the room is a deeply recessed pit, large enough for maybe four people, with stairs leading in one side.  You hear the sound of <<if $cold>>running<<else>>splashing<<endif>> water coming from the pit, but you can't quite see in.\u000a\u000aOn the other wall of the room, barely visible through the steam, is a narrow hall with a flight of stairs climbing out of sight. In the corner to the side of the hall is an unmarked door.  It looks like a maintenance door of some kind; you're probably not supposed to use it.\u000a\u000a<<if not $showering>>[[take a shower|TakeAShower]]\u000a<<else>><<set $showering to 0>><<endif>><<if $ignoring and not $cold>>[[go in the pit|Ignoring]]<<else>>[[go in the pit|ShowerPit]]<<endif>>\u000a[[follow the ramp|Entrance]]\u000a[[follow the stairs|ShowersToPool]]\u000a[[try the door|Baths]]
 p212
 sg27
 VShowers
 p213
 sg29
 g30
-((I2017
-I1
-I17
+((I2023
+I3
+I22
 I2
-I8
-I18
+I3
+I9
+I2
+I81
 I1
-I17
-I0
 tp214
 (dp215
 tp216
@@ -1392,11 +1392,11 @@ tp431
 Rp432
 sbsa(dp433
 g18
-I01
+I00
 sg19
 (lp434
-F136.0
-aF888.0
+F144.0
+aF896.0
 asg21
 (itiddlywiki
 Tiddler
@@ -1803,21 +1803,21 @@ Tiddler
 p555
 (dp556
 g25
-V<<set $ignoring to 1>>The <<$boy>> turns to look at you with a smile, but frowns when <<$he>> sees you.\u000a\u000a"You don't belong here," <<$he>> says, pointedly looking over your naked body.\u000a\u000a[[apologize|PitDisdain]]\u000a[[leave|Showers]]\u000a[[talk with <<$him>>|PitDisdain]]
+V<<set $ignoring to 1>>The <<$boy>> turns to look at you with a smile, then suddenly frowns in disgust.\u000a\u000a"//You// don't belong here," <<$he>> says, pointedly looking over your naked body. "Go use the regular showers."\u000a\u000a[[apologize|PitDisdain]]\u000a[[leave|Showers]]\u000a[[talk with <<$him>>|PitDisdain]]
 p557
 sg27
 VPitTalk
 p558
 sg29
 g30
-((I2016
+((I2023
+I3
+I22
+I2
 I6
-I20
-I20
-I28
-I8
-I0
-I172
+I54
+I2
+I81
 I1
 tp559
 (dp560
@@ -1903,22 +1903,22 @@ Tiddler
 p585
 (dp586
 g25
-VYou open your mouth to speak, but the <<$boy>> has already gone back to washing <<$him>>self.  <<$He>>'s not even looking at you anymore.\u000a\u000a[[leave|ExitPit]]\u000a[[try again|Ignored]]\u000a[[grab <<$him>>|Grab]]
+VYou open your mouth to speak, but the <<$boy>> has already turned away and resumed washing <<$him>>self.  <<$He>>'s not even looking at you.\u000a\u000a[[leave|ExitPit]]\u000a[[try again|Ignored]]\u000a[[grab <<$him>>|Grab]]
 p587
 sg27
 VPitDisdain
 p588
 sg29
 g30
-((I2016
-I2
+((I2023
 I3
-I21
-I46
-I11
+I22
 I2
-I34
-I0
+I8
+I22
+I2
+I81
+I1
 tp589
 (dp590
 tp591
@@ -1953,7 +1953,7 @@ Tiddler
 p600
 (dp601
 g25
-V<<print either("Adrift", "Aimless", "Empty", "Falling", "Floating", "Lost", "Nothing", "Sinking", "Vanished", "Weightless")>>.\u000a\u000a[[boys are pretty|TheForest][$likes = "boys"]]\u000a[[girls are pretty|TheForest][$likes = "girls"]]
+V<<print either("Adrift", "Aimless", "Empty", "Falling", "Floating", "Lost", "Nothing", "Sinking", "Vanished", "Weightless")>>.\u000a\u000a[[boys are pretty|Somewhere][$likes = "boys"]]\u000a[[girls are pretty|Somewhere][$likes = "girls"]]
 p602
 sg27
 VDream
@@ -1962,13 +1962,13 @@ sg29
 g30
 ((I2023
 I3
-I11
+I22
+I1
+I33
 I2
-I13
-I54
-I5
-I70
-I0
+I2
+I81
+I1
 tp604
 (dp605
 tp606
@@ -2053,22 +2053,22 @@ Tiddler
 p630
 (dp631
 g25
-VYou try again to get <<$his>> attention, but no matter what you say <<$he>> doesn't react.  It's as though <<$he>> can't even hear you.\u000a\u000a[[leave|Showers]]\u000a[[grab <<$him>>|Grab]]
+VYou try again to get <<$his>> attention, but no matter what you say <<$he>> doesn't react.  It's like <<$he>> can't even hear you.\u000a\u000a[[leave|Showers]]\u000a[[grab <<$him>>|Grab]]
 p632
 sg27
 VIgnored
 p633
 sg29
 g30
-((I2016
-I2
+((I2023
 I3
-I21
-I47
-I34
+I22
 I2
-I34
-I0
+I8
+I42
+I2
+I81
+I1
 tp634
 (dp635
 tp636
@@ -2603,22 +2603,22 @@ Tiddler
 p795
 (dp796
 g25
-V<<if $from is "Ocean">>You reach the shore without much difficulty, and walk out onto dry land.  <<endif>>The sand is warm and powder-fine under your feet, and the sound of the surf is gentle and lulling.  The ocean sparkles in the sunlight.\u000a\u000aAway from shore, the fine sand gradually gives way to grass, trees, and ferns.  The leaves of the forest sway gently in the cool breeze.\u000a\u000a[Beach house?]\u000a\u000a[[go for a swim|Ocean]]\u000a[[enter the trees|BeachWoods]]\u000a[[lie down|BeachNap]]
+V<<if $from is "Ocean">>You reach the shore without much difficulty, and walk out onto dry land.  <<else if $from is "Lobby">>You walk through the door and across the sand to the shore.  <<endif>>The sand is warm and powder-fine under your feet, and the sound of the surf is gentle and lulling.  The ocean sparkles in the sunlight.\u000a\u000aAway from the water, the fine sand gives way to grass, trees, and ferns.  The leaves of the forest sway gently in the cool breeze.\u000a\u000a[Beach house?]\u000a\u000a[[go for a swim|Ocean]]\u000a[[enter the trees|BeachWoods]]\u000a[[lie down|BeachNap]]
 p797
 sg27
 VBeach
 p798
 sg29
 g30
-((I2020
+((I2023
+I3
+I22
+I2
+I18
+I19
+I2
+I81
 I1
-I19
-I15
-I37
-I49
-I6
-I19
-I0
 tp799
 (dp800
 tp801
@@ -3105,21 +3105,21 @@ Tiddler
 p946
 (dp947
 g25
-VYou make yourself comfortable next to the <<$boy>> and take the controller as <<$he>> explains the rules.  They're pretty complicated, but you think you understand the basics.\u000a\u000aThen the game starts, and you can barely keep up--colors and shapes you don't understand flash across the screen, along with seemingly random numbers and sound effects.  The <<$boy>> next to you tries to explain the modifiers, bonuses and power-ups as you play, but they are coming too quickly to mention them all, and it isn't helping your concentration.  After just a few minutes, the game is over--you've lost.<<set $played to 1>>\u000a\u000a[[try again|LoftPersist]]\u000a[[give up|LoftResign]]
+VYou make yourself comfortable next to the <<$boy>> and take the controller as <<$he>> explains the rules.  They seem a little complicated, but manageable.\u000a\u000aThen the game starts, and you can barely keep up--colors and shapes you don't understand flash across the screen, along with seemingly random numbers and sound effects.  The <<$boy>> next to you tries to explain the modifiers, bonuses and power-ups as you play, but they are coming too quickly to mention them all, and it isn't helping your concentration.  After just a few minutes, the game is over--you've lost.<<set $played to 1>>\u000a\u000a[[try again|LoftPersist]]\u000a[[give up|LoftResign]]
 p948
 sg27
 VLoftPlay
 p949
 sg29
 g30
-((I2016
+((I2023
+I3
+I22
+I3
 I7
-I27
-I15
-I18
-I0
+I24
 I2
-I209
+I81
 I1
 tp950
 (dp951
@@ -3555,8 +3555,8 @@ g18
 I00
 sg19
 (lp1084
-F357.0
-aF153.0
+F562.0
+aF24.0
 asg21
 (itiddlywiki
 Tiddler
@@ -4573,21 +4573,21 @@ Tiddler
 p1390
 (dp1391
 g25
-VThe sound of the surf, and the warmth of the sun and sand, lulls you to sleep.\u000a\u000aThe beach remains.\u000a\u000a[[look|Beach][$from="Nap"]]
+VThe sound of the surf, and the warmth of the sun and sand, lulls you to sleep.\u000a\u000a<<set $from to "Nap">><<Beach>>
 p1392
 sg27
 VBeachAwake
 p1393
 sg29
 g30
-((I2016
-I11
-I5
+((I2023
+I3
 I22
-I30
-I7
-I5
-I310
+I2
+I12
+I15
+I2
+I81
 I1
 tp1394
 (dp1395
@@ -4873,21 +4873,21 @@ Tiddler
 p1480
 (dp1481
 g25
-VYou wander around the lobby, pausing to admire the view of the ocean.  It looks like perfect weather for a swim, but there aren't any doors leading out.\u000a\u000aThere's a stairway set into the wall, next to the counter.  A sign above the stairway says simply, "ROOMS".\u000a\u000aOn top of the unattended counter is a small bell.\u000a\u000a[[take the stairs|LobbyStair]]\u000a[[ring the bell|LobbyWait]]\u000a<<if visited("LobbyWait")>>[[climb the counter|LobbyClimb]]\u000a<<endif>>[[go down the hall|InsideFollow][$from="Lobby"]]
+VYou wander around the lobby, pausing to admire the view of the ocean.  A sliding glass door leads out. It looks like perfect weather for a swim.\u000a\u000aThere's a stairway set into the wall, next to the counter.  A sign above the stairway says, "GARDEN".\u000a\u000aOn top of the unattended counter is a small bell.\u000a\u000a[[take the stairs|LobbyStair]]\u000a[[ring the bell|LobbyWait]]\u000a<<if visited("LobbyWait")>>[[climb the counter|LobbyClimb]]\u000a<<endif>>[[go outside|Beach][$from="Lobby"]]\u000a[[go down the hall|InsideFollow][$from="Lobby"]]
 p1482
 sg27
 VLobbyLook
 p1483
 sg29
 g30
-((I2017
-I5
-I28
-I0
+((I2023
+I3
+I22
+I2
 I25
-I45
-I6
-I148
+I15
+I2
+I81
 I1
 tp1484
 (dp1485
@@ -4923,22 +4923,22 @@ Tiddler
 p1495
 (dp1496
 g25
-VThe stairs are richly carpeted and clean-smelling, like cotton.  Before long you reach a large door of<<if $cold>> brutal, riveted steel.<<else>> dark wood and ornately inlaid gold and silver.<<endif>> The door has no handle, but in its center is a small hole that might fit a key.\u000a\u000a<<if $key>>[[try the gold key|Rooms]]\u000a<<else>><<if not visited("RoomsShut")>>[[test the door|RoomsShut]]\u000a<<endif>><<endif>>[[turn back|LobbyLook]]\u000a\u000a/% TODO: stair goes to garden, not rooms %/\u000a/%<<set $ornate = 0; $steel = 0; $darkd = 0; $lit = 0>>\u005c\u000a<<if $from is "below">> ... narrow landing, which turns left and rises another half-dozen steps before opening into a narrow, breezy hallway.\u000a\u000a[[look|Rooms]]\u005c\u000a<<else if $from is "above">>[description of descend]\u000a\u000a[[look|LobbyLook]]\u005c\u000a<<else>>[This text should never appear!]<<endif>>%/
+VThe stairs are richly carpeted and clean-smelling, like cotton.  Before long you emerge onto a rooftop garden densely arranged with flowers.\u000a\u000aOn one edge of the rooftop is a hedge wall with a small opening in it and a path beyond. A sign next to the opening says "out".\u000a\u000a[[go out|Garden]]\u000a[[turn back|LobbyLook]]\u000a\u000a/% TODO: stair goes to garden, not rooms %/\u000a/%<<set $ornate = 0; $steel = 0; $darkd = 0; $lit = 0>>\u005c\u000a<<if $from is "below">> ... narrow landing, which turns left and rises another half-dozen steps before opening into a narrow, breezy hallway.\u000a\u000a[[look|Room]]\u005c\u000a<<else if $from is "above">>[description of descend]\u000a\u000a[[look|LobbyLook]]\u005c\u000a<<else>>[This text should never appear!]<<endif>>%/
 p1497
 sg27
 VLobbyStair
 p1498
 sg29
 g30
-((I2020
+((I2023
+I3
+I22
+I3
+I12
+I21
+I2
+I81
 I1
-I19
-I15
-I47
-I32
-I6
-I19
-I0
 tp1499
 (dp1500
 tp1501
@@ -4973,7 +4973,7 @@ Tiddler
 p1510
 (dp1511
 g25
-V<<if not visited("RoomShut")>>[description of door surface/texture goes here]<<else>>[briefened description of door-openness]<<endif>>\u000a\u000a[door takes you to SOMETHING GOOD???!?!?! that (a) changes depending on variables (esp. $cold), and (b) changes something about the game (new menu option, mention in Awake, persists across playthroughs? Will depend on what I can come up with for the GOOD SOMETHING???!?!?!??!?]\u000a\u000a/%[cold steel door takes you to row of prison cells, warm wooden door takes you to row of plush hotel rooms]\u000a\u000a[ORRRR:\u000a\u000adefault: "watch"\u000acompany: "watch closely"\u000acold: "listen" (and cry???)]\u000a\u000a[ORRR ORRRR:\u000a\u000apedastal with fist-sized "pearl", when you pick it up: default = beautiful and warm, company = orgasm, cold = jelly-like and disgusting, falls apart at your touch to reveal a rotten center]%/
+V<<if not visited("RoomShut")>>[description of door surface/texture goes here]<<else>>[briefened description of door-openness]<<endif>>\u000a\u000a[door takes you to SOMETHING GOOD???!?!?!* that (a) changes depending on variables (esp. $cold), and (b) changes something about the game (new menu option, mention in Awake, persists across playthroughs? Will depend on what I can come up with for the GOOD SOMETHING???!?!?!??!?]\u000a\u000a*[lucidity! ability to 'teleport' (in the menu), set (some) variables (including chance) manually - some passages can only be accessed by 'hacking' variables this way. Can be turned on and off in the menu.]\u000a\u000a/%[cold steel door takes you to row of prison cells, warm wooden door takes you to row of plush hotel rooms]\u000a\u000a[ORRRR:\u000a\u000adefault: "watch"\u000acompany: "watch closely"\u000acold: "listen" (and cry???)]\u000a\u000a[ORRR ORRRR:\u000a\u000apedastal with fist-sized "pearl", when you pick it up: default = beautiful and warm, company = orgasm, cold = jelly-like and disgusting, falls apart at your touch to reveal a rotten center]%/
 p1512
 sg27
 VRoom
@@ -4982,13 +4982,13 @@ sg29
 g30
 ((I2023
 I3
-I11
+I22
 I1
-I11
-I5
-I5
-I70
-I0
+I23
+I27
+I2
+I81
+I1
 tp1514
 (dp1515
 tp1516
@@ -6673,7 +6673,7 @@ Tiddler
 p2020
 (dp2021
 g25
-V<<set $drawer to either(0,1,2,3,4,5)>>/% More? %/\u005c\u000a<<if $drawer is 0>>[dice, tattered pack of cards, single(?) chesspiece, checkerboard bottom]\u005c\u000a<<else if $drawer is 1>>[beads, plastic jems, charms, and the head of a tiny porcelain dragon]\u005c\u000a<<else if $drawer is 2>>[tiny gears, cranks, and pistons, some moving on their own]\u005c\u000a<<else if $drawer is 3>>You open one of the drawers and find a rather mismatched collection of <<$boy>>'s underwear: <<if $likes is "boys">>[desc]<<else>>[desc]<<endif>>\u000a\u000aThey don't smell like anything but clean laundry, mostly--just a hint of...\u005c\u000a<<else if $drawer is 4>>[full of water, lined with stone, no bottom]\u005c\u000a<<else if $drawer is 5>>You open one of the drawers and find it almost completely empty. The only thing in it is a single sheet of notebook paper, ragged along one edge, with a note that says only:\u000a\u000a  Don't forget\u000a\u000a  this is important\u005c\u000a<<endif>>\u000a\u000a[[close the drawer|previous()]]
+V<<set $drawer to either(0,1,2,3,4,5)>>/% More? %/\u005c\u000a<<if $drawer is 0>>[dice, tattered pack of cards, single(?) chesspiece, checkerboard bottom]\u005c\u000a<<else if $drawer is 1>>[beads, plastic jems, charms, and the head of a tiny porcelain dragon]\u005c\u000a<<else if $drawer is 2>>[tiny gears, cranks, and pistons, some moving on their own]\u005c\u000a<<else if $drawer is 3>>You open one of the drawers and find a rather mismatched collection of <<$boy>>'s underwear, in all different sizes: \u005c\u000a<<if $likes is "boys">>briefs, boxers, boxer briefs, and even a couple of thongs. Most are either plain, solid colors or some kind of plaid, but there are some houndstooth and argyle pairs as well. A few have more outlandish designs: one bright yellow pair is covered with bananas, a dark blue one with fish. There's a camo pair, and one with leopard print, and another patterned like a Mondrian painting.  A few other pairs are covered with superheroes or videogame characters.\u005c\u000a<<else>>[desc]<<endif>>\u000a\u000aThey don't smell like anything but clean laundry, mostly--just a hint of...\u005c\u000a<<else if $drawer is 4>>You pull out one of the larger drawers and find it edged with stone, with a pool of dark water at the bottom, like a square well.\u000a\u000aThe water sloshes around from the drawer's motion. It goes deep, much deeper than the drawer. You can't see the bottom.\u005c\u000a<<else if $drawer is 5>>You open one of the drawers and find it almost completely empty. The only thing in it is a single sheet of notebook paper, ragged along one edge, with a note that says only:\u000a\u000a  Don't forget\u000a\u000a  this is important\u005c\u000a<<endif>>\u000a\u000a[[close the drawer|previous()]]
 p2022
 sg27
 VAtticDrawer
@@ -6682,13 +6682,13 @@ sg29
 g30
 ((I2023
 I3
-I11
+I22
+I3
+I6
+I18
 I2
-I11
-I26
-I5
-I70
-I0
+I81
+I1
 tp2024
 (dp2025
 tp2026
@@ -6723,7 +6723,7 @@ Tiddler
 p2035
 (dp2036
 g25
-V<<set $shelf to either(0,1,2,3,4,5)>>/% More? %/\u005c\u000a<<if $shelf is 0>>On one of the shelves is a little bonsai tree in a glass pot, with tiny jewel-like leaves in every imaginable shade of green. The leaves are rustling slightly as though in a light breeze, though you don't feel a draft.\u005c\u000a<<else if $shelf is 1>>On one of the shelves is a dizzying menagerie of little porcelain figurines: geese, falcons, fish, farm animals of all kinds, gorillas, elephants, big cats and tabbies, seals and walruses, giraffes, beetles, dragonflies, butterflies, wolves, lizards and crocodiles, mythical beasts, and more.\u000a\u000aOne of the figurines--a dragon with wings spread wide--is missing its head.\u005c\u000a<<else if $shelf is 2>>One of the shelves is crammed to the gills with books of every imaginable variety: pulp paperbacks; ancient, loosely-bound folios; hardcovers of every size and thickness; heavy, gilded tomes bound in rich leather, and even a few magazines and brochures. You can't see what's on the spines.\u000a\u000aPulling one off the shelf at random, you open it up and can't see the words inside, either. You put it back on the shelf.\u005c\u000a<<else if $shelf is 3>>Next to one of the shelves is a large cabinet in an antique style.\u000a\u000aYou open the door of the cabinet and find another, smaller cabinet inside it, this one with a much more modern look. You open that cabinet and find another, still smaller cabinet with a rather generic look, as though it might be found in a school or office. You open that cabinet as well, and see...\u000a\u000aA <<$boy>>'s face, eyes wide and staring<<if $cold>> out at you from inside a solid block of ice.<<else>> for a moment before <<$he>> smiles and laughs--sending your stomach to your throat as though the floor's fallen out from under you--then shuts a door on <<$his>> side.\u000a\u000aYou push on it, but it doesn't open.<<endif>>\u005c\u000a<<else if $shelf is 4>>[tiny waterfall, waterwheel, piney woods (no back)]\u005c\u000a<<else if $shelf is 5>>[fancy oil lamp, lit]\u005c\u000a<<endif>>\u000a\u000a[[look around|previous()]]
+V<<set $shelf to either(0,1,2,3,4,5)>>/% More? %/\u005c\u000a/% TODO: interaction? e.g., put the dragon in the drawer with the head, then both vanish and a tiny living dragon appears in either the bonsai or woods shelves; but if you try to put the head on the dragon it just falls off and gets lost (then reappears in the drawer) %/\u005c\u000a<<if $shelf is 0>>On one of the shelves is a little bonsai tree in a glass pot, with tiny jewel-like leaves in every imaginable shade of green. The leaves are rustling slightly as though in a light breeze, though you don't feel a draft.\u005c\u000a<<else if $shelf is 1>>On one of the shelves is a dizzying menagerie of little porcelain figurines: geese, falcons, fish, farm animals of all kinds, gorillas, elephants, big cats and tabbies, seals and walruses, giraffes, beetles, dragonflies, butterflies, wolves, lizards and crocodiles, mythical beasts, and more.\u000a\u000aOne of the figurines--a dragon with wings spread wide--is missing its head.\u005c\u000a<<else if $shelf is 2>>One of the shelves is packed tight with books of every imaginable variety: pulp paperbacks; ancient, loosely-bound folios; hardcovers of every size and thickness; heavy, gilded tomes bound in rich leather; and even a few magazines and brochures. You can't see what's on the spines.\u000a\u000aPulling one off the shelf at random, you open it up and can't see the words inside, either. You put it back on the shelf.\u005c\u000a<<else if $shelf is 3>>Next to one of the shelves is a large cabinet in an antique style.\u000a\u000aYou open the door of the cabinet and find another, smaller cabinet inside it, this one with a much more modern look. You open that cabinet and find another, still smaller cabinet with a rather generic look, as though it might be found in a school or office. You open that cabinet as well, and see...\u000a\u000aA <<$boy>>'s face, eyes wide and staring<<if $cold>> out blankly from inside a solid block of ice.\u000a\u000a<<$His>> eyes, only <<$his>> eyes, move to look directly at you.<<else>> for a moment before <<$he>> smiles and laughs--sending your stomach to your throat as though the floor's fallen out from under you--then shuts a door on <<$his>> side.\u000a\u000aYou push on it, but it doesn't open.<<endif>>\u005c\u000a<<else if $shelf is 4>>[tiny waterfall, waterwheel, piney woods (no back)]\u005c\u000a<<else if $shelf is 5>>One of the shelves is empty except for an old, fancy-looking oil lamp in an eastern style that reminds you of //Aladdin//. The lamp is lit, flickering gently with a warm, yellow light.\u000a\u000aYou reach out your thumb and rub it a few times, but you don't see what happens. /% But something DOES happen--what? %/\u005c\u000a<<endif>>\u000a\u000a[[look around|previous()]]
 p2037
 sg27
 VAtticShelf
@@ -6732,13 +6732,13 @@ sg29
 g30
 ((I2023
 I3
-I11
+I22
 I2
+I39
+I53
+I2
+I81
 I1
-I40
-I5
-I70
-I0
 tp2039
 (dp2040
 tp2041
@@ -7297,10 +7297,110 @@ tp2205
 (dp2206
 tp2207
 Rp2208
+sbsa(dp2209
+g18
+I00
+sg19
+(lp2210
+F150.0
+aF155.0
+asg21
+(itiddlywiki
+Tiddler
+p2211
+(dp2212
+g25
+V<<if $likes is "boys">><<set $boy = "boy"; $girl = "girl"; $Boy = "Boy"; $Girl = "Girl"; $he = "he"; $she = "she"; $He = "He"; $She = "She"; $him = "him"; $her = "her"; $Him = "Him"; $Her = "Her"; $his = "his"; $shis = "her"; $His = "His"; $Shis = "Her"; $whis = "his"; $hers = "hers"; $Whis = "His"; $Hers = "Hers">>\u005c\u000a<<else>><<set $boy = "girl"; $girl = "boy"; $Boy = "Girl"; $Girl = "Boy"; $he = "she"; $she = "he"; $He = "She"; $She = "He"; $him = "her"; $her = "him"; $Him = "Her"; $Her = "Him"; $his = "her"; $shis = "his"; $His = "Her"; $Shis = "His"; $whis = "hers"; $hers = "his"; $Whis = "Hers"; $Hers = "His">><<endif>>\u005c\u000a<<set $dest to either("Forest", "House", "Showers")>> /% Baths, Garden %/\u005c\u000a<<display $dest>>
+p2213
+sg27
+VSomewhere
+p2214
+sg29
+g30
+((I2023
+I3
+I22
+I2
+I1
+I29
+I2
+I81
+I1
+tp2215
+(dp2216
+tp2217
+Rp2218
+sg35
+(lp2219
+sg38
+g30
+((I2023
+I3
+I22
+I1
+I25
+I17
+I2
+I81
+I1
+tp2220
+(dp2221
+tp2222
+Rp2223
+sbsa(dp2224
+g18
+I01
+sg19
+(lp2225
+F2384.0
+aF776.0
+asg21
+(itiddlywiki
+Tiddler
+p2226
+(dp2227
+g25
+V[GO IN to get to fountain; tunnels/baths]
+p2228
+sg27
+VGarden
+p2229
+sg29
+g30
+((I2023
+I3
+I22
+I3
+I14
+I20
+I2
+I81
+I1
+tp2230
+(dp2231
+tp2232
+Rp2233
+sg35
+(lp2234
+sg38
+g30
+((I2023
+I3
+I22
+I3
+I12
+I12
+I2
+I81
+I1
+tp2235
+(dp2236
+tp2237
+Rp2238
 sbsasS'scale'
-p2209
+p2239
 F1.0
 sS'snapping'
-p2210
+p2240
 I00
 ss.
