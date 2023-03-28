@@ -4023,7 +4023,7 @@ Tiddler
 p1225
 (dp1226
 g25
-V[Opulent, labyrinthine museum in anachronistic styles. Clearly closed, thuderstorm outside.  Constant feeling of being chased/watched, feeling like you're trespassing.  Touching anything / going anywhere you're "not supposed to" leads (by degrees) to getting caught (?), which wakes you up. (Exception: key?) Navigating correctly brings you to ~~Rooms (which ones depends on $cold OR just to door).~~ ...Tunnels?]
+V[Opulent, labyrinthine museum in anachronistic styles. Extremely vertical; reappearing elevator is the central fixture? Clearly closed, thunderstorm outside.  Constant feeling of being chased/watched, feeling like you're trespassing.  Touching anything / going anywhere you're "not supposed to" leads (by degrees) to getting caught (?), which wakes you up. (Exception: key?) Navigating correctly brings you to ~~Rooms (which ones depends on $cold OR just to door).~~ ...Tunnels?]
 p1227
 sg27
 VMuseum
@@ -4032,12 +4032,12 @@ sg29
 g30
 ((I2023
 I3
-I27
-I23
-I1
-I55
+I28
 I0
-I86
+I25
+I19
+I1
+I87
 I1
 tp1229
 (dp1230
@@ -5573,7 +5573,7 @@ Tiddler
 p1690
 (dp1691
 g25
-V[tiny bay window with plush seats and a little table, with a mug of something good to drink (still steaming). Cramped everything, but cozy. Outside the window: forest?\u000a\u000aSpiral stairs down, steep stairs up(, hallway to creaky old door?)]\u000a\u000a/%You're in a dim, cramped hallway lined with dozens of shelves and drawers of every size and shape.  The shelves are stuffed with trinkets, knick knacks, and all kinds of books.\u000a\u000aThe hallway splits in two at one end, with a short riser of stairs going up to one hall and down to the other.  At the opposite end of the hall is a descending spiral stair.%/\u000a\u000a[[open a drawer|AtticDrawer]]\u000a[[examine a shelf|AtticShelf]]\u000a/%sit, drink, look out the window, etc.%/\u000a[[go up the stairs|AtticToMuseum]]\u000a[[take the hallway|AtticToMuseum]] /% to...tunnels? room?%/\u000a[[go down the stairs|House]]
+V[tiny bay window with plush seats and a little table, with a mug of something good to drink (still steaming). Cramped everything, but cozy. Outside the window: rain, twilight.\u000a\u000aSpiral stairs down, steep stairs up(, hallway to creaky old door?)]\u000a\u000a/%You're in a dim, cramped hallway lined with dozens of shelves and drawers of every size and shape.  The shelves are stuffed with trinkets, knick knacks, and all kinds of books.\u000a\u000aThe hallway splits in two at one end, with a short riser of stairs going up to one hall and down to the other.  At the opposite end of the hall is a descending spiral stair.%/\u000a\u000a[[open a drawer|AtticDrawer]]\u000a[[examine a shelf|AtticShelf]]\u000a/%sit, drink, look out the window, etc.%/\u000a[[go up the stairs|AtticToMuseum]]\u000a[[take the hallway|AtticToMuseum]] /% to...tunnels? room?%/\u000a[[go down the stairs|HouseToAttic]]
 p1692
 sg27
 VAttic
@@ -5582,13 +5582,13 @@ sg29
 g30
 ((I2023
 I3
-I11
-I1
-I14
-I10
-I5
-I70
+I28
 I0
+I22
+I39
+I1
+I87
+I1
 tp1694
 (dp1695
 tp1696
@@ -6362,7 +6362,7 @@ tp1926
 Rp1927
 sbsa(dp1928
 g18
-I01
+I00
 sg19
 (lp1929
 F1876.0
@@ -6462,7 +6462,7 @@ tp1956
 Rp1957
 sbsa(dp1958
 g18
-I00
+I01
 sg19
 (lp1959
 F225.0
@@ -6473,7 +6473,7 @@ Tiddler
 p1960
 (dp1961
 g25
-V<<set $drawer to either(0,1,2,3,4,5)>>/% More? %/\u005c\u000a<<if $drawer is 0>>[dice, tattered pack of cards, single(?) chesspiece, checkerboard bottom]\u005c\u000a<<else if $drawer is 1>>[beads, plastic jems, charms, and the head of a tiny porcelain dragon]\u005c\u000a<<else if $drawer is 2>>[tiny gears, cranks, and pistons, some moving on their own]\u005c\u000a<<else if $drawer is 3>>You open one of the drawers and find a rather mismatched collection of <<$boy>>'s underwear, in all different sizes: \u005c\u000a<<if $likes is "boys">>briefs, boxers, boxer briefs, and even a couple of thongs. Most are either plain, solid colors or some kind of plaid, but there are some houndstooth and argyle pairs as well. A few have more outlandish designs: one bright yellow pair is covered with bananas, a dark blue one with fish. There's a camo pair, and one with leopard print, and another patterned like a Mondrian painting.  A few other pairs are covered with superheroes or videogame characters.\u005c\u000a<<else>>[desc]<<endif>>\u000a\u000aThey don't smell like anything but clean laundry, mostly--just a hint of...\u005c\u000a<<else if $drawer is 4>>You pull out one of the larger drawers and find it edged with stone, with a pool of dark water at the bottom, like a square well.\u000a\u000aThe water sloshes around from the drawer's motion. It goes deep, much deeper than the drawer. You can't see the bottom.\u005c\u000a<<else if $drawer is 5>>You open one of the drawers and find it almost completely empty. The only thing in it is a single sheet of notebook paper, ragged along one edge, with a note that says only:\u000a\u000a  Don't forget\u000a\u000a  this is important\u005c\u000a<<endif>>\u000a\u000a[[close the drawer|previous()]]
+V<<set $drawer to either(0,1,2,3,4,5)>>/% More? %/\u005c\u000a<<if $drawer is 0>>[dice, tattered pack of cards, single(?) chesspiece, checkerboard bottom]\u005c\u000a<<else if $drawer is 1>>[beads, plastic jems, charms, and the head of a tiny porcelain dragon]\u005c\u000a<<else if $drawer is 2>>[tiny gears, cranks, and pistons, some moving on their own]\u005c\u000a<<else if $drawer is 3>>You open one of the drawers and find a rather mismatched collection of <<$boy>>'s underwear, in all different sizes: \u005c\u000a<<if $likes is "boys">>briefs, boxers, boxer briefs, and even a couple of thongs. Most are either plain, solid colors or some kind of plaid, but there are a few houndstooth and argyle pairs as well. Some have more outlandish designs: one bright yellow pair is covered with bananas, a dark blue one with fish. There's a camo pair, and one with leopard print, and another patterned like a Mondrian painting.  A few other pairs are covered with superheroes or videogame characters.\u005c\u000a<<else>>panties, bras, boyshorts, and more, in every imaginable color. Most are plain and practical, but there are plenty of thongs, sheer lingere, and lacy bits mixed in as well.<<endif>>\u000a\u000aThey don't smell like anything but clean laundry, mostly--just a hint of...\u005c\u000a<<else if $drawer is 4>>You pull out one of the larger drawers and find it edged with stone, with a pool of dark water at the bottom, like a square well.\u000a\u000aThe water sloshes around from the drawer's motion. It goes deep, much deeper than the drawer. You can't see the bottom.\u005c\u000a<<else if $drawer is 5>>You open one of the drawers and find it almost completely empty. The only thing in it is a single sheet of notebook paper, ragged along one edge, with a note that says only:\u000a\u000a  Don't forget\u000a\u000a  this is important\u005c\u000a<<endif>>\u000a\u000a[[close the drawer|previous()]]
 p1962
 sg27
 VAtticDrawer
@@ -6482,12 +6482,12 @@ sg29
 g30
 ((I2023
 I3
-I22
-I3
-I6
-I18
-I2
-I81
+I28
+I0
+I51
+I25
+I1
+I87
 I1
 tp1964
 (dp1965
