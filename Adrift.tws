@@ -6462,7 +6462,7 @@ tp1956
 Rp1957
 sbsa(dp1958
 g18
-I01
+I00
 sg19
 (lp1959
 F225.0
@@ -6473,7 +6473,7 @@ Tiddler
 p1960
 (dp1961
 g25
-V<<set $drawer to either(0,1,2,3,4,5)>>/% More? %/\u005c\u000a<<if $drawer is 0>>[dice, tattered pack of cards, single(?) chesspiece, checkerboard bottom]\u005c\u000a<<else if $drawer is 1>>[beads, plastic jems, charms, and the head of a tiny porcelain dragon]\u005c\u000a<<else if $drawer is 2>>[tiny gears, cranks, and pistons, some moving on their own]\u005c\u000a<<else if $drawer is 3>>You open one of the drawers and find a rather mismatched collection of <<$boy>>'s underwear, in all different sizes: \u005c\u000a<<if $likes is "boys">>briefs, boxers, boxer briefs, and even a couple of thongs. Most are either plain, solid colors or some kind of plaid, but there are a few houndstooth and argyle pairs as well. Some have more outlandish designs: one bright yellow pair is covered with bananas, a dark blue one with fish. There's a camo pair, and one with leopard print, and another patterned like a Mondrian painting.  A few other pairs are covered with superheroes or videogame characters.\u005c\u000a<<else>>panties, bras, boyshorts, and more, in every imaginable color. Most are plain and practical, but there are plenty of thongs, sheer lingere, and lacy bits mixed in as well.<<endif>>\u000a\u000aThey don't smell like anything but clean laundry, mostly--just a hint of...\u005c\u000a<<else if $drawer is 4>>You pull out one of the larger drawers and find it edged with stone, with a pool of dark water at the bottom, like a square well.\u000a\u000aThe water sloshes around from the drawer's motion. It goes deep, much deeper than the drawer. You can't see the bottom.\u005c\u000a<<else if $drawer is 5>>You open one of the drawers and find it almost completely empty. The only thing in it is a single sheet of notebook paper, ragged along one edge, with a note that says only:\u000a\u000a  Don't forget\u000a\u000a  this is important\u005c\u000a<<endif>>\u000a\u000a[[close the drawer|previous()]]
+V<<set $drawer to either(0,1,2,3,4,5)>>/% More? %/\u005c\u000a<<if $drawer is 0>>[dice, tattered pack of cards, single(?) chesspiece, checkerboard bottom]\u005c\u000a<<else if $drawer is 1>>You open one of the drawers and find it filled with colorful baubles: beads of glass and clay and plastic, fake gems and jewels, bits of polished quartz, pyrite, geodes, and simple charms and pendants. You dig your fingers in and lift out a handful, then let the faux riches run through your fingers back into the heap.\u000a\u000aAn unusual white beads catches your eye, and you see it's not a bead at all: it's the snarling head of a tiny porcelain dragon.\u005c\u000a<<else if $drawer is 2>>[tiny gears, cranks, and pistons, some moving on their own]\u005c\u000a<<else if $drawer is 3>>You open one of the drawers and find a rather mismatched collection of <<$boy>>'s underwear, in all different sizes: \u005c\u000a<<if $likes is "boys">>briefs, boxers, boxer briefs, and even a couple of thongs. Most are either plain, solid colors or some kind of plaid, but there are a few houndstooth and argyle pairs as well. Some have more outlandish designs: one bright yellow pair is covered with bananas, a dark blue one with fish. There's a camo pair, and one with leopard print, and another patterned like a Mondrian painting.  A few other pairs are covered with superheroes or videogame characters.\u005c\u000a<<else>>panties, bras, boyshorts, and more, in every imaginable color. Most are plain and practical, but there are a fair number of thongs, sheer lingere, and lacy bits mixed in as well.<<endif>>\u000a\u000aThey don't smell like anything but clean laundry, mostly--just a hint of...\u005c\u000a<<else if $drawer is 4>>You pull out one of the larger drawers and find it ringed with stone, with a pool of dark water at the bottom, like a square well.\u000a\u000aThe water sloshes around from the drawer's motion. It goes deep, much deeper than the drawer. You can't see the bottom.\u005c\u000a<<else if $drawer is 5>>You open one of the drawers and find it almost completely empty. The only thing in it is a single sheet of notebook paper, ragged along one edge, with a note that says only:\u000a\u000a  Don't forget\u000a\u000a  this is important\u005c\u000a<<endif>>\u000a\u000a[[close the drawer|previous()]]
 p1962
 sg27
 VAtticDrawer
@@ -6483,9 +6483,9 @@ g30
 ((I2023
 I3
 I28
-I0
-I51
-I25
+I2
+I33
+I32
 I1
 I87
 I1
@@ -6512,7 +6512,7 @@ tp1971
 Rp1972
 sbsa(dp1973
 g18
-I00
+I01
 sg19
 (lp1974
 F225.0
@@ -6523,7 +6523,7 @@ Tiddler
 p1975
 (dp1976
 g25
-V<<set $shelf to either(0,1,2,3,4,5)>>/% More? %/\u005c\u000a/% TODO: interaction? e.g., put the dragon in the drawer with the head, then both vanish and a tiny living dragon appears in either the bonsai or woods shelves; but if you try to put the head on the dragon it just falls off and gets lost (then reappears in the drawer) %/\u005c\u000a<<if $shelf is 0>>On one of the shelves is a little bonsai tree in a glass pot, with tiny jewel-like leaves in every imaginable shade of green. The leaves are rustling slightly as though in a light breeze, though you don't feel a draft.\u005c\u000a<<else if $shelf is 1>>On one of the shelves is a dizzying menagerie of little porcelain figurines: geese, falcons, fish, farm animals of all kinds, gorillas, elephants, big cats and tabbies, seals and walruses, giraffes, beetles, dragonflies, butterflies, wolves, lizards and crocodiles, mythical beasts, and more.\u000a\u000aOne of the figurines--a dragon with wings spread wide--is missing its head.\u005c\u000a<<else if $shelf is 2>>One of the shelves is packed tight with books of every imaginable variety: pulp paperbacks; ancient, loosely-bound folios; hardcovers of every size and thickness; heavy, gilded tomes bound in rich leather; and even a few magazines and brochures. You can't see what's on the spines.\u000a\u000aPulling one off the shelf at random, you open it up and can't see the words inside, either. You put it back on the shelf.\u005c\u000a<<else if $shelf is 3>>Next to one of the shelves is a large cabinet in an antique style.\u000a\u000aYou open the door of the cabinet and find another, smaller cabinet inside it, this one with a much more modern look. You open that cabinet and find another, still smaller cabinet with a rather generic look, as though it might be found in a school or office. You open that cabinet as well, and see...\u000a\u000aA <<$boy>>'s face, eyes wide and staring<<if $cold>> out blankly from inside a solid block of ice.\u000a\u000a<<$His>> eyes, only <<$his>> eyes, move to look directly at you.<<else>> for a moment before <<$he>> smiles and laughs--sending your stomach to your throat as though the floor's fallen out from under you--then shuts a door on <<$his>> side.\u000a\u000aYou push on it, but it doesn't open.<<endif>>\u005c\u000a<<else if $shelf is 4>>[tiny waterfall, waterwheel, piney woods (no back)]\u005c\u000a<<else if $shelf is 5>>One of the shelves is empty except for an old, fancy-looking oil lamp in an eastern style that reminds you of //Aladdin//. The lamp is lit, flickering gently with a warm, yellow light.\u000a\u000aYou reach out your thumb and rub it a few times, but you don't see what happens. /% But something DOES happen--what? %/\u005c\u000a<<endif>>\u000a\u000a[[look around|previous()]]
+V<<set $shelf to either(0,1,2,3,4,5)>>/% More? %/\u005c\u000a/% TODO: interaction? e.g., put the dragon in the drawer with the head, then both vanish and a tiny living dragon appears in either the bonsai or woods shelves; but if you try to put the head on the dragon it just falls off and gets lost (then reappears in the drawer) %/\u005c\u000a<<if $shelf is 0>>On one of the shelves is a little bonsai tree in a glass pot, with tiny jewel-like leaves in every imaginable shade of green. The leaves are rustling slightly as though in a light breeze, though you don't feel a draft.\u005c\u000a<<else if $shelf is 1>>On one of the shelves is a dizzying menagerie of little porcelain figurines: geese, falcons, fish, farm animals of all kinds, gorillas, elephants, big cats and tabbies, seals and walruses, giraffes, beetles, dragonflies, butterflies, wolves, lizards and crocodiles, mythical beasts, and more.\u000a\u000aOne of the figurines--a dragon with flared wings and claws raised to strike--is missing its head.\u005c\u000a<<else if $shelf is 2>>One of the shelves is especially packed with books of every imaginable variety: pulp paperbacks; ancient, loosely-bound folios; hardcovers of every size and thickness; heavy, gilded tomes bound in rich leather; and even a few magazines and brochures. You can't see what's on the spines.\u000a\u000aPulling one off the shelf at random, you open it up and can't see the words inside, either. You put it back on the shelf.\u005c\u000a<<else if $shelf is 3>>Next to one of the shelves is a large cabinet in an antique style.\u000a\u000aYou open the door of the cabinet and find another, smaller cabinet inside it, this one with a much more modern look. You open that cabinet and find another, still smaller cabinet with a rather generic look, as though it might be found in a school or office. You open that cabinet as well, and see...\u000a\u000aA <<$boy>>'s face, eyes wide and staring<<if $cold>> out blankly from inside a solid block of ice.\u000a\u000a<<$His>> eyes, only <<$his>> eyes, move to look directly at you.<<else>> for a moment before <<$he>> smiles and laughs--sending your stomach to your throat as though the floor's fallen out from under you--then shuts a door on <<$his>> side.\u000a\u000aYou push on it, but it doesn't open.<<endif>>\u005c\u000a<<else if $shelf is 4>>One of the shelves contains a detailed diorama of a mill and waterwheel in some piney, mountainous woods. On a closer look, there is even more detail than you first thought: an actual trickle of water is really turning the waterwheel, and you can just make out individual needles on the miniscule trees. The branches sway as you breathe.\u000a\u000aThough you can't see inside, the windows of the mill are glowing with the unmistakable flicker of candlelight.\u000a\u000aThere is no back: the trees simply continue, rising steeply out of sight toward the mountain's peak.\u005c\u000a<<else if $shelf is 5>>One of the shelves holds an old, fancy-looking oil lamp in an eastern style, like the one from //Aladdin//. The lamp is lit, flickering gently with a warm, yellow light.\u000a\u000aYou reach out with your thumb and rub it a few times, but you don't see what happens. /% But something DOES happen--what? %/\u005c\u000a<<endif>>\u000a\u000a[[look around|previous()]]
 p1977
 sg27
 VAtticShelf
@@ -6532,12 +6532,12 @@ sg29
 g30
 ((I2023
 I3
-I22
+I28
 I2
-I39
-I53
-I2
-I81
+I20
+I13
+I1
+I87
 I1
 tp1979
 (dp1980
