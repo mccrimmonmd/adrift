@@ -1203,7 +1203,7 @@ Tiddler
 p375
 (dp376
 g25
-V<<set $stripped to 0>>\u005c\u000aYou're in a small, cozy home.\u000a\u000aThe windows are black with night outside, but a twinkling of white suggests snow.  The room is lit and warmed by a firepit in the center, recessed into the floor and ringed with soft cushions.\u000a\u000aTo one side of the firepit is a ladder that runs up from a hole in the floor and through an identical hole in the ceiling.  Across from the ladder, against one wall, a wooden spiral stair climbs up and disappears through a different spot.  Farther from the fire is nothing of consequence.\u000a\u000aOn the opposite side of the firepit, a gauzy curtain runs nearly the whole width of the room.  Where the curtain stops you see a dresser, a bottom drawer pulled open.  Behind the curtain you can just make out the silhouette of a large four-post bed, illuminated by a light coming from a half-open door. You hear the faint sound of running water.\u000a\u000a[[sit by the fire|Fireplace]]\u000a[[look behind the curtain|Bedroom]]\u000a[[climb down the ladder|Basement]]\u000a<<if $played is 4>>[[climb up the ladder|LoftRegret]]<<else if $played > 0>>[[climb up the ladder|LoftWatch][$from = "house"]]<<else>>[[climb up the ladder|Loft]]<<endif>>\u000a[[take the stairs|HouseToAttic]]
+V<<set $stripped to 0>>\u005c\u000aYou're in a small, cozy home.\u000a\u000aThe windows are black with night outside, but drifting pinpricks of light suggest snow.  The room is lit and warmed by a firepit in the center, recessed into the floor and ringed with soft cushions.\u000a\u000aTo one side of the firepit is a ladder that runs up from a hole in the floor and through an identical hole in the ceiling.  Across from the ladder, against one wall, a wooden spiral stair climbs up and disappears through a different spot.  Farther from the fire is nothing of consequence.\u000a\u000aOn the opposite side of the firepit, a gauzy curtain runs nearly the whole width of the room.  Where the curtain stops you see a dresser, a bottom drawer pulled open.  Behind the curtain you can just make out the silhouette of a large four-post bed, illuminated by a light coming from a half-open door. You hear the faint sound of running water.\u000a\u000a[[sit by the fire|Fireplace]]\u000a[[look behind the curtain|Bedroom]]\u000a[[climb down the ladder|Basement]]\u000a<<if $played is 4>>[[climb up the ladder|LoftRegret]]<<else if $played > 0>>[[climb up the ladder|LoftWatch][$from = "house"]]<<else>>[[climb up the ladder|Loft]]<<endif>>\u000a[[take the stairs|HouseToAttic]]
 p377
 sg27
 VHouse
@@ -1212,13 +1212,13 @@ sg29
 g30
 ((I2023
 I3
-I11
-I2
-I26
-I31
-I5
-I70
+I27
+I23
+I32
+I14
 I0
+I86
+I1
 tp379
 (dp380
 tp381
@@ -2603,21 +2603,21 @@ Tiddler
 p795
 (dp796
 g25
-VThe ladder goes through a short tunnel and emerges at the pointy end of an egg-shaped, low-ceilinged loft.  At the wide end of the loft is a large television with two <<$boy>>s, a little younger than you, propped up on pillows in front of it.  The room is very warm; the <<$boy>>s' shirts lie discarded in a corner.  They look like they're playing some kind of videogame.\u000a\u000aAfter a moment, one of them glances your direction. <<$He>> smiles and holds out the controller.\u000a\u000a"Oh, hey" <<$he>> says. "Wanna play?"\u000a\u000a[[join them|LoftPlay]]\u000a[[go back|LoftExcuse]]
+VThe ladder goes through a short tunnel and emerges at the pointy end of an egg-shaped, low-ceilinged loft.  At the wide end of the loft is a large television with two younger <<$boy>>s propped up on pillows in front of it.  The room is very warm; the two <<$boy>>s are naked from the waist up, their shirts lying discarded in a corner.  They look like they're playing some kind of videogame.\u000a\u000aAfter a moment, one of them glances your direction. <<$He>> smiles and holds out the controller.\u000a\u000a"Oh, hey" <<$he>> says. "Wanna play?"\u000a\u000a[[join them|LoftPlay]]\u000a[[go back|LoftExcuse]]
 p797
 sg27
 VLoft
 p798
 sg29
 g30
-((I2017
-I5
-I28
+((I2023
+I3
+I27
+I23
+I55
+I12
 I0
-I37
-I31
-I6
-I148
+I86
 I1
 tp799
 (dp800
@@ -4073,21 +4073,21 @@ Tiddler
 p1240
 (dp1241
 g25
-V<<if $played is 1>>The <<$boy>>s offer to let you play another round, and you nervously agree. You go over everything you remember from the last round, determined to do better this time.\u000a\u000aWhen the game starts, though, the whole screen has changed. Seeing your expression, the <<$boy>> next to you quickly explains that most of the rules are the same, but the visual elements and certain modifiers get changed each round to "keep things interesting."\u000a\u000aYou nod and do your best to keep up, but it's hopeless.  You can't remember what any of the colors or numbers mean, and with everything shuffled around you struggle with the basic controls.  The round is over even more quickly than the last.<<set $played to 2>>\u000a\u000a[[keep trying|LoftPersist]]\u000a[[give up|LoftResign]]\u005c\u000a<<else if $played is 2>>You ask the two <<$boy>>s if you can give it just one more go.  They agree easily enough, but the <<$boy>>  you've been playing against is starting to look bored.  When the game begins, the screen is once again completely unrecognizable--somehow even the numbers look like they're in a foreign language.  This round lasts a little longer than your first, but it doesn't feel like you're getting any better.  You begin to suspect your opponent is going easy on you.\u000a\u000aWhen the round ends, you catch <<$him>> stifling a yawn.  "Want another go?" <<$he>> says.<<set $played to 3>>\u000a\u000a[[give up|LoftResign]]<<else>>[This shouldn't happen!]<<endif>>
+V<<if $played is 1>>The <<$boy>>s offer to let you play another round, and you nervously agree. You go over everything you remember from the last round, determined to do better this time.\u000a\u000aWhen the game starts, though, the whole screen has changed. Seeing your expression, the <<$boy>> next to you quickly explains that most of the rules are the same, but the visual elements and certain modifiers get changed each round to "keep things interesting."\u000a\u000aYou nod and do your best to keep up, but it's hopeless.  You can't remember what any of the colors or numbers mean, and with everything shuffled around you struggle with the basic controls.  The round is over even more quickly than the last.<<set $played to 2>>\u000a\u000a[[keep trying|LoftPersist]]\u000a[[give up|LoftResign]]\u005c\u000a<<else if $played is 2>>You ask the two <<$boy>>s if you can give it just one more go.  They agree easily enough, but the <<$boy>>  you've been playing against is starting to look bored.  When the game begins, the screen is once again completely unrecognizable.  This round lasts a little longer than your first, but it doesn't feel like you're getting any better.  You begin to suspect your opponent is going easy on you.\u000a\u000aWhen the round ends, you catch <<$him>> stifling a yawn.  "Want another go?" <<$he>> says.<<set $played to 3>>\u000a\u000a[[give up|LoftResign]]<<else>>[This shouldn't happen!]<<endif>>
 p1242
 sg27
 VLoftPersist
 p1243
 sg29
 g30
-((I2017
-I5
+((I2023
+I3
+I27
+I23
+I49
 I28
 I0
-I41
-I16
-I6
-I148
+I86
 I1
 tp1244
 (dp1245
@@ -4173,21 +4173,21 @@ Tiddler
 p1270
 (dp1271
 g25
-V<<if $from is "house">>You climb back up the ladder quietly, not wanting to disturb the <<$boy>>s' game.  They don't seem to notice you.\u000a\u000a<<endif>>You settle back on the cushions and watch <<if $from is "loft">>the two <<$boy>>s<<else>>them<<endif>> play a few rounds.  The shapes and colors go by almost faster than you can process, yet each round seems to last forever.  It's clear you were not putting up much of a fight.\u000a\u000aYou still have no idea what's going on.\u000a\u000a<<if $played is 3>>[[keep watching|LoftStare]]\u000a<<endif>>[[leave|House]]
+V<<if $from is "house">>You climb back up the ladder quietly, not wanting to disturb the <<$boy>>s' game.  They don't seem to notice you.\u000a\u000a<<endif>>You settle back on the cushions and watch <<if $from is "loft">>the two <<$boy>>s<<else>>them<<endif>> play a few rounds.  The shapes and colors go by almost faster than you can process, yet each round seems to last forever.  It's clear you were not putting up much of a fight.\u000a\u000aYou still have no idea what's going on.\u000a\u000a<<if $played is 3>>[[keep watching|LoftStare]]\u000a<<else if $played is 2>>[[try again|LoftPersist]]\u000a<<endif>>[[leave|House]]
 p1272
 sg27
 VLoftWatch
 p1273
 sg29
 g30
-((I2017
-I5
-I28
+((I2023
+I3
+I27
+I23
+I46
+I21
 I0
-I43
-I49
-I6
-I148
+I86
 I1
 tp1274
 (dp1275
@@ -4623,21 +4623,21 @@ Tiddler
 p1405
 (dp1406
 g25
-VYou watch a while longer.  As your hopes of actually understanding the game slowly fade, you start paying more attention to the <<$boy>>s.  The two of them have a close, easy rapport, laughing at in-jokes, teasing and jostling each other when they score.  It almost seems like they're watching each other more than the game.\u000a\u000aThe naked skin of their backs has a soft blue halo from the light of the television screen.<<set $played to 4>>\u000a\u000a[[keep watching|LoftCreep]]\u000a[[leave|House]]
+VYou watch a while longer.  As your hopes of actually understanding the game fade, your attention turns to the <<$boy>>s.  The two of them have a close, easy rapport, laughing at in-jokes, teasing and jostling each other when they score.  It almost seems like they're watching each other more than the game.\u000a\u000aThe bare skin of their backs has a soft blue halo from the light of the television screen.<<set $played to 4>>\u000a\u000a[[keep watching|LoftCreep]]\u000a[[leave|House]]
 p1407
 sg27
 VLoftStare
 p1408
 sg29
 g30
-((I2016
-I11
-I5
-I21
-I18
-I18
-I5
-I310
+((I2023
+I3
+I27
+I23
+I56
+I28
+I0
+I86
 I1
 tp1409
 (dp1410
@@ -5723,21 +5723,21 @@ Tiddler
 p1735
 (dp1736
 g25
-VYou wait at the top of the ladder and listen to the <<$boy>>s' conversation.  Their whispers and laughter are just at the edge of hearing, too faint to make out words.  As your eyes adjust to the darkness, you notice stars glowing faintly on the ceiling.\u000a\u000a[[keep listening|LoftToStars]]\u000a[[leave|House]]
+VYou wait at the top of the ladder and listen to the <<$boy>>s' conversation.  Their murmurs and whispers are too faint to make out words, but you can hear well enough to sense their intimacy. Every few minutes there's a faint rustling of clothes, or a whisper of skin.\u000a\u000aAs your eyes adjust to the darkness, you notice stars glowing faintly on the ceiling.\u000a\u000a[[keep listening|LoftToStars]]\u000a[[leave|House]]
 p1737
 sg27
 VLoftListen
 p1738
 sg29
 g30
-((I2022
+((I2023
 I3
-I29
+I27
+I23
+I42
+I48
 I0
-I3
-I58
-I1
-I88
+I86
 I1
 tp1739
 (dp1740
@@ -5773,21 +5773,21 @@ Tiddler
 p1750
 (dp1751
 g25
-VAs you listen, the stars grow slowly brighter.  The ceiling is soon filled with a wash of them: more stars than you've ever seen in your life, the broad band of the Milky Way clearly visible.\u000a\u000aAfter a few minutes, you notice the <<$boy>>s have stopped talking.  A moment later you realize that the loft, the ladder, and the floor have all vanished, leaving you floating in space, surrounded by stars and the void.\u000a\u000a[[look|Stars]]
+VAs you listen, the stars grow slowly brighter.  The ceiling is soon filled with a wash of them: more stars than you've ever seen in your life, the broad band of the Milky Way clearly visible.\u000a\u000aAfter a few minutes, you notice the <<$boy>>s have gone quiet.  A moment later you realize that the loft, the ladder, and the floor have all vanished, leaving you floating in space, surrounded by stars and the void.\u000a\u000a[[look|Stars]]
 p1752
 sg27
 VLoftToStars
 p1753
 sg29
 g30
-((I2017
-I5
-I28
+((I2023
+I3
+I27
+I23
+I36
+I55
 I0
-I51
-I26
-I6
-I148
+I86
 I1
 tp1754
 (dp1755
@@ -6999,7 +6999,7 @@ tp2117
 Rp2118
 sbsa(dp2119
 g18
-I01
+I00
 sg19
 (lp2120
 F649.0
