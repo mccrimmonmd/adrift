@@ -2805,21 +2805,21 @@ Tiddler
 p856
 (dp857
 g25
-V[Moldy, rotting wooden floors (no walls mentioned).  Two "themed" shower rooms, one totally ruined.  Rusted, dripping, steampunk-y tubes, valves and chambers comprise the "baths."  Catwalk at far end collapses if you try to use it, wakes you up.]
+V[~~Moldy, rotting wooden floors (no walls mentioned).  Two "themed" shower rooms, one totally ruined.  Rusted, dripping, steampunk-y tubes, valves and chambers comprise the "baths."~~ Spaceship!!  Catwalk at far end collapses if you try to use it, wakes you up.]
 p858
 sg27
 VBaths
 p859
 sg29
 g30
-((I2016
-I11
-I5
-I20
-I46
-I57
-I5
-I310
+((I2023
+I3
+I29
+I1
+I58
+I17
+I2
+I88
 I1
 tp860
 (dp861
@@ -4523,7 +4523,7 @@ Tiddler
 p1375
 (dp1376
 g25
-VThe sound of the surf, and the warmth of the sun and sand, lulls you to sleep.\u000a\u000a<<set $from to "Nap">><<Beach>>/% TODO: go somewhere else? %/
+VThe sound of the surf, and the warmth of the sun and sand, lulls you to sleep<<if $lucid>>--but then you remember you're already dreaming<<else>>. You almost remember something<<endif>>.\u000a\u000a<<set $from to "Nap">><<Beach>>/% TODO: go somewhere else? %/
 p1377
 sg27
 VBeachAwake
@@ -4532,12 +4532,12 @@ sg29
 g30
 ((I2023
 I3
-I28
-I2
-I51
 I29
+I2
 I1
-I87
+I23
+I2
+I88
 I1
 tp1379
 (dp1380
