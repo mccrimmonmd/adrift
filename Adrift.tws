@@ -1,7 +1,7 @@
 (dp0
 S'buildDestination'
 p1
-V/Applications/Programming/twine_1.4.2_osx/Saved Stories/Adrift_2017-01-18.html
+VC:\u005cUsers\u005csatur\u005cDocuments\u005ctwine\u005ctwine_1.4.2_osx\u005cSaved Stories\u005cAdrift_2023-03-29.html
 p2
 sS'saveDestination'
 p3
@@ -195,8 +195,8 @@ g18
 I00
 sg19
 (lp74
-F694.0
-aF179.0
+F526.0
+aF307.0
 asg21
 (itiddlywiki
 Tiddler
@@ -295,29 +295,29 @@ g18
 I00
 sg19
 (lp104
-F699.0
-aF37.0
+F573.0
+aF156.0
 asg21
 (itiddlywiki
 Tiddler
 p105
 (dp106
 g25
-VThe stream flows through a channel down a broad ramp on the other side of the glass, across a hall to an opening at the base of the wall, and out into the forest where you stand.  Across the hall,  on both sides of the ramp and as far as you can see, are empty counters with cabinets and shelves behind them.  No one is at the counters.\u000a\u000aTo one side of the stream is a glass door with a silver handle.\u000a\u000a<<if visited("FirstEntrance")>>[[go inside|Entrance]]<<else>>[[try the door|FirstEntrance]]<<endif>>\u000a[[go downstream|Forest]]
+VThe stream is flowing from a channel that runs across a hallway on the other side of the glass. On the other side of the hall, the channel continues up a broad ramp and out of sight.  To each side of the ramp, as far as you can see, are counters with cabinets and shelves behind them.  No one is at the counters.\u000a\u000aThe stream runs out to the forest where you stand through an opening in the base of the wall. To one side is a glass door with a silver handle.\u000a\u000a<<if not visited("Entrance")>>[[go inside|Entrance]]<<else>>[[try the door|ForestToEntrance]]<<endif>>\u000a[[go downstream|Forest]]
 p107
 sg27
 VSouth
 p108
 sg29
 g30
-((I2016
-I11
-I5
-I22
-I41
-I28
-I5
-I310
+((I2023
+I3
+I30
+I0
+I53
+I33
+I3
+I89
 I1
 tp109
 (dp110
@@ -345,8 +345,8 @@ g18
 I00
 sg19
 (lp119
-F521.0
-aF596.0
+F449.0
+aF606.0
 asg21
 (itiddlywiki
 Tiddler
@@ -445,15 +445,15 @@ g18
 I00
 sg19
 (lp149
-F1011.0
-aF19.0
+F905.0
+aF20.0
 asg21
 (itiddlywiki
 Tiddler
 p150
 (dp151
 g25
-VIn the center of a broad ramp, a stream flows through a mosaic-lined channel down to the ramp's base, across a hall, and under a glass wall to the forest outside. A tiny footbridge spans the stream.  On either side of it, the hallway--empty counters stocked with luxuries on one hand, and glass wall on the other--stretches away as far as you can see.  To one side of the stream is the silver-handled door leading back outside.\u000a\u000aThe faint smell of steam is in the air.\u000a\u000a[[follow the left hallway|LobbyEntrance]]\u000a[[follow the right hallway|LobbyEntrance]]\u000a[[follow the ramp|RampToShowers]]\u000a<<if visited("FirstExit") or not visited("Forest")>>[[go outside|South]]<<else>>[[go outside|FirstExit]]<<endif>>
+V/% TODO: this needs to be a more independent location, possibly added to the starting roster. Description needs to be neutral w/r to origin; get rid of "XxxToEntrance" passages. %/\u005c\u000a\u005c\u000aWater flows through a mosaic-lined channel from the top of a boad ramp, down its center, across a hall, and under a glass wall to the forest outside. A tiny footbridge spans the stream.  On either side of it, the hallway--empty counters stocked with luxuries on one hand, and glass wall on the other--stretches away as far as you can see.  To one side of the stream is the silver-handled door leading out to the forest.\u000a\u000aThe faint smell of steam is in the air.\u000a\u000a[[follow the left hallway|LobbyEntrance]]\u000a[[follow the right hallway|LobbyEntrance]]\u000a[[go up the ramp|RampToShowers]]\u000a<<if visited("FirstExit") or not visited("Forest")>>[[go outside|Forest]]<<else>>[[go outside|FirstExit]]<<endif>>
 p152
 sg27
 VEntrance
@@ -462,12 +462,12 @@ sg29
 g30
 ((I2023
 I3
-I27
-I22
 I30
-I4
-I0
-I86
+I1
+I1
+I58
+I3
+I89
 I1
 tp154
 (dp155
@@ -603,7 +603,7 @@ Tiddler
 p195
 (dp196
 g25
-VYou're in a room covered from floor to ceiling with tiles as warm as the steamy air.  A dozen shower spouts are spaced around the walls of the room, and several more jut out from the ceiling near the middle.  Some of them are running, but no one else is in the room.\u000a\u000aYou don't see any drains: instead, the water collects at the edges of the room in a gutter, which flows to a channel running through the center of a broad ramp, down and out of sight.\u000a\u000aIn the center of the room is a deeply recessed pit, large enough for maybe four people, with stairs leading in one side.  You hear the sound of <<if $cold>>running<<else>>splashing<<endif>> water coming from the pit, but you can't quite see in.\u000a\u000aOn the other wall of the room, barely visible through the steam, is a narrow hall with a flight of stairs climbing out of sight. In the corner to the side of the hall is an unmarked door.  It looks like a maintenance door of some kind; you're probably not supposed to use it.\u000a\u000a<<if not $showering>>[[take a shower|TakeAShower]]\u000a<<else>><<set $showering to 0>><<endif>><<if $ignoring and not $cold>>[[go in the pit|Ignoring]]<<else>>[[go in the pit|ShowerPit]]<<endif>>\u000a[[follow the ramp|Entrance]]\u000a[[follow the stairs|ShowersToPool]]\u000a[[try the door|Baths]]
+VYou're in a room covered from floor to ceiling with tiles as warm as the steamy air.  A dozen shower spouts are spaced around the walls of the room, and several more jut out from the ceiling near the middle.  Some of them are running, but no one else is in the room.\u000a\u000aYou don't see any drains: instead, the water collects at the edges of the room in a gutter, which flows to a channel running through the center of a broad ramp, down and out of sight.\u000a\u000aIn the center of the room is a deeply recessed pit, large enough for maybe four people, with stairs leading in one side.  You hear the sound of <<if $cold>>running<<else>>splashing<<endif>> water coming from the pit, but you can't quite see in.\u000a\u000aOn the other wall of the room, barely visible through the steam, is a narrow hall with a flight of stairs climbing out of sight.\u000a\u000a<<if not $showering>>[[take a shower|TakeAShower]]\u000a<<else>><<set $showering to 0>><<endif>><<if $ignoring and not $cold>>[[go in the pit|Ignoring]]<<else>>[[go in the pit|ShowerPit]]<<endif>>\u000a<<if not visited("Entrance")>>[[follow the ramp|RampToEntrance]]<<else>>[[follow the ramp|Entrance]]<<endif>>\u000a[[follow the stairs|ShowersToPool]]
 p197
 sg27
 VShowers
@@ -612,12 +612,12 @@ sg29
 g30
 ((I2023
 I3
-I22
-I2
+I30
+I0
+I57
+I17
 I3
-I9
-I2
-I81
+I89
 I1
 tp199
 (dp200
@@ -645,8 +645,8 @@ g18
 I00
 sg19
 (lp209
-F666.0
-aF596.0
+F616.0
+aF606.0
 asg21
 (itiddlywiki
 Tiddler
@@ -695,29 +695,29 @@ g18
 I00
 sg19
 (lp224
-F1025.0
-aF440.0
+F1039.0
+aF281.0
 asg21
 (itiddlywiki
 Tiddler
 p225
 (dp226
 g25
-V<<if $from is "Lobby">>You exit the lobby and walk down the long hall,<<else>>You continue down the hall,<<endif>> blank white wall on one side and unbroken glass on the other.  Outside, the leaves of the trees sway a little in a light breeze.<<if not visited("FirstExit")>>  For some reason, the forest doesn't seem as fake from in here.<<endif>>\u000a\u000aBefore long, a stream crosses your path.\u000a\u000a[[look|Entrance]]
+V<<if $from is "lobby">>You exit the lobby and walk down a long hall,<<else>>You continue down the hall,<<endif>> unattended counters on one side and a wall of glass on the other.  Outside is a forest, the leaves of the trees swaying a little in a light breeze.<<if visited("Forest") and not visited("FirstExit")>>  For some reason, the forest doesn't seem as fake from in here.<<endif>>\u000a\u000aBefore long, a channel of running water crosses your path.\u000a\u000a<<if not visited("Entrance")>>[[look|Entrance]]<<else>>[[look|HallToEntrance]]<<endif>>
 p227
 sg27
 VInsideFollow
 p228
 sg29
 g30
-((I2016
-I11
-I5
-I23
-I35
+((I2023
 I3
-I5
-I310
+I30
+I0
+I52
+I25
+I3
+I89
 I1
 tp229
 (dp230
@@ -745,29 +745,29 @@ g18
 I00
 sg19
 (lp239
-F852.0
-aF2.0
+F741.0
+aF18.0
 asg21
 (itiddlywiki
 Tiddler
 p240
 (dp241
 g25
-VThe door opens without difficulty.  Inside, the air is warm and humid.  The shelves behind the counters are stocked with fluffy towels, luxuriant patterned robes, and countless small bottles of soaps, salts, and oils. You don't need anything.\u000a\u000aA tiny footbridge crosses the stream to the hall on the other side.  The unattended counters continue as far as you can see in both directions.  In front of you, the stream flows through a channel running down the center of a broad ramp.\u000a\u000a[[follow the left hallway|LobbyEntrance]]\u000a[[follow the right hallway|LobbyEntrance]]\u000a[[follow the ramp|RampToShowers]]
+VThe door opens without difficulty.  Inside, the air is warm and humid. The shelves behind the counters are stocked with fluffy towels, luxuriant patterned robes, and countless small bottles of soaps, salts, and oils.\u000a\u000aYou don't need anything.\u000a\u000aA tiny footbridge spans the stream dividing the two unending hallways.  The channel runs from the top of a broad ramp, down the center, and back out to the forest.\u000a\u000a[[follow the left hallway|LobbyEntrance]]\u000a[[follow the right hallway|LobbyEntrance]]\u000a[[follow the ramp|RampToShowers]]
 p242
 sg27
-VFirstEntrance
+VForestToEntrance
 p243
 sg29
 g30
-((I2016
-I6
-I22
-I20
-I11
-I22
-I2
-I174
+((I2023
+I3
+I30
+I0
+I54
+I46
+I3
+I89
 I1
 tp244
 (dp245
@@ -795,29 +795,29 @@ g18
 I00
 sg19
 (lp254
-F853.0
-aF130.0
+F749.0
+aF161.0
 asg21
 (itiddlywiki
 Tiddler
 p255
 (dp256
 g25
-VYou walk back into the forest, the strange sense of artificiality returning as you do.  You hadn't realized it had gone.\u000a\u000aYou notice you can't hear any birds.  Then you notice you can't hear the rustling of the leaves, though the breeze is plainly moving them.  The forest looks and feels real, but apart from the ever-present rushing of the stream it is completely noiseless.\u000a\u000a<<South>>
+VYou walk back into the forest, the strange sense of artificiality returning as you do.  You hadn't realized it had gone.\u000a\u000aYou notice you can't hear any birds.  Then you notice you can't hear the rustling of the leaves, though the breeze is plainly moving them.  The forest looks and feels real, but apart from the ever-present rushing of the stream it is completely noiseless.\u000a\u000a<<Forest>>
 p257
 sg27
 VFirstExit
 p258
 sg29
 g30
-((I2022
+((I2023
 I3
-I29
-I1
-I53
-I14
-I1
-I88
+I30
+I0
+I41
+I20
+I3
+I89
 I1
 tp259
 (dp260
@@ -853,7 +853,7 @@ Tiddler
 p270
 (dp271
 g25
-VThe air here is cool and just a little humid, but not uncomfortable.  On the near side of the room a narrow staircase leads down out from the wall.\u000a\u000a<<if $swimming>>Two younger <<$boy>>s are doing laps in the pool, pausing now and then to show off and fool around. They're not wearing swimsuits, just swimming naked.\u000a\u000aOne of them notices you standing by the pool and smiles, motioning you to join them.<<else>>Two younger <<$boy>>s are standing next to the pool, completely naked.  They turn to look at you as you enter, and one of them smiles.\u000a\u000a"Hey," <<$he>> says.  "Want to swim with us?"<<endif>>\u000a\u000a[[join them|Laps]]\u000a[[go down the stairs|Excused][$dest = "Showers"]]
+VThe air here is cool and just a little humid, but not uncomfortable.  On the near side of the room a narrow staircase leads down out from the wall, and on the opposite wall is an unmarked door.  It looks like a maintenance door of some kind; you're probably not supposed to use it.\u000a\u000a<<if $swimming>>Two younger <<$boy>>s are doing laps in the pool, pausing now and then to show off and fool around. They're not wearing swimsuits, just swimming naked.\u000a\u000aOne of them notices you standing by the pool and smiles, motioning you to join them.<<else>>Two younger <<$boy>>s are standing next to the pool, completely naked.  They turn to look at you as you enter, and one of them smiles.\u000a\u000a"Hey," <<$he>> says.  "Want to swim with us?"<<endif>>\u000a\u000a[[join them|Laps]]\u000a[[go down the stairs|Excused][$dest = "Showers"]]\u000a[[try the door|Baths]]
 p272
 sg27
 VPool
@@ -862,12 +862,12 @@ sg29
 g30
 ((I2023
 I3
-I28
+I29
+I23
+I27
+I57
 I2
-I41
-I46
-I1
-I87
+I88
 I1
 tp274
 (dp275
@@ -1495,8 +1495,8 @@ g18
 I00
 sg19
 (lp464
-F1183.0
-aF24.0
+F1174.0
+aF20.0
 asg21
 (itiddlywiki
 Tiddler
@@ -1645,8 +1645,8 @@ g18
 I00
 sg19
 (lp509
-F1178.0
-aF165.0
+F1488.0
+aF318.0
 asg21
 (itiddlywiki
 Tiddler
@@ -1942,7 +1942,7 @@ tp596
 Rp597
 sbsa(dp598
 g18
-I00
+I01
 sg19
 (lp599
 F1179.0
@@ -2553,7 +2553,7 @@ Tiddler
 p780
 (dp781
 g25
-V<<if $from is "Ocean">>You reach the shore without much difficulty, and walk out onto dry land.  <<else if $from is "Lobby">>You walk through the door and across the sand to the shore.  <<endif>>The sand is warm and powder-fine under your feet, and the sound of the surf is gentle and lulling.  The ocean sparkles in the sunlight.\u000a\u000aAway from the water, the fine sand gives way to grass, trees, and ferns.  The leaves of the forest sway gently in the cool breeze.\u000a\u000a[Beach house?]\u000a\u000a[[go for a swim|Ocean]]\u000a[[enter the trees|BeachWoods]]\u000a[[lie down|BeachNap]]
+V<<if $from is "ocean">>You reach the shore without much difficulty, and walk out onto dry land.  <<else if $from is "lobby">>You walk through the door and across the sand to the shore.  <<endif>>The sand is warm and powder-fine under your feet, and the sound of the surf is gentle and lulling.  The ocean sparkles in the sunlight.\u000a\u000aAway from the water, the fine sand gives way to grass, trees, and ferns.  The leaves of the forest sway gently in the cool breeze.\u000a\u000a[Beach house?]\u000a\u000a[[go for a swim|Ocean]]\u000a[[enter the trees|BeachWoods]]\u000a[[lie down|BeachNap]]
 p782
 sg27
 VBeach
@@ -2562,12 +2562,12 @@ sg29
 g30
 ((I2023
 I3
-I22
-I2
-I18
-I19
-I2
-I81
+I30
+I0
+I46
+I54
+I3
+I89
 I1
 tp784
 (dp785
@@ -2855,21 +2855,21 @@ Tiddler
 p871
 (dp872
 g25
-V<<if $from is "stairs">>The water is too thick to take a breath, so you simply dive in and start swimming.  For a few lungaching seconds you flail against the brilliant, churning water, not certain of up or down, or whether you're moving at all.\u000a\u000aJust as your lungs feel about to burst, you break free of the surface.  You take a few moments to catch your breath and brush the water from your eyes, then look around you.\u000a\u000a<<endif>>A warm, dazzling sun shines down from a cloudless blue sky.  Broad, lazy waves surround you, glittering in the sunlight and setting the horizon bobbing gently up and down.  A light, cool breeze is blowing.\u000a\u000aSome distance away, you spot a sandy beach edged by a lush, green forest.  It's not too far to swim.\u000a\u000a[[dive|OceanToStairs]]\u000a[[swim to shore|Beach][$from="Ocean"]]
+V<<if $from is "stairs">>The water is too thick to take a breath, so you simply dive in and start swimming.  For a few lungaching seconds you flail against the brilliant, churning water, not certain of up or down, or whether you're moving at all.\u000a\u000aJust as your lungs feel about to burst, you break free of the surface.  You take a few moments to catch your breath and brush the water from your eyes, then look around you.\u000a\u000a<<endif>>A warm, dazzling sun shines down from a cloudless blue sky.  Broad, lazy waves surround you, glittering in the sunlight and setting the horizon bobbing gently up and down.  A light, cool breeze is blowing.\u000a\u000aSome distance away, you spot a sandy beach edged by a lush, green forest.  It's not too far to swim.\u000a\u000a[[dive|OceanToStairs]]\u000a[[swim to shore|Beach][$from="ocean"]]
 p873
 sg27
 VOcean
 p874
 sg29
 g30
-((I2016
-I11
-I5
-I22
-I15
-I7
-I5
-I310
+((I2023
+I3
+I30
+I0
+I47
+I3
+I3
+I89
 I1
 tp875
 (dp876
@@ -4423,21 +4423,21 @@ Tiddler
 p1345
 (dp1346
 g25
-VYou walk a little way into the trees, the sound of surf fading oddly fast.  You turn to look behind you, and see only the barest glimmer of ocean beyond the thickening forest.\u000a\u000aBefore you, faintly, you hear the far-off sound of a running stream.\u000a\u000a[[go back|Beach][$from="Trees"]]\u000a[[find the stream|FollowSound]]
+VYou walk a little way into the trees, the sound of surf fading oddly fast.  You turn to look behind you, and see only the barest glimmer of ocean beyond the thickening forest.\u000a\u000aBefore you, faintly, you hear the far-off sound of a running stream.\u000a\u000a[[go back|Beach][$from="trees"]]\u000a[[find the stream|FollowSound]]
 p1347
 sg27
 VBeachWoods
 p1348
 sg29
 g30
-((I2016
-I11
-I5
-I22
-I38
-I54
-I5
-I310
+((I2023
+I3
+I30
+I0
+I47
+I34
+I3
+I89
 I1
 tp1349
 (dp1350
@@ -4512,7 +4512,7 @@ tp1371
 Rp1372
 sbsa(dp1373
 g18
-I01
+I00
 sg19
 (lp1374
 F1940.0
@@ -4523,7 +4523,7 @@ Tiddler
 p1375
 (dp1376
 g25
-VThe sound of the surf, and the warmth of the sun and sand, lulls you to sleep<<if $lucid>>--but then you remember you're already dreaming<<else>>. You almost remember something<<endif>>.\u000a\u000a<<set $from to "Nap">><<Beach>>/% TODO: go somewhere else? %/
+VThe sound of the surf, and the warmth of the sun and sand, lulls you to sleep<<if $lucid>>--but then you remember you're already dreaming<<else>>. You almost remember something<<endif>>.\u000a\u000a<<set $from to "nap">><<Beach>>/% TODO: go somewhere else? %/
 p1377
 sg27
 VBeachAwake
@@ -4532,12 +4532,12 @@ sg29
 g30
 ((I2023
 I3
-I29
-I2
-I1
-I23
-I2
-I88
+I30
+I0
+I47
+I12
+I3
+I89
 I1
 tp1379
 (dp1380
@@ -4765,29 +4765,29 @@ g18
 I00
 sg19
 (lp1449
-F1014.0
-aF164.0
+F905.0
+aF173.0
 asg21
 (itiddlywiki
 Tiddler
 p1450
 (dp1451
 g25
-VYou stroll down the carpeted hallway, taking your time.  You soon pass a spacious, well-lit lobby filled with plush chairs, tables, and potted plants.  The AC sends a faint, cool breeze drifting into the hallway.\u000a\u000aThe far wall of the lobby is also glass; there's a smooth tan beach and calm waves beyond.  Along one inner wall, hundreds of shining keys hang from hooks behind a broad counter.\u000a\u000aThe counter is empty.\u000a\u000a[[take a look|LobbyLook]]\u000a[[continue on|InsideFollow][$from="Hall"]]
+VYou stroll down the carpeted hallway, taking your time.  You soon pass a spacious, well-lit lobby filled with plush chairs, tables, and potted plants.  The AC sends a faint, cool breeze drifting into the hallway.\u000a\u000aThe far wall of the lobby is also glass; there's a smooth tan beach and calm waves beyond.  Along one inner wall, hundreds of shining keys hang from hooks behind a broad counter.\u000a\u000aNo one is at this counter, either.\u000a\u000a[[take a look|LobbyLook]]\u000a[[continue on|InsideFollow][$from="hall"]]
 p1452
 sg27
 VLobbyEntrance
 p1453
 sg29
 g30
-((I2016
-I11
-I5
-I23
-I35
-I42
-I5
-I310
+((I2023
+I3
+I30
+I0
+I45
+I56
+I3
+I89
 I1
 tp1454
 (dp1455
@@ -4815,15 +4815,15 @@ g18
 I00
 sg19
 (lp1464
-F1011.0
-aF300.0
+F980.0
+aF416.0
 asg21
 (itiddlywiki
 Tiddler
 p1465
 (dp1466
 g25
-VYou wander around the lobby, pausing to admire the view of the ocean.  A sliding glass door leads out. It looks like perfect weather for a swim.\u000a\u000aThere's a stairway set into the wall, next to the counter.  A sign above the stairway says, "GARDEN".\u000a\u000aOn top of the unattended counter is a small bell.\u000a\u000a[[take the stairs|LobbyStair]]\u000a[[ring the bell|LobbyWait]]\u000a<<if visited("LobbyWait")>>[[climb the counter|LobbyClimb]]\u000a<<endif>>[[go outside|Beach][$from="Lobby"]]\u000a[[go down the hall|InsideFollow][$from="Lobby"]]
+VYou wander around the lobby, pausing to admire the view of the ocean.  A sliding glass door leads out. It looks like perfect weather for a swim.\u000a\u000aThere's a stairway set into the wall, next to the counter.  A sign above the stairway says simply, "IN".\u000a\u000aOn top of the unattended counter is a small bell.\u000a\u000a[[take the stairs|LobbyStair]]\u000a[[ring the bell|LobbyWait]]\u000a<<if visited("LobbyWait")>>[[climb the counter|LobbyClimb]]\u000a<<endif>>[[go outside|Beach][$from="lobby"]]\u000a[[go down the hall|InsideFollow][$from="lobby"]]
 p1467
 sg27
 VLobbyLook
@@ -4832,12 +4832,12 @@ sg29
 g30
 ((I2023
 I3
-I22
-I2
-I25
-I15
-I2
-I81
+I30
+I0
+I46
+I24
+I3
+I89
 I1
 tp1469
 (dp1470
@@ -4865,8 +4865,8 @@ g18
 I00
 sg19
 (lp1479
-F870.0
-aF303.0
+F800.0
+aF301.0
 asg21
 (itiddlywiki
 Tiddler
@@ -5315,8 +5315,8 @@ g18
 I00
 sg19
 (lp1614
-F871.0
-aF442.0
+F801.0
+aF440.0
 asg21
 (itiddlywiki
 Tiddler
@@ -5365,8 +5365,8 @@ g18
 I00
 sg19
 (lp1629
-F1014.0
-aF583.0
+F944.0
+aF581.0
 asg21
 (itiddlywiki
 Tiddler
@@ -5415,8 +5415,8 @@ g18
 I00
 sg19
 (lp1644
-F871.0
-aF582.0
+F801.0
+aF580.0
 asg21
 (itiddlywiki
 Tiddler
@@ -7060,7 +7060,7 @@ Tiddler
 p2136
 (dp2137
 g25
-V<<if $likes is "boys">><<set $boy = "boy"; $girl = "girl"; $Boy = "Boy"; $Girl = "Girl"; $he = "he"; $she = "she"; $He = "He"; $She = "She"; $him = "him"; $her = "her"; $Him = "Him"; $Her = "Her"; $his = "his"; $shis = "her"; $His = "His"; $Shis = "Her"; $whis = "his"; $hers = "hers"; $Whis = "His"; $Hers = "Hers">>\u005c\u000a<<else>><<set $boy = "girl"; $girl = "boy"; $Boy = "Girl"; $Girl = "Boy"; $he = "she"; $she = "he"; $He = "She"; $She = "He"; $him = "her"; $her = "him"; $Him = "Her"; $Her = "Him"; $his = "her"; $shis = "his"; $His = "Her"; $Shis = "His"; $whis = "hers"; $hers = "his"; $Whis = "Hers"; $Hers = "His">><<endif>>\u005c\u000a<<set $destination to either("Forest", "House", "Showers")>> /% Baths, Garden... Museum? What else? %/\u005c\u000a<<display $destination>>
+V<<if $likes is "boys">><<set $boy = "boy"; $girl = "girl"; $Boy = "Boy"; $Girl = "Girl"; $he = "he"; $she = "she"; $He = "He"; $She = "She"; $him = "him"; $her = "her"; $Him = "Him"; $Her = "Her"; $his = "his"; $shis = "her"; $His = "His"; $Shis = "Her"; $whis = "his"; $hers = "hers"; $Whis = "His"; $Hers = "Hers">>\u005c\u000a<<else>><<set $boy = "girl"; $girl = "boy"; $Boy = "Girl"; $Girl = "Boy"; $he = "she"; $she = "he"; $He = "She"; $She = "He"; $him = "her"; $her = "him"; $Him = "Her"; $Her = "Him"; $his = "her"; $shis = "his"; $His = "Her"; $Shis = "His"; $whis = "hers"; $hers = "his"; $Whis = "Hers"; $Hers = "His">><<endif>>\u005c\u000a<<set $destination to either("Forest", "House", "Showers")>> /% Entrance, Museum, ... Baths? What else? %/\u005c\u000a<<display $destination>>
 p2138
 sg27
 VSomewhere
@@ -7069,12 +7069,12 @@ sg29
 g30
 ((I2023
 I3
-I28
-I0
-I15
-I20
+I30
 I1
-I87
+I0
+I56
+I3
+I89
 I1
 tp2140
 (dp2141
@@ -7197,10 +7197,110 @@ tp2175
 (dp2176
 tp2177
 Rp2178
+sbsa(dp2179
+g18
+I00
+sg19
+(lp2180
+F1173.0
+aF150.0
+asg21
+(itiddlywiki
+Tiddler
+p2181
+(dp2182
+g25
+VThe air clears a little as you make your way down the ramp, growing cooler as it does. At the bottom of the ramp is a hallway, so long you can't see the ends, with a wall of glass on one side and unattended counters along the other. Shelves behind the counters are stocked with fluffy towels, luxuriant patterned robes, and countless small bottles of soaps, salts, and oils.\u000a\u000aYou don't need anything.\u000a\u000aThe gutter runs down the center of the ramp, across the hallway--where a tiny footbridge spans it--and through an opening at the bottom of the glass to a forest beyond, where it becomes a stream. To one side of the stream is a silver-handled door.\u000a\u000a[[follow the left hallway|LobbyEntrance]]\u000a[[follow the right hallway|LobbyEntrance]]\u000a[[go outside|Forest]]
+p2183
+sg27
+VRampToEntrance
+p2184
+sg29
+g30
+((I2023
+I3
+I29
+I23
+I42
+I29
+I2
+I88
+I1
+tp2185
+(dp2186
+tp2187
+Rp2188
+sg35
+(lp2189
+sg38
+g30
+((I2023
+I3
+I29
+I23
+I30
+I5
+I2
+I88
+I1
+tp2190
+(dp2191
+tp2192
+Rp2193
+sbsa(dp2194
+g18
+I00
+sg19
+(lp2195
+F1037.0
+aF143.0
+asg21
+(itiddlywiki
+Tiddler
+p2196
+(dp2197
+g25
+Vasjdfkhjaskdhkasjdkasjhdf
+p2198
+sg27
+VHallToEntrance
+p2199
+sg29
+g30
+((I2023
+I3
+I30
+I0
+I59
+I55
+I3
+I89
+I1
+tp2200
+(dp2201
+tp2202
+Rp2203
+sg35
+(lp2204
+sg38
+g30
+((I2023
+I3
+I30
+I0
+I52
+I29
+I3
+I89
+I1
+tp2205
+(dp2206
+tp2207
+Rp2208
 sbsasS'scale'
-p2179
+p2209
 F1.0
 sS'snapping'
-p2180
+p2210
 I00
 ss.
